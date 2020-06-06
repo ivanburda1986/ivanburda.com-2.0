@@ -205,23 +205,23 @@
       font-size: 1.9rem; }
 
 /*PROJECT OVERLAYS*/
-#project1-overlay-container {
+.project-overlay-container {
   display: flex;
   position: fixed;
   align-content: center;
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: rgba(29, 63, 68, 0.95);
+  background: rgba(29, 63, 98, 0.95);
   margin: 0;
   top: 0;
   left: 0;
   z-index: 3;
   visibility: hidden;
   overflow-y: hidden; }
-  #project1-overlay-container.show {
+  .project-overlay-container.show {
     visibility: visible; }
-  #project1-overlay-container.hide {
+  .project-overlay-container.hide {
     visibility: hidden; }
 
 .project-overlay {
@@ -291,7 +291,8 @@
   display: flex;
   grid-area: footer;
   justify-content: space-around;
-  align-content: space-between; }
+  align-content: space-between;
+  background-color: #156099; }
 
 .project-overlay-sourcode-btn-container {
   width: 50%; }
@@ -319,7 +320,19 @@
     color: #C6D6E6; }
 
 #project1-overlay .project-overlay-photo {
-  background: url(../img/portfolio/taxidermy.png) center;
+  background: url("../img/portfolio/taxidermy.png") center;
+  background-size: cover; }
+
+#project2-overlay .project-overlay-photo {
+  background: url("../img/portfolio/ivanburda.png") center;
+  background-size: cover; }
+
+#project3-overlay .project-overlay-photo {
+  background: url("../img/portfolio/currency-convertor.png") center;
+  background-size: cover; }
+
+#project4-overlay .project-overlay-photo {
+  background: url("../img/portfolio/christinadengg.png") center;
   background-size: cover; }
 
 .project-overview {
@@ -338,15 +351,15 @@
   background-size: cover; }
 
 #project2 {
-  background: url("../img/portfolio/currency-convertor.png") center;
+  background: url("../img/portfolio/ivanburda.png") center;
   background-size: cover; }
 
 #project3 {
-  background: url("../img/portfolio/christinadengg.png") center;
+  background: url("../img/portfolio/currency-convertor.png") center;
   background-size: cover; }
 
 #project4 {
-  background: url("../img/portfolio/ivanburda.png") center;
+  background: url("../img/portfolio/christinadengg.png") center;
   background-size: cover; }
 
 .project-button {
