@@ -62,7 +62,7 @@
   width: 40px;
   height: 4px;
   z-index: 2;
-  background: $dominant-color;
+
 
 
   &::before {
@@ -135,27 +135,30 @@
 //Burger menu on-toggler
 .burger-animate-startState {
   @include transition-littleTime();
-  //background-color: orange;
+  background: $dominant-color;
+
 
   &::before {
     @include transition-littleTime();
-    //background-color: orange;
   }
 
   &::after {
     @include transition-littleTime();
-    //background-color: orange;
   }
 }
 
 .burger-animate-endState {
+  background: green;
+
   &::before {
     background: $dominant-color;
     transform: translateX(10px) !important;
+    background: pink;
   }
 
   &::after {
-    background: $dominant-color;
+    //background: $dominant-color;
     transform: translateX(10px) !important;
+    background: pink;
   }
 }

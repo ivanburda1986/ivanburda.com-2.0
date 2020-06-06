@@ -15,19 +15,6 @@ burgerToggler.addEventListener("click", (e) => {
   }
 })
 
-//Closing the mobile nav if the user clicks outside of it
-let windowInnerWidth = window.innerWidth;
-if (windowInnerWidth <= 600) {
-  document.addEventListener("click", (e) => {
-    let mobileNavigationBottomValueYAxis = mobileNavigation.getBoundingClientRect().bottom;
-    if (mobileNavigationBottomValueYAxis > 0 && e.clientY > mobileNavigationBottomValueYAxis) {
-      mobileNavigation.classList.remove("anim-slideToScreen-endState");
-      burger.classList.remove("burger-animate-endState");
-      burgerToggler.checked = false;
-    }
-  })
-}
-
 function closeMobileNavigation() {
   document.getElementById("main-nav-mobile-menu-options").classList.remove("anim-slideToScreen-endState");
   document.getElementById("burger").classList.remove("burger-animate-endState");
