@@ -14,12 +14,12 @@
   <link rel="stylesheet" href="css/main.css" />
   <title>Ivan Burda</title>
   <!--Favicon-->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-  <!--Hamburger menu-->
+  <!--Mobile navigation-->
   <div class="menu-wrap">
     <input type="checkbox" class="toggler" />
     <div class="hamburger">
@@ -34,16 +34,20 @@
           <ul>
             <li class="mobile-nav-btn"><a href="#frontpage">Welcome</a></li>
             <li class="mobile-nav-btn"><a href="#profile">Profile</a></li>
-            <li class="mobile-nav-btn"><a href="#experience">Experience</a></li>
+            <li class="mobile-nav-btn">
+              <a href="#experience">Experience</a>
+            </li>
             <li class="mobile-nav-btn"><a href="#portfolio">Portfolio</a></li>
             <li class="mobile-nav-btn"><a href="#contact">Contact</a></li>
-            <li class="mobile-nav-btn"><a href="blog.html#blog-frontpage">Blog</a></li>
+            <li class="mobile-nav-btn">
+              <a href="blog.html#blog-frontpage">Blog</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <!--Navbar-->
+  <!--Navigation-->
   <nav id="main-nav">
     <div class="container">
       <h1 id="logo-text"><a href="#frontpage">IVAN BURDA</a></h1>
@@ -65,93 +69,99 @@
         <h2>Welcome</h2>
       </div>
       <div class="content">
+        <!--Ivan Burda - frontpage information-->
         <div class="section-left">
           <div class="section-left-heading-and-photo">
             <div class="section-left-photo">
-              <img src="/img/about-photo.jpg" alt="ivanburda photo" />
+              <img src="img/ivan-business.jpg" alt="Ivan Burda - business photo" />
             </div>
           </div>
           <div class="section-left-text">
             <p id="intro-line">
-              I help businesses to understand their needs and translate those
+              I help businesses understand their needs and translate those
               into valuable solutions.
             </p>
             <div id="signature">
-              <img src="/img/signature.png" alt="signature" />
+              <img src="img/signature.png" alt="Ivan Burda - hand signature" />
             </div>
           </div>
         </div>
+        <!--An overview of the latest blogposts-->
         <div class="section-right">
           <div id="latest-blogposts-title">
             <h3>Latest blog posts</h3>
           </div>
           <article class="post-preview">
             <div class="post-preview-image">
-              <img src="img/blog/understanding-digital-world.jpg" alt="Understanding the Digital World" />
+              <img src="img/blog/understanding-digital-world.jpg"
+                alt="Cover of the book Understanding the Digital World" />
             </div>
             <div class="post-preview-title">
               <h4>
-                <a href="blogposts/2020-01-understaning-the-digital-world.html">Understanding the
-                  Digital World</a>
+                <a href="blogposts/2020-01-understaning-the-digital-world.html">Understanding the Digital World</a>
               </h4>
             </div>
             <div class="post-preview-content">
               <p>
                 Brian Kernighan, a Princeton University professor and an
-                experienced computer scientist has written the <i>Understanding the Digital World</i>
-                with the
-                aim to help an ordinary man or woman learn how computers work, how they communicate
-                among themselves, and how they influence our lives, should we like it or not. Long gone
-                are the days when computers were sitting in dark, air-conditioned, ...
+                experienced computer scientist has written the
+                <i>Understanding the Digital World</i>
+                with the aim to help an ordinary man or woman learn how
+                computers work, how they communicate among themselves, and how
+                they influence our lives, should we like it or not. Long gone
+                are the days when computers were sitting in dark,
+                air-conditioned, ...
               </p>
               <a href="blogposts/2020-01-understaning-the-digital-world.html">read more</a>
             </div>
           </article>
           <article class="post-preview">
             <div class="post-preview-image">
-              <img src="img/blog/you-dont-know-js-up-going.jpg" alt="You dont know JS Up and Going" />
+              <img src="img/blog/you-dont-know-js-up-going.jpg" alt="Cover of the book You dont know JS Up and Going" />
             </div>
             <div class="post-preview-title">
               <h4>
-                <a href="blogposts/2020-03-you-dont-know-js-get-up-going.html">You Don't Know JS: Up &
-                  Going</a>
+                <a href="blogposts/2020-03-you-dont-know-js-get-up-going.html">You Don't Know JS: Up & Going</a>
               </h4>
               <div class="post-category post-category-development">
                 Development
               </div>
             </div>
             <div class="post-preview-content">
-              <p>The <i>Up&Going</i> is the first book in the series of six written by Kyle Simpson, an
-                open-web evangelist,
-                teacher
-                and a javascript enthusiast. The series is called <i>You Don’t Know JS</i> and the main
-                reason why Simpson
-                has
-                put
-                his efforts into writing it is to help developers getting a complete apprehension of the
-                most popular
-                language
-                of the web.</p>
+              <p>
+                The <i>Up&Going</i> is the first book in the series of six
+                written by Kyle Simpson, an open-web evangelist, teacher and a
+                javascript enthusiast. The series is called
+                <i>You Don’t Know JS</i> and the main reason why Simpson has
+                put his efforts into writing it is to help developers getting
+                a complete apprehension of the most popular language of the
+                web.
+              </p>
               <a href="blogposts/2020-03-you-dont-know-js-get-up-going.html">read more</a>
             </div>
           </article>
           <article class="post-preview">
             <div class="post-preview-image">
-              <img src="img/blog/api-design.jpg" alt="API Design" />
+              <img src="img/blog/api-design.jpg" alt="Cover of the book API Design" />
             </div>
             <div class="post-preview-title">
               <h4>
                 <a href="blogposts/2018-api-architecture.html">API Design</a>
               </h4>
-              <div class="post-category post-category-technology">Technology</div>
+              <div class="post-category post-category-technology">
+                Technology
+              </div>
             </div>
             <div class="post-preview-content">
               <p>
-                It is surprising how the author at not even three hunder pages managed to cover also API
-                description languages, design decisions, architectural patterns and much more. Still,
-                the highest value for the readers who finds themselves at a project with JSON-based REST
-                API lies in the fact that Matthias Biehl provides a step-by-by step guidance to
-                designing such a RESTful JSON-based API by covering vast area of the topic.
+                It is surprising how the author at not even three hunder pages
+                managed to cover also API description languages, design
+                decisions, architectural patterns and much more. Still, the
+                highest value for the readers who finds themselves at a
+                project with JSON-based REST API lies in the fact that
+                Matthias Biehl provides a step-by-by step guidance to
+                designing such a RESTful JSON-based API by covering vast area
+                of the topic.
               </p>
               <a href="blogposts/2018-api-architecture.html">read more</a>
             </div>
@@ -173,9 +183,10 @@
               <h3>Bridging the gap</h3>
             </div>
             <div class="section-left-photo">
-              <img src="/img/IMG_3406.JPG" alt="ivanburda photo" />
+              <img src="img/ivan-outdoor.jpg" alt="Ivan Burda - an outdoor photo" />
             </div>
           </div>
+          <!--Profile: A short text about me-->
           <div class="section-left-text">
             <p>
               As an analyst, I measure my success by helping business clients
@@ -199,6 +210,7 @@
             </p>
           </div>
         </div>
+        <!--Profile: A structured summary of my skills and expertise-->
         <div class="section-right">
           <div class="side-heading-text">
             <h3>Skills and Expertise</h3>
@@ -233,8 +245,8 @@
             <div class="infobox-description">
               <ul class="underlined-list">
                 <li>
-                  A solid knowledge and design experience with APIs,
-                  HTTP, JSON
+                  A solid knowledge and design experience with APIs, HTTP,
+                  JSON
                 </li>
                 <li>
                   IT-systems architecture insight, card processing,
@@ -279,13 +291,14 @@
         <h2>Experience</h2>
       </div>
       <div class="content">
+        <!--Experience: Testimonials-->
         <div class="section-left">
           <div class="section-left-heading-and-photo">
             <div class="side-heading-text">
               <h3>Testimonials</h3>
             </div>
             <div class="section-left-photo">
-              <img src="/img/ivan1.jpg" alt="job experience photo" />
+              <img src="img/ivan-smartcasual.jpg" alt="Ivan Burda - a smart casual photo" />
             </div>
           </div>
           <div class="section-left-text">
@@ -297,14 +310,14 @@
               </div>
               <div class="testimonial-text">
                 <p>
-                  It's no exaggeration to say that I've never met someone else who featured such a
-                  high level of critical introspection. Ivan therefore is a fast learner, a listener
-                  to
-                  feedback, an implementer of strategy like no one else.
+                  It's no exaggeration to say that I've never met someone else
+                  who featured such a high level of critical introspection.
+                  Ivan therefore is a fast learner, a listener to feedback, an
+                  implementer of strategy like no one else.
                 </p>
               </div>
               <div class="testimonial-photo">
-                <img src="/img/mathias-linkedin.jpeg" alt="Mathias Frey - linkedin photo" />
+                <img src="img/mathias-linkedin.jpeg" alt="Mathias Frey - linkedin photo" />
               </div>
             </div>
             <div class="testimonial">
@@ -315,9 +328,10 @@
               </div>
               <div class="testimonial-text">
                 <p>
-                  Ivan is a game changer for software development teams. He has outstanding analytical
-                  skills. He is able to tackle any business requirement and turn it into extremely
-                  well described tasks.
+                  Ivan is a game changer for software development teams. He
+                  has outstanding analytical skills. He is able to tackle any
+                  business requirement and turn it into extremely well
+                  described tasks.
                 </p>
               </div>
               <div class="testimonial-photo">
@@ -332,17 +346,20 @@
               </div>
               <div class="testimonial-text">
                 <p>
-                  Ivan is one of the best business analysts I've ever had the honor to work with. He's
-                  very enthusiastic and always willing to learn and move forward. He's the guy who
-                  will "go the extra mile" to ensure that the solution to be done is the right one.
+                  Ivan is one of the best business analysts I've ever had the
+                  honor to work with. He's very enthusiastic and always
+                  willing to learn and move forward. He's the guy who will "go
+                  the extra mile" to ensure that the solution to be done is
+                  the right one.
                 </p>
               </div>
               <div class="testimonial-photo">
-                <img src="/img/peter-linkedin.jpeg" alt="Peter Karas - linkedin photo" />
+                <img src="img/peter-linkedin.jpeg" alt="Peter Karas - linkedin photo" />
               </div>
             </div>
           </div>
         </div>
+        <!--Experience: An overview of employment history-->
         <div class="section-right">
           <div class="side-heading-text">
             <h3>Employments</h3>
@@ -354,32 +371,49 @@
             </div>
             <div class="infobox-description">
               <p>
-                I worked for the Erste Group IT between 2016 and 2018 as an external analyst,
-                consequently to which I joined internally. I am a member of the team delivering the
-                George Online Banking to all countries within the Erste Group. George has 5+ millions
-                monthly active users both on web and mobile, and still growing.
+                I worked for the Erste Group IT between 2016 and 2018 as an
+                external analyst, consequently to which I joined internally. I
+                am a member of the team delivering the George Online Banking
+                to all countries within the Erste Group. George has 5+
+                millions monthly active users both on web and mobile, and
+                still growing.
               </p>
               <p>
-                I believe in overlapping roles, so I as an analyst I have acquired lots of knowledge and
-                experience also in the area of testing, development, project management, system design,
-                etc. At the same time I also try to share my own experience and bring in new ideas to
-                support the philosophy of our self-learning organisation.
+                I believe in overlapping roles, so I as an analyst I have
+                acquired lots of knowledge and experience also in the area of
+                testing, development, project management, system design, etc.
+                At the same time I also try to share my own experience and
+                bring in new ideas to support the philosophy of our
+                self-learning organisation.
               </p>
               <ul class="dotted-list">
-                <li>Helping business in 6 countries to analyse their needs and transform them into
-                  valuable solutions</li>
-                <li>Specification of requirements and documentation of the delivered solution</li>
-                <li>Development of automated tests using the Cypress.io and BDD</li>
+                <li>
+                  Helping business in 6 countries to analyse their needs and
+                  transform them into valuable solutions
+                </li>
+                <li>
+                  Specification of requirements and documentation of the
+                  delivered solution
+                </li>
+                <li>
+                  Development of automated tests using the Cypress.io and BDD
+                </li>
                 <li>Group API alignment and specification (REST&JSON)</li>
                 <li>Integration of third-party features</li>
                 <li>Card digitization and NFC payments for mobile devices</li>
                 <li>Detailed knowledge of retail banking products</li>
-                <li>Knowledge handover and skill transfer to other team members</li>
-                <li>Developing the team by interviewing new candidates, onboarding new colleagues,
-                  sharing experience sharing, consulting, helping others to grow (organizing
-                  workshops).</li>
-                <li>Designing the onboarding process and criteria for new members of the business
-                  analysis team</li>
+                <li>
+                  Knowledge handover and skill transfer to other team members
+                </li>
+                <li>
+                  Developing the team by interviewing new candidates,
+                  onboarding new colleagues, sharing experience sharing,
+                  consulting, helping others to grow (organizing workshops).
+                </li>
+                <li>
+                  Designing the onboarding process and criteria for new
+                  members of the business analysis team
+                </li>
               </ul>
             </div>
           </div>
@@ -427,13 +461,15 @@
   <section id="portfolio" class="section section-even section-padding">
     <div id="project-overlays-container">
       <div id="coverage"></div>
+      <!--Overlay-->
       <div class="project-overlay hide" id="project1-overlay">
         <div class="project-overlay-header">
           <div class="project-overlay-header-title">
             <p>A Small Business Website</p>
           </div>
           <div id="project1-hidebtn" class="project-overlay-header-close-btn-container">
-            <button>×</button></div>
+            <button>×</button>
+          </div>
         </div>
         <div class="project-overlay-tech-tags tech-tags">
           <div class="tech-tag tag-html">HTML</div>
@@ -442,33 +478,34 @@
           <div class="tech-tag tag-js">JS</div>
         </div>
         <div class="project-overlay-main">
-
           <div class="project-overlay-photo"></div>
           <div class="project-overlay-description">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Non,
-              quo? Assumenda facere sed a laborum quos accusantium at cumque dignissimos incidunt
-              provident,
-              impedit corporis dolorem, expedita iusto similique et vitae.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non,
+              quo? Assumenda facere sed a laborum quos accusantium at cumque
+              dignissimos incidunt provident, impedit corporis dolorem,
+              expedita iusto similique et vitae.
+            </p>
           </div>
         </div>
-
         <div class="project-overlay-footer">
-          <div class="project-overlay-sourcode-btn-container"><a href="https://github.com/ivanburda1986/jordanpetr.cz"
-              target="_blank"><button>Github</button></a></div>
-          <div class="project-overlay-demo-btn-container"><a href="https://www.jordanpetr.cz"
-              target="_blank"><button>Live
-                site</button></a>
+          <div class="project-overlay-sourcode-btn-container">
+            <a href="https://github.com/ivanburda1986/jordanpetr.cz" target="_blank"><button>Github</button></a>
+          </div>
+          <div class="project-overlay-demo-btn-container">
+            <a href="https://www.jordanpetr.cz" target="_blank"><button>Live site</button></a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container">
+      <!--Projects-->
       <div class="section-title">
         <h2>Development Portfolio</h2>
       </div>
       <div id="projects">
+        <!--Small business website: Petr Jordan-->
         <div class="project">
           <div class="project-title">
             <h4>A Small Business Website</h4>
@@ -477,13 +514,12 @@
             <div class="tech-tag tag-html">HTML</div>
             <div class="tech-tag tag-css">CSS</div>
           </div>
-          <div class="project-overview" id="project1">
-
-          </div>
+          <div class="project-overview" id="project1"></div>
           <div id="project1-showBtn" class="project-button">
             Details
           </div>
         </div>
+        <!--My own website-->
         <div class="project">
           <div class="project-title">
             <h4>My Own Website</h4>
@@ -492,12 +528,12 @@
             <div class="tech-tag tag-html">HTML</div>
             <div class="tech-tag tag-css">CSS</div>
           </div>
-          <div class="project-overview" id="project4">
-
+          <div class="project-overview" id="project4"></div>
+          <div class="project-button">
+            <a href="https://github.com/ivanburda1986/ivanburda.com" target="_blank">Details</a>
           </div>
-          <div class="project-button"><a href="https://github.com/ivanburda1986/ivanburda.com"
-              target="_blank">Details</a></div>
         </div>
+        <!--Currency convertor-->
         <div class="project">
           <div class="project-title">
             <h4>Currency Convertor</h4>
@@ -507,13 +543,12 @@
             <div class="tech-tag tag-css">CSS</div>
             <div class="tech-tag tag-js">JS</div>
           </div>
-          <div class="project-overview" id="project2">
-
-          </div>
+          <div class="project-overview" id="project2"></div>
           <div class="project-button">
             <a href="img/portfolio/udemy-fe-html-css.jpg" target="_blank">Details</a>
           </div>
         </div>
+        <!--Personal presentation: Christina Dengg-->
         <div class="project">
           <div class="project-title">
             <h4>A Personal Presentation</h4>
@@ -524,13 +559,11 @@
             <div class="tech-tag tag-sass">Sass</div>
             <div class="tech-tag tag-js">JS</div>
           </div>
-          <div class="project-overview" id="project3">
-
+          <div class="project-overview" id="project3"></div>
+          <div class="project-button">
+            <a href="https://github.com/ivanburda1986/ivanburda.com" target="_blank">Details</a>
           </div>
-          <div class="project-button"><a href="https://github.com/ivanburda1986/ivanburda.com"
-              target="_blank">Details</a></div>
         </div>
-
       </div>
     </div>
   </section>
@@ -560,14 +593,17 @@
       </div>
     </div>
   </section>
+  <!--Footer-->
   <footer id="main-footer">
     <div class="container">
-      <p>Copyright &copy; <span id="footer-year"></span>, Ivan Burda, All Rights Reserved</p>
+      <p>
+        Copyright &copy; <span id="footer-year"></span>, Ivan Burda, All
+        Rights Reserved
+      </p>
     </div>
   </footer>
   <script src="js/project-overlay.js"></script>
   <script src="js/script.js"></script>
 </body>
-
 
 </html>
