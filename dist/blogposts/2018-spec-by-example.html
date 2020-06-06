@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Font Awesome Kit-->
+  <script src="https://kit.fontawesome.com/4b83083c38.js" crossorigin="anonymous"></script>
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+  <!--Styles-->
+  <link rel="stylesheet" href="../styles/stylesheet.css">
+  <link rel="stylesheet" href="../styles/hamburger-menu.css">
+  <link rel="stylesheet" media="screen and (min-width:1100px)" href="../styles/min-width-1100.css">
+  <link rel="stylesheet" media="screen and (max-width:900px)" href="../styles/max-width-900.css">
+  <link rel="stylesheet" media="screen and (max-height:720px)" href="../styles/max-height-720.css">
+  <link rel="stylesheet" media="screen and (max-width:600px)" href="../styles/max-width-600.css">
+  <link rel="stylesheet" media="screen and (max-width:340px)" href="../styles/max-width-340.css">
+  <title>Ivan Burda - Blog</title>
+</head>
+
+<body>
+  <!--Hamburger menu-->
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div id="mobile-nav">
+      <h1 id="logo-text"><a href="../index.html#frontpage">IVAN BURDA</a></h1>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li class="mobile-nav-btn"><a href="../index.html">Welcome</a></li>
+            <li class="mobile-nav-btn"><a href="../index.html#profile">Profile</a></li>
+            <li class="mobile-nav-btn"><a href="../index.html#experience">Experience</a></li>
+            <li class="mobile-nav-btn"><a href="../index.html#portfolio">Portfolio</a></li>
+            <li class="mobile-nav-btn"><a href="../index.html#contact">Contact</a></li>
+            <li class="mobile-nav-btn"><a href="../blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Navbar-->
+  <nav id="main-nav">
+    <div class="container">
+      <h1 id="logo-text"><a href="../index.html">IVAN BURDA</a></h1>
+      <ul class="list">
+        <li class="main-nav-btn"><a href="../index.html#profile">Profile</a></li>
+        <li class="main-nav-btn"><a href="../index.html#experience">Experience</a></li>
+        <li class="main-nav-btn"><a href="../index.html#portfolio">Portfolio</a></li>
+        <li class="main-nav-btn"><a href="../index.html#contact">Contact</a></li>
+        <li class="main-nav-btn"><a href="../blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--Post page body-->
+  <section id="blog-post-page" class="section section-odd section-padding">
+    <div class="container">
+      <!--Post itself-->
+      <div class="blog-post-title">
+        <h2 class="blog-post-heading">Specification By Example - A Workshop with G. Adzic</h2>
+      </div>
+      <div class="blog-post-meta-info">
+        <div class="post-meta-info-details">Article published in 2018</div>
+      </div>
+      <article class="blog-post-body">
+        <h4>For more than two years I have been working on a project where the goals of our team are:</h4>
+        <ul class="dotted-list">
+          <li>Designing an API layer to open a group of financial organizations to the world</li>
+          <li>Creating an innovative, easy-to-use online solution that will help customers to improve their financial
+            lives</li>
+          <li>Setting up a platform for 3rd-party plugins</li>
+        </ul>
+        When I joined I was a junior business analyst (BA) and what is clear to me now when looking over my shoulder
+        into the past, was not clear to me back then. It is not only me, the whole team has made a huge progress.
+        <h4>At my project beginnings, the team worked like this:</h4>
+        <ul class="dotted-list">
+          <li>Product owner outlined a requirement</li>
+          <li>Business analyst wrote a set of stories elaborating this requirement (usually in a form of unstructured
+            narrative)</li>
+          <li>Developers took the stories and tried to implement them</li>
+          <li>Testers had a look at the development output, tried to test it manually, using rather a gut feeling than a
+            having a clear set of acceptance criteria</li>
+          <li>The FE functionality got deployed to a UAT</li>
+          <li>Feedback arrived: lots of bugs, a clash of the reality and the expectations</li>
+        </ul>
+        Since this time we have made a huge progress. Besides other things, our specifications have become more
+        structured and a they even contain behaviour-driven-development (BDD) based scenarios.
+        <h4>The scenarios have helped a lot to everyone involved:</h4>
+        <ul class="dotted-list">
+          <li>BA has to think about the expected requirement behaviour in a more complete way</li>
+          <li>Product owner (PO) can check the scenarios and have a handshake with the BA before the development starts
+          </li>
+          <li>Developers have an idea of what is expected from them, where to start, where to finish and how to know
+            they have done what is expected</li>
+          <li>Developers use the BDD (Given-when-then) scenarios for writing unit tests</li>
+          <li>Testers have at least a rough idea what they should (manually) test</li>
+          <li>Anyone who opens a requirement specification can get an overview quickly</li>
+        </ul>
+        <h4>A huge improvement since the times of the stream-of-consciousness kind of specification. Yet we still face
+          these issues:</h4>
+        <ul class="dotted-list">
+          <li>Our documentation for the frontend (FE) code is manually written (therefore incomplete, outdated)</li>
+          <li>The test coverage of the FE code is insufficient and not reliable</li>
+          <li>The manually written documentation is not in any automatic/interactive relationship with the FE code</li>
+          <li>Team members lack knowledge about the FE solution</li>
+          <li> Lots of misunderstanding during the development as well as bugs during the acceptance stage</li>
+        </ul>
+        When re-reading the book <i>BDD in Action</i> which has worked for me and the team really well as a learning
+        source to
+        enhance our specifications with scenarios, and when watching related talks by Dan North, I realized an important
+        fact: The job of a business analyst is not to come up with a solution on his/her own and put this solution into
+        scenarios. The key responsibility of a BA is to get the team (PO, BA, developer, tester, designer) together to
+        have a conversation and find out the most suitable solution by discovering questions that have not been
+        considered/asked before. Looking for more information I found an interview with Gojko Adzic – who as a matter of
+        coincidence(?) planned to come to the city where I live and give a two-day workshop on the topic: Specification
+        by Example.
+        <h4>There were seven of us and instead of long introductions, Gojko suggested an activity for which he:</h4>
+        <ul class="dotted-list">
+          <li>Asked us to split into two groups</li>
+          <li>Gave us a list of of Black-Jack card game rules</li>
+          <li>Told us he represents a non-technical business owner to answer our questions</li>
+          <li>Asked us to come up with a paper-based implementation of the game. We could create a set of scenarios,
+            draw a diagram, draw pictures or anything we wanted. Afterwards one of us would be a machine that will be
+            tested by the client, and this machine would have to operate strictly by following our paper-based
+            implementation</li>
+          <li>He time-boxed the activity for 15 minutes</li>
+        </ul>
+        The rules of the game given to us were written on a single A4 page and as we found ourselves under a time
+        pressure we started with the “implementation” immediately. After the 15 minutes one team had a process diagram,
+        the other team had a set of Given-when-then scenarios. As we were not ready yet, Gojko agreed to move our
+        project deadline by another 5 minutes.
+        <h4>After the additional 5 minutes Gojko:</h4>
+        <ul class="dotted-list">
+          <li>Gave us a set of acceptance tests</li>
+          <li>Asked one of us to be a tester, one of us to be the Black-Jack casino machine, one of us to be an observer
+            which makes sure the machine follows strictly the paper-based implementation we have done</li>
+          <li>Time-boxed the activity for 10 minutes</li>
+        </ul>
+        <b>Result:</b> The implementations of the both teams failed all acceptance tests provided. A big spoonful of
+        harsh truth.
+        <h4>Lessons learned:</h4>
+        <ul class="dotted-list">
+          <li><b>We started working immediately before thinking more about the requirements -></b> Before you start
+            working,
+            even if there is time pressure, take 10% of the time to question the
+            requirements.</li>
+          <li><b>We did not ask for the acceptance criteria -> </b>Ask the business who is going to accept the solution
+            and what the acceptance criteria are. What should fail/pass?</li>
+          <li><b>We took the business requirements as correct and given -> </b>Don’t fall into the trap that business
+            stakeholders know what they want. Usually they don’t and it is not their mistake.
+            The role of a BA is to find out and clarify the real and relevant requirements of the business. This should
+            be done by triggerring a conversation to discover questions nobody had asked before.</li>
+          <li><b>We felt like there was not enough time -> </b>Don’t say there is not enough time to do something – say
+            instead that within the given time you can deliver only a limited scope.</li>
+        </ul>
+        <p>After we finished this 20+10 minutes long activity, and tested our implementation with the acceptance
+          criteria (examples of expected behaviour), we started to find out questions and unclarities. It also turned
+          out that not even all members of our team understood the original requirements in the same way. Unfortunately,
+          the unclarities became visible only after the implementation – sadly, this is what usually happens in everyday
+          life.</p>
+        <p>Important to say that the acceptance criteria given to us by business turned out to be wrong, even
+          contradictory. But this did not matter – they helped us to have a conversation and discover problems.</p>
+        <p>As Gojko pointed out afterwards, the real problems stem from things which are clear – because they are
+          “clear” to different people in different ways. Things which are unclear, on the other hand, are good, because
+          they instantly make us aware there are still questions to be answered.</p>
+        <p>This activity taught us that if a team discusses examples of expected behaviour during the specification
+          process then the team can even in very short time find out lots of unclear spots. All this before the real
+          implementation starts.</p>
+        <p>An important input for such a specification-by-example session are some acceptance criteria – if not prepared
+          by business, then by the BA based on the goals of the business.</p>
+        <p>As Gojko mentioned, feedback often comes after the implementation (too late) when people get something they
+          can complain about. So instead of asking business for final requirements, the business should be given
+          something to complain about in advance, before the development starts.</p>
+        <p>The “something” to complain about can be a list of acceptance tests (Given-when-then scenarios) based on what
+          the team learnt during the specification-by-examples session. Alternatively it can be a table, a picture, a
+          behaviour model. Suitability depends on the character of the requirements.</p>
+        <p>Having done the specification-by-example session the BA will afterwards find out answers to the newly-emerged
+          questions and will provide business stakeholders with the scenarios/acceptance tests/etc. At this point the
+          business stakeholders will be able to give feedback (complain).</p>
+        <p>Only after the questions get answered and and feedback gets provided by the business, a more mature
+          requirements can be written down. This is the point where the BA should specify the solution based on the new
+          findings. A set of given-when-then scenarios, a picture, diagram, a table with examples – all will work well
+          depending on the context.</p>
+        <p>Specification-by-example discussions can literally save weeks of development, because it reduces
+          misunderstanding, bugs, necessity for improvements as well as any clashes between what gets delivered and what
+          was expected. In addition to this, specification by example makes the whole team involved and supports
+          knowledge sharing.</p>
+
+
+
+        <h4>Facing resistance:</h4>
+        <ul class="dotted-list">
+          <li><b>The team thinks they do not have time for such a new approach. Developers are busy typing the code,
+              testers clicking around etc. -> </b>Do not offer a tool by saying that you are going to do specification
+            by example. Point out the reasons why everyone is busy because of trying to understand requirements and
+            because of fixing everything that has gone wrong. Then suggest an experiment where a whole team participates
+            in discussing the requirements. Time-box the experiment to 30 minutes. Say that if that does not work, the
+            team loses 30 minutes once a week. If it works, everyone benefits from it and fewer bugs and better solution
+            will make everyone less busy/stressed/overloaded in the end.</li>
+          <li><b>The business owners say they do not have time to have a meeting with you to discuss question and some
+              additional examples: -> </b>Ask the business owners how important the project is to them. They will most
+            likely say that very important. Then tell them that if the project is very important, why they think it is
+            not worth spending a few more moments to better understand and nail down the requirements. </li>
+        </ul>
+        <h4>Where to go from here?</h4>
+        <ul class="dotted-list">
+          <li>The most important benefit of specification by example is to have better understanding of the product to
+            be developed, where this understanding has been reached through a discussion involving all team members.
+          </li>
+          <li>Once this is done, the given-when-then scenarios specifying the solution can be used as an input for
+            automated testing. Tools for turning the scenarios into automated tests are for example Cucumber or FitNess.
+          </li>
+          <li>It is vital to make a decision what needs to be tested automatically and what manually. Automation on its
+            own does not solve anything. </li>
+          <li>Automation be applied to things which are correct, otherwise we will only get into troubles faster.</li>
+          <li>Automated tests should be version-controlled to get easily matched with the version we want to test.</li>
+          <li>Cucumber scenarios can be further (automatically) exported into HTML, PDF or Confluence (using Green
+            Pepper plugin), so that they become more accessible to wider audience.</li>
+          <li>As Gojko points out, people often think there is no documentation in the agile delivery approach. This is
+            not true. There is documentation, but it is more bound to the code. By this it is always up to date. In the
+            agile approach the acceptance tests (criteria) equal the specification and equal the documentation. To quote
+            the author: “Living documentation is a reliable and authoritative source of information on system
+            functionality, which anyone can easily access.”</li>
+        </ul>
+        <h4>The last word</h4>
+        <p>The workshop with Gojko Adzic literally exceeded all my expectation. Similarly to business owners, before the
+          workshop I was not even fully aware what to ask for and what should be delivered.
+          Gojko is highly professional and enthusiastic in his approached. Rather then just sharing theories he manages
+          to teach by experience. During the two-day workshop I experienced how things usually go wrong and managed to
+          find out and learn how to work better. Highly recommended.</p>
+        <img src="/img/blog/ivan-gojko.jpg" alt="A photo of Ivan and Gojko at the workshop">
+      </article>
+      <div class="blog-post-further-info">
+        <a href="https://gojko.net/books/" target="_blank"><i class="fas fa-book fa-1x"></i>Get books</a>
+        <a href="https://gojko.net/about/" target="_blank"><i class="fas fa-info-circle fa-1x"></i>About
+          Gojko Adzic</a>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer id="main-footer">
+    <div class="container">
+      <p>Copyright &copy; 2020, Ivan Burda, All Rights Reserved </p>
+    </div>
+  </footer>
+</body>
+<script src="/js/script.js"></script>
+
+</html>

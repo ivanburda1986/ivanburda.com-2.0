@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Font Awesome Kit-->
+  <script src="https://kit.fontawesome.com/4b83083c38.js" crossorigin="anonymous"></script>
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+  <!--Styles-->
+  <link rel="stylesheet" href="../styles/stylesheet.css">
+  <link rel="stylesheet" href="../styles/hamburger-menu.css">
+  <link rel="stylesheet" media="screen and (min-width:1100px)" href="../styles/min-width-1100.css">
+  <link rel="stylesheet" media="screen and (max-width:900px)" href="../styles/max-width-900.css">
+  <link rel="stylesheet" media="screen and (max-height:720px)" href="../styles/max-height-720.css">
+  <link rel="stylesheet" media="screen and (max-width:600px)" href="../styles/max-width-600.css">
+  <link rel="stylesheet" media="screen and (max-width:340px)" href="../styles/max-width-340.css">
+  <title>Ivan Burda - Blog</title>
+</head>
+
+<body>
+  <!--Hamburger menu-->
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div id="mobile-nav">
+      <h1 id="logo-text"><a href="../index.html#frontpage">IVAN BURDA</a></h1>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li class="mobile-nav-btn"><a href="../index.html">Welcome</a></li>
+            <li class="mobile-nav-btn"><a href="../index.html#profile">Profile</a></li>
+            <li class="mobile-nav-btn"><a href="../index.html#experience">Experience</a></li>
+            <li class="mobile-nav-btn"><a href="../index.html#portfolio">Portfolio</a></li>
+            <li class="mobile-nav-btn"><a href="../index.html#contact">Contact</a></li>
+            <li class="mobile-nav-btn"><a href="../blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Navbar-->
+  <nav id="main-nav">
+    <div class="container">
+      <h1 id="logo-text"><a href="../index.html">IVAN BURDA</a></h1>
+      <ul class="list">
+        <li class="main-nav-btn"><a href="../index.html#profile">Profile</a></li>
+        <li class="main-nav-btn"><a href="../index.html#experience">Experience</a></li>
+        <li class="main-nav-btn"><a href="../index.html#portfolio">Portfolio</a></li>
+        <li class="main-nav-btn"><a href="../index.html#contact">Contact</a></li>
+        <li class="main-nav-btn"><a href="../blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--Post page body-->
+  <section id="blog-post-page" class="section section-odd section-padding">
+    <div class="container">
+      <!--Post itself-->
+      <div class="blog-post-title">
+        <h2 class="blog-post-heading">Craft 2018 - Conference and Workshop</h2>
+      </div>
+      <div class="blog-post-meta-info">
+        <div class="post-meta-info-details">Article published in 2018</div>
+      </div>
+      <article class="blog-post-body">
+        <p>
+          Budapest in Hungary, one of the four capitals on Danube – the second largest European river. In 2018, on the
+          10th and 11th May, again the stage for the Craft Conference, which this year celebrated its 5th birthday. The
+          Craft Conference is focused on the software delivery craftsmanship, standing on three pillars:
+          Language-agnostic methods and best practices (TDD, BDD, non-functional matters, etc.), Team-organisational
+          topics and best practices, New trends and upcoming technologies.</p>
+        <p>For me, a business analyst involved and interested in software delivery, the main motivation for attending
+          the conference was: Experiencing the event itself; learning about topics directly relevant to business
+          analysis (e.g. BDD), and getting new ideas from the broader field of the software delivery universe.</p>
+        <h3>Testing, Faster – A workshop with Dan North</h3>
+        <img src="/img/blog/ivan-dan-craft.jpg" alt="a photo with Dan North" class="blog-image-left">
+        <p>Two days preceding the conference were dedicated to workshops ranging from non-technical to highly technical
+          ones. In 2017 I became a practitioner of BDD, so going for the Dan North’s workshop was a no-brainer. The
+          workshop promised to give a broader view on testing, yet, as Dan North is the originator of BDD, I expected to
+          experience also this. The workshop took place at the premises of IBM Budapest and this turned out to a pain
+          point hard to overcome even for speaker of Dan North’s level. The venue was a church-like room with terrible
+          acoustics. With nearly forty participants and lots of echo, it was hardly possible not only to hear Dan but
+          also anyone else, self including.
+
+        </p>
+        <p>Leaving aside the spatial challenges, the workshop started with a brainstorming on possible testing
+          approaches and assigning them into the “Testing Corners” matrix. This exercise made us aware of how individual
+          testing approaches need to be combined to achieve the best outcomes, i.e. working software which is
+          transparent, easy to maintain, test and further develop. Hardly is there a person, who has never experienced
+          that testing is often looked-down at as a burden and unavoidable cost, which hopefully will be very soon and
+          completely taken-care of by robots. Dan North showed us that there is still a future for test engineers. And
+          it is likely to be very bright. Automation should do what it is good at – repetitive, boring, mainly
+          regression testing. By this it will free hands to human test engineers who should do what machines are bad at
+          – exploratory testing, UX experience testing, seeing the broader picture and coming up with edge cases no
+          robot can think of.</p>
+        <p>After this, Dan facilitated a discussion on what makes a good test and a bad test. Being able to come up with
+          quality tests is conditioned by accurate understanding of the functionality and underlying requirements.
+          Understanding not only on the individual level, rather on the team level. At this point BDD came onto the
+          stage and Dan spoken about three steps it involves: Having a conversation to understand a requirement as a
+          team, Capturing the common understanding in a form of scenarios, Automating the scenarios by turning them into
+          tests. Quite often teams bring a disaster upon themselves by aiming for test automation without having done
+          the previous two steps. By this they end up with wrong tests, which are not only useless, but even more give
+          false outcomes and are an overhead to maintain.</p>
+        <p>The workshop left me with mixed feelings. The main downturn was the venue and then the number of participants
+          (approx. 40) which turned the event into a lecture with audience participation. On the other hand Dan is a
+          charming, knowledgeable experienced professional and as I had a chance to sit with him when we all went to for
+          a lunch, we could have a chat. I asked him why he had never written a book on BDD himself. “Because by writing
+          a book you pin it down,” he replied and then elaborated: “I see BDD as a living, evolving approach. Writing a
+          book about it would give it a sense of something finished – which it isn’t.”</p>
+        <p>This is the reason why Dan has been mainly blogging about the BDD. Yet, as much as I understand his point,
+          having a structured text guiding one through an an unexplored field, is not a bad thing. Luckily, there was
+          Gaspar Nagy, taking part at the workshop as well – and as I was about to learn on the last day of the
+          conference, Gaspar had written such a book and was also about to give a hands-on workshop!</p>
+        <h3>Conference Talks – Personal Highlights</h3>
+        <h4>Five key challenges for software quality tomorrow – Gojko Adzic</h4>
+        <p>A rather entertaining talk on how imperfections in design of technical solutions can bring unexpected and not
+          always pleasant outcomes. A representative example is what happened at the Amazon Marketplace to the book The
+          Making of a Fly: The Genetics of Animal Design. In 2011 the title was offered at the Amazon Marketplace and
+          its price soon went up $23,698,655.93. The reason behind this was not that the book was that rare. Rather, it
+          was caused by software which was used by other re-sellers. A re-seller with a better customer-satisfaction
+          rating than the person who originally offered the book, could benefits from their higher rating and offer the
+          book for a slightly higher price to make a profit. Every other re-seller with a slightly better rating than
+          the other re-sellers could do the same and ask for a slightly better price. As all this was handled by a
+          pricing algorithm the price of the book soon went through the roof. A funny situation, one would say – but now
+          consider the same has already happened at a stock market. In his talk Gojko mentioned several other examples
+          where automation led us into unpredictable ways. There is also a book <i>Humans vs. Computers</i> recently
+          published
+          by him to read more and even find out suggestion how not to fall in one of these traps.</p>
+        <h4>The People Patch – Adventures in Social Engineering – Jenny Radcliffe</h4>
+        <p>When I was reading The Art of Deception by Keving Mitnick in 2007, I for the first time came across the idea
+          the humans are the weakest link the the security of any system. Jenny Radcliffe who calls herself a human
+          hacker is a living example proving this statement. As a teenager Jenny loved breaking into old, unused
+          buildings and getting for free into music festivals. This adventurous pursuit brought her into a career where
+          she as a white hat hacker looking for weaknesses in the security of high-profile international organisations
+          who have already invested millions to be secure. And she is doing so without any noticeable technical
+          expertise, just by looking for publicly available information and benefiting from the human psyche. The talk
+          was extremely interesting, even more so nowadays when everyone scatters private information on social networks
+          without being aware how it could get misused if piled up.</p>
+        <h4>Software Development is Upside down – Allan Kelly</h4>
+        <p>In the economics courses at the university I was taught about economies of scale. The higher volume a factory
+          can produce, the cheaper unit price it can get. Applying the same approach to software delivery is a huge
+          mistake, yet so often done everywhere around us. Allan Kelly in his spectacular, easy to understand and
+          entertaining way laid out why delivering software in smaller volumes is more meaningful. In other words buying
+          10 packages of half-a-liter milk is more cost-efficient than getting a 10l barrel. Do you want to know more?
+          Watch for yourself here.</p>
+        <h4>Writing Better BDD Scenario – Gaspar Nagy & Seb Rose</h4>
+        A two-hour workshop given by Gaspar Nagy and Seb Rose came as an utter surprise to me. Even though I intended to
+        participate, I did not expect such a hands-on experience on a conference day dedicated to talks. Gaspar and Seb
+        have co-authored a recently published Discovery: Explore Behaviour Using Examples focused on the discovery part
+        of the BDD approach. Right now they are working on two more titles (Formulation, Automation) to cover the topic
+        fully. They conveyed the workshop in a way which allowed the participants to understand the value of
+        collaborative requirement discovery as well as formulation of requirements into Given-When-Then scenarios. Only
+        when reading the concisely written book at home, I realized the whole workshop was based on it. Combination of
+        the workshop experience and the printed guide will surely allow me to put the BDD approach even further into
+        everyday life of our project team.
+        <br>
+        <p>Craft conference was a positive experience for me. Not only because there was a plethora of interesting talks
+          but also because the event was a great opportunity to meet colleagues from the field, discover new ideas and
+          surprisingly also to learn more about the colleagues from our own team who came along.</p>
+      </article>
+      <div class="blog-post-further-info">
+        <a href="https://craft-conf.com/" target="_blank"><i class="fas fa-info-circle fa-1x"></i>About Craft</a>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer id="main-footer">
+    <div class="container">
+      <p>Copyright &copy; 2020, Ivan Burda, All Rights Reserved </p>
+    </div>
+  </footer>
+</body>
+<script src="/js/script.js"></script>
+
+</html>
