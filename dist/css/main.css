@@ -222,26 +222,23 @@
     opacity: 0;
     cursor: pointer; }
 
-#burger {
+#burger .burger-line {
   position: absolute;
   border: none;
-  width: 40px;
   height: 4px;
-  z-index: 2; }
-  #burger::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    width: 40px;
-    height: 4px;
-    background: #1D3F62; }
-  #burger::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    width: 40px;
-    height: 4px;
-    background: #1D3F62; }
+  z-index: 2;
+  background: #1D3F62; }
+
+#burger #burger-line1 {
+  top: -10px;
+  transition: all 0.5s ease-in-out; }
+
+#burger #burger-line2 {
+  transition: all 0.5s ease-in-out; }
+
+#burger #burger-line3 {
+  top: 10px;
+  transition: all 0.5s ease-in-out; }
 
 #main-nav-mobile-menu-options {
   width: 100vw; }
@@ -275,23 +272,23 @@
 .anim-slideToScreen-endState {
   transform: translateY(0vh); }
 
-.burger-animate-startState {
-  transition: all 0.5s ease-in-out;
-  background: #1D3F62; }
-  .burger-animate-startState::before {
-    transition: all 0.5s ease-in-out; }
-  .burger-animate-startState::after {
-    transition: all 0.5s ease-in-out; }
+.line1-animate-startState,
+.line2-animate-startState,
+.line3-animate-startState {
+  width: 40px; }
 
-.burger-animate-endState {
-  background: green; }
-  .burger-animate-endState::before {
-    background: #1D3F62;
-    transform: translateX(10px) !important;
-    background: pink; }
-  .burger-animate-endState::after {
-    transform: translateX(10px) !important;
-    background: pink; }
+.line1-animate-endState {
+  transform: translateY(10px) rotate(400deg);
+  width: 25px; }
+
+.line2-animate-endState {
+  transform: rotate(315deg);
+  width: 25px; }
+
+.line3-animate-endState {
+  transform: translateY(-10px) rotate(400deg);
+  width: 25px;
+  opacity: 0; }
 
 /*PROJECT OVERLAYS*/
 .project-overlay-container {

@@ -57,30 +57,28 @@
 }
 
 #burger {
-  position: absolute;
-  border: none;
-  width: 40px;
-  height: 4px;
-  z-index: 2;
-
-
-
-  &::before {
-    content: "";
+  .burger-line {
     position: absolute;
-    top: -10px;
-    width: 40px;
+    border: none;
+
     height: 4px;
+    z-index: 2;
     background: $dominant-color;
+
   }
 
-  &::after {
-    content: "";
-    position: absolute;
+  #burger-line1 {
+    top: -10px;
+    @include transition-littleTime;
+  }
+
+  #burger-line2 {
+    @include transition-littleTime;
+  }
+
+  #burger-line3 {
     top: 10px;
-    width: 40px;
-    height: 4px;
-    background: $dominant-color;
+    @include transition-littleTime;
   }
 }
 
@@ -133,32 +131,25 @@
 }
 
 //Burger menu on-toggler
-.burger-animate-startState {
-  @include transition-littleTime();
-  background: $dominant-color;
 
-
-  &::before {
-    @include transition-littleTime();
-  }
-
-  &::after {
-    @include transition-littleTime();
-  }
+.line1-animate-startState,
+.line2-animate-startState,
+.line3-animate-startState {
+  width: 40px;
 }
 
-.burger-animate-endState {
-  background: green;
+.line1-animate-endState {
+  transform: translateY(10px) rotate(400deg);
+  width: 25px;
+}
 
-  &::before {
-    background: $dominant-color;
-    transform: translateX(10px) !important;
-    background: pink;
-  }
+.line2-animate-endState {
+  transform: rotate(315deg);
+  width: 25px;
+}
 
-  &::after {
-    //background: $dominant-color;
-    transform: translateX(10px) !important;
-    background: pink;
-  }
+.line3-animate-endState {
+  transform: translateY(-10px) rotate(400deg);
+  width: 25px;
+  opacity: 0;
 }
