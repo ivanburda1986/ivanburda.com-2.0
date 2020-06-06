@@ -469,9 +469,10 @@ ul {
   align-items: center;
   color: $dominant-color;
   background: $page-background-neutral;
+  border-radius: $border-radius;
 
   &:hover {
-    border: 2px solid $accent-color-shade-light;
+    background: $page-background-dark;
   }
 
 }
