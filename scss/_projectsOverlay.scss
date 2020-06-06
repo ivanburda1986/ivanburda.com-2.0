@@ -1,7 +1,5 @@
 /*PROJECT OVERLAYS*/
-#project-overlays-container {}
-
-#coverage {
+#project1-overlay-container {
   display: flex;
   position: fixed;
   align-content: center;
@@ -15,22 +13,20 @@
   z-index: 3;
   visibility: hidden;
   overflow-y: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &.hide {
+    visibility: hidden;
+  }
 }
 
-#coverage .hide {
-  visibility: hidden;
-}
+// body {
+//   overflow: hidden;
+// }
 
-#coverage .show {
-  visibility: visible;
-}
-
-
-
-/* 
-body {
-    overflow: hidden;
-} */
 
 .project-overlay {
   display: grid;
@@ -47,9 +43,7 @@ body {
   top: 10vh;
   left: 20%;
   z-index: 3;
-  overflow-y: hidden;
   background: $page-background-neutral;
-  visibility: visible;
   border-radius: 5px;
 }
 
@@ -67,33 +61,34 @@ body {
   text-align: center;
   line-height: 100%;
 
+  p {
+    display: block;
+    color: white;
+    padding: 1rem 1rem;
+  }
+
 }
 
-.project-overlay-header-title p {
-  display: block;
-  color: white;
-  padding: 1rem 1rem;
-}
 
-
-.project-overlay-header-close-btn-container {
+.project-overlay-header-hide-btn-container {
   width: 10%;
+
+  button {
+    font-size: 3rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: $text-light;
+    cursor: pointer;
+
+    &:hover {
+      color: $page-background-neutral;
+    }
+
+  }
 }
 
-.project-overlay-header-close-btn-container button {
-  font-size: 3rem;
-  width: 100%;
-  border: none;
-  outline: none;
-  background: none;
-  color: $text-light;
-  cursor: pointer;
-
-}
-
-.project-overlay-header-close-btn-container button:hover {
-  color: $page-background-neutral;
-}
 
 .project-overlay .tech-tag {
   height: 1rem;
@@ -107,7 +102,6 @@ body {
   grid-area: main;
   display: flex;
   flex-direction: row;
-
 }
 
 .project-overlay-photo {
@@ -127,17 +121,18 @@ body {
 }
 
 .project-overlay-sourcode-btn-container {
-
   width: 50%;
+
+  button {
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+  }
 }
 
-.project-overlay-sourcode-btn-container button {
-  background: none;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-}
+
 
 .project-overlay-demo-btn-container {
   width: 50%;
@@ -153,26 +148,17 @@ body {
   text-align: center;
   font-size: 1.5rem;
   cursor: pointer;
+
+  &:hover {
+    color: $page-background-neutral;
+  }
 }
 
-.project-overlay-footer button:hover {
-  color: $page-background-neutral;
-}
-
-
-
-
-#project1-overlay .show {
-  visibility: visible;
-}
-
-#project1-overlay .hide {
-  visibility: hidden;
-}
-
-#project1-overlay .project-overlay-photo {
-  background: url(../img/portfolio/taxidermy.png) center;
-  background-size: cover;
+#project1-overlay {
+  .project-overlay-photo {
+    background: url(../img/portfolio/taxidermy.png) center;
+    background-size: cover;
+  }
 }
 
 
@@ -223,20 +209,20 @@ body {
   border-top: 1px solid $page-background-dark;
   border-radius: $border-radius;
   cursor: pointer;
-}
 
-.project-button a {
-  display: block;
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
-}
+  &:hover {
+    background: $page-background-light;
+  }
 
-.project-button:hover {
-  background: $page-background-light;
-}
+  a {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
 
-.project-button a:hover {
-  color: $accent-color-shade-dark;
-  font-weight: initial;
+    &:hover {
+      color: $accent-color-shade-dark;
+      font-weight: initial;
+    }
+  }
 }

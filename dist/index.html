@@ -21,31 +21,7 @@
 <body>
   <!--Mobile navigation-->
   <div class="menu-wrap">
-    <input type="checkbox" class="toggler" />
-    <div class="hamburger">
-      <div></div>
-    </div>
-    <div id="mobile-nav">
-      <h1 id="logo-text"><a href="#frontpage">IVAN BURDA</a></h1>
-    </div>
-    <div class="menu">
-      <div>
-        <div>
-          <ul>
-            <li class="mobile-nav-btn"><a href="#frontpage">Welcome</a></li>
-            <li class="mobile-nav-btn"><a href="#profile">Profile</a></li>
-            <li class="mobile-nav-btn">
-              <a href="#experience">Experience</a>
-            </li>
-            <li class="mobile-nav-btn"><a href="#portfolio">Portfolio</a></li>
-            <li class="mobile-nav-btn"><a href="#contact">Contact</a></li>
-            <li class="mobile-nav-btn">
-              <a href="blog.html#blog-frontpage">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+
   </div>
   <!--Navigation-->
   <nav id="main-nav">
@@ -459,8 +435,50 @@
   </section>
   <!--Portfolio-->
   <section id="portfolio" class="section section-even section-padding">
+    <!--Overlay-->
+    <div id="project-overlays-container">
 
+      <!--Overlay-project1-->
+      <div id="project1-overlay-container">
+        <div class="project-overlay" id="project1-overlay">
+          <div class="project-overlay-header">
+            <div class="project-overlay-header-title">
+              <p>A Small Business Website</p>
+            </div>
+            <div id="project1-hidebtn" class="project-overlay-header-hide-btn-container">
+              <button>×</button>
+            </div>
+          </div>
+          <div class="project-overlay-tech-tags tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-sass">Sass</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overlay-main">
+            <div class="project-overlay-photo"></div>
+            <div class="project-overlay-description">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non,
+                quo? Assumenda facere sed a laborum quos accusantium at cumque
+                dignissimos incidunt provident, impedit corporis dolorem,
+                expedita iusto similique et vitae.
+              </p>
+            </div>
+          </div>
+          <div class="project-overlay-footer">
+            <div class="project-overlay-sourcode-btn-container">
+              <a href="https://github.com/ivanburda1986/jordanpetr.cz" target="_blank"><button>Github</button></a>
+            </div>
+            <div class="project-overlay-demo-btn-container">
+              <a href="https://www.jordanpetr.cz" target="_blank"><button>Live site</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
+
       <!--Projects-->
       <div class="section-title">
         <h2>Development Portfolio</h2>
@@ -564,7 +582,7 @@
     </div>
   </footer>
   <script src="js/project-overlay.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
