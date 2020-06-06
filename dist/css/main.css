@@ -426,58 +426,6 @@
   background: url("../img/portfolio/christinadengg.png") center;
   background-size: cover; }
 
-.project-overview {
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: top;
-  text-align: justify;
-  padding: 0.625rem 1.875rem;
-  max-height: 70%;
-  min-height: 70%;
-  border-top: 1px solid #1D3F62; }
-
-#project1 {
-  background: url("../img/portfolio/taxidermy.png") center;
-  background-size: cover; }
-
-#project2 {
-  background: url("../img/portfolio/ivanburda.png") center;
-  background-size: cover; }
-
-#project3 {
-  background: url("../img/portfolio/currency-convertor.png") center;
-  background-size: cover; }
-
-#project4 {
-  background: url("../img/portfolio/christinadengg.png") center;
-  background-size: cover; }
-
-.project-button {
-  display: block;
-  width: 100%;
-  min-height: 15%;
-  max-height: 15%;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  padding: 0.625rem 0.25rem;
-  color: #0986E5;
-  border-top: 1px solid #AFC4CC;
-  border-radius: 0px 0px 8px 8px;
-  cursor: pointer; }
-  .project-button:hover {
-    background: #DCE7FF; }
-  .project-button a {
-    display: block;
-    padding: 1rem;
-    width: 100%;
-    height: 100%; }
-    .project-button a:hover {
-      color: #156099;
-      font-weight: initial; }
-
 /*BLOG SECTION*/
 .year {
   margin-bottom: 3rem; }
@@ -493,6 +441,9 @@
   display: flex;
   padding: 0.5rem 0;
   margin-bottom: 0.2rem; }
+
+.item-name {
+  padding: 0 0.5rem; }
 
 /*BLOG POST - SINGLE PAGE*/
 #blog-post-page .container {
@@ -813,6 +764,61 @@ ul {
   background: #156099;
   color: #ffffff; }
 
+.project-overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: top;
+  text-align: justify;
+  padding: 0.625rem 1.875rem;
+  max-height: 70%;
+  min-height: 70%;
+  border-top: 1px solid #1D3F62; }
+
+#project1 {
+  background: url("../img/portfolio/taxidermy.png") center;
+  background-size: cover; }
+
+#project2 {
+  background: url("../img/portfolio/ivanburda.png") center;
+  background-size: cover; }
+
+#project3 {
+  background: url("../img/portfolio/currency-convertor.png") center;
+  background-size: cover; }
+
+#project4 {
+  background: url("../img/portfolio/christinadengg.png") center;
+  background-size: cover; }
+
+.project-button {
+  display: block;
+  width: 100%;
+  min-height: 15%;
+  max-height: 15%;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  padding: 0.625rem 0.25rem;
+  padding-top: 1rem;
+  color: #156099;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-top: 1px solid #AFC4CC;
+  border-radius: 0px 0px 8px 8px;
+  cursor: pointer; }
+  .project-button:hover {
+    background: #DCE7FF; }
+  .project-button a {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    height: 100%; }
+    .project-button a:hover {
+      color: #156099;
+      font-weight: initial; }
+
 #contact .container {
   min-height: 100vh;
   overflow: hidden; }
@@ -1038,7 +1044,7 @@ ul {
 
 @media only screen and (max-width: 340px) {
   #mobile-nav #logo-text {
-    margin-left: 50px; }
+    margin-left: 30px; }
   /*Frontpage*/
   .post-preview {
     grid-template-areas: "title" "description" "image"; }

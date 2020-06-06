@@ -23,12 +23,9 @@
   }
 }
 
-
-
 // body {
 //   overflow: hidden;
 // }
-
 
 .project-overlay {
   display: grid;
@@ -71,7 +68,6 @@
 
 }
 
-
 .project-overlay-header-hide-btn-container {
   width: 10%;
 
@@ -91,7 +87,6 @@
 
   }
 }
-
 
 .project-overlay {
   .tech-tag {
@@ -191,71 +186,5 @@
   .project-overlay-photo {
     background: url('../img/portfolio/christinadengg.png') center;
     background-size: cover;
-  }
-}
-
-
-
-.project-overview {
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: top;
-  text-align: justify;
-  padding: 0.625rem 1.875rem;
-  max-height: 70%;
-  min-height: 70%;
-  border-top: 1px solid $dominant-color;
-}
-
-#project1 {
-  background: url('../img/portfolio/taxidermy.png') center;
-  background-size: cover;
-}
-
-#project2 {
-  background: url('../img/portfolio/ivanburda.png') center;
-  background-size: cover;
-}
-
-#project3 {
-  background: url('../img/portfolio/currency-convertor.png') center;
-  background-size: cover;
-}
-
-#project4 {
-  background: url('../img/portfolio/christinadengg.png') center;
-  background-size: cover;
-}
-
-.project-button {
-  display: block;
-  width: 100%;
-  min-height: 15%;
-  max-height: 15%;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  padding: 0.625rem 0.25rem;
-  color: $accent-color-shade-light;
-  border-top: 1px solid $page-background-dark;
-  border-radius: $border-radius;
-  cursor: pointer;
-
-  &:hover {
-    background: $page-background-light;
-  }
-
-  a {
-    display: block;
-    padding: 1rem;
-    width: 100%;
-    height: 100%;
-
-    &:hover {
-      color: $accent-color-shade-dark;
-      font-weight: initial;
-    }
   }
 }

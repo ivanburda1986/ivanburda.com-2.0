@@ -1,458 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--Font Awesome Kit-->
-    <script
-      src="https://kit.fontawesome.com/4b83083c38.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
-      rel="stylesheet"
-    />
-    <!--Styles-->
-    <link rel="stylesheet" href="../styles/stylesheet.css" />
-    <link rel="stylesheet" href="../styles/hamburger-menu.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width:1100px)"
-      href="../styles/min-width-1100.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:900px)"
-      href="../styles/max-width-900.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-height:720px)"
-      href="../styles/max-height-720.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:600px)"
-      href="../styles/max-width-600.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width:340px)"
-      href="../styles/max-width-340.css"
-    />
-    <title>Ivan Burda - Blog</title>
-  </head>
 
-  <body>
-    <!--Hamburger menu-->
-    <div class="menu-wrap">
-      <input type="checkbox" class="toggler" />
-      <div class="hamburger">
-        <div></div>
-      </div>
-      <div id="mobile-nav">
-        <h1 id="logo-text"><a href="../index.html#frontpage">IVAN BURDA</a></h1>
-      </div>
-      <div class="menu">
-        <div>
-          <div>
-            <ul>
-              <li class="mobile-nav-btn">
-                <a href="../index.html">Welcome</a>
-              </li>
-              <li class="mobile-nav-btn">
-                <a href="../index.html#profile">Profile</a>
-              </li>
-              <li class="mobile-nav-btn">
-                <a href="../index.html#experience">Experience</a>
-              </li>
-              <li class="mobile-nav-btn">
-                <a href="../index.html#portfolio">Portfolio</a>
-              </li>
-              <li class="mobile-nav-btn">
-                <a href="../index.html#contact">Contact</a>
-              </li>
-              <li class="mobile-nav-btn"><a href="../blog.html">Blog</a></li>
-            </ul>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--Font Awesome Kit-->
+  <script src="https://kit.fontawesome.com/4b83083c38.js" crossorigin="anonymous"></script>
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" />
+  <!--Styles-->
+  <link rel="stylesheet" href="../css/main.css" />
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Ivan Burda - Blog</title>
+</head>
+
+<body>
+  <!--Mobile navigation-->
+  <div class="menu-wrap">
+    <div id="main-nav-mobile-burger-menu">
+      <div id="burger-container">
+        <input type="checkbox" id="burger-toggler" />
+        <div id="burger" class="burger-animate-startState"></div>
       </div>
     </div>
-    <!--Navbar-->
-    <nav id="main-nav">
-      <div class="container">
-        <h1 id="logo-text"><a href="../index.html">IVAN BURDA</a></h1>
-        <ul class="list">
-          <li class="main-nav-btn">
-            <a href="../index.html#profile">Profile</a>
+    <div id="mobile-nav">
+      <h1 id="logo-text"><a href="../index.html">IVAN BURDA</a></h1>
+    </div>
+    <div id="main-nav-mobile-menu-options" class="anim-slideToScreen-startState">
+      <ul>
+        <li>
+          <a id="nav-mobile-profile" href="../index.html#profile" class="main-nav-btn-link">Profile</a>
+        </li>
+        <li>
+          <a id="nav-mobile-experience" href="../index.html#experience" class="main-nav-btn-link">Experience</a>
+        </li>
+        <li>
+          <a id="nav-mobile-portfolio" href="../index.html#portfolio" class="main-nav-btn-link">Portfolio</a>
+        </li>
+        <li>
+          <a id="nav-mobile-contact" href="../index.html#contact" class="main-nav-btn-link">Contact</a>
+        </li>
+        <li>
+          <a id="nav-mobile-contact" href="../blog.html" class="main-nav-btn-link">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Navbar-->
+  <nav id="main-nav">
+    <div class="container">
+      <h1 id="logo-text"><a href="../index.html">IVAN BURDA</a></h1>
+      <ul class="list">
+        <li class="main-nav-btn">
+          <a href="../index.html#profile">Profile</a>
+        </li>
+        <li class="main-nav-btn">
+          <a href="../index.html#experience">Experience</a>
+        </li>
+        <li class="main-nav-btn">
+          <a href="../index.html#portfolio">Portfolio</a>
+        </li>
+        <li class="main-nav-btn">
+          <a href="../index.html#contact">Contact</a>
+        </li>
+        <li class="main-nav-btn"><a href="../blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--Post page body-->
+  <section id="blog-post-page" class="section section-odd section-padding">
+    <div class="container">
+      <!--Post itself-->
+      <div class="blog-post-title">
+        <h2 class="blog-post-heading">
+          BDD Fundamentals with Gáspár Nagy and Seb Rose: Working Together is
+          Success
+        </h2>
+      </div>
+      <div class="blog-post-meta-info">
+        <div class="post-meta-info-details">Article published in 2018</div>
+      </div>
+      <article class="blog-post-body">
+        <p>
+          Henry Ford has coined hundreds of brilliant ideas, yet, there is one
+          which is very much true even in the today’s world of software
+          delivery:
+          <i>“Coming together is a beginning. Keeping together is progress.
+            Working together is success.”</i>
+        </p>
+        <p>
+          In the spring 2017, when I first heard about Behaviour-Driven
+          Development (BDD) and read the book BDD In Action, I understood BDD
+          as a way to better specify requirements at our software-delivery
+          project. After all, back then this was a goal of a business analyst
+          – to write better specification and throw it over the fence to a
+          developer and tester so that they would know what to do. BDD in the
+          way I got it seemed to be a sound remedy to the issues we faced back
+          in the days, mainly improvements coming out of the clash between
+          business expectations vs. our delivery, and lots of bugs stemming
+          from the fact that we neither had a common way to write our
+          specifications, nor did we practice an approach that would allow us
+          to understand requirements at the team level. You can read more
+          about those times in the introduction to another post of mine:
+          <a href="/blogposts/2018-spec-by-example.html">Specification by Example with Gojko Adzic</a>.
+        </p>
+        <p>
+          The participation at the workshop given by Gojko in early 2018
+          opened my eyes a bit more and I started to see the real idea behind
+          BDD. To be fair towards the BDD in Action, re-reading the book
+          allowed me to see what I originally did not get. BDD is not about
+          writing better specification, even though it eventually helps to do
+          that. BDD is rather about delivering maintainable software of a
+          great value through better cooperation and communication within a
+          team.
+        </p>
+        <p>
+          As Johan Wolfgang von Goethe once put it:
+          <i>“Everyone hears only what he understands.” </i> This was true for
+          my original understanding of BDD and this has turned out to be true
+          also for our software-delivery project. Individual people at various
+          roles at our project quite often understood expectations,
+          requirements and specifications in their own ways – and they were
+          not even aware of the different understanding until it came to light
+          at a very late stage, usually after the development had finished.
+        </p>
+        <p>
+          When I met Gáspár Nagy and Seb Rose at the
+          <a href="/blogposts/2018-craft-budapest.html">Craft Conerence in May 2018</a>
+          they outlined to me how to make everyone
+          <b>u-n-d-e-r-s-t-a-n-d</b> in the same way. They called this
+          approach a deliberate discovery, i.e. a discovery of the
+          requirements intentionally before lots of effort get invested,
+          rather than accidentally in a form of unpleasant surprises during
+          the development or even at the deployment stage.
+        </p>
+        <p>
+          Reading their
+          <a href="http://bddbooks.com/" target="_blank">concise book on the topic</a>
+          showed me that the deliberate discovery was just the first step
+          towards applying BDD at a project, yet a quintessential one for
+          being able to put into practice the following two steps: Formulation
+          and Automation. First the team needs to agree and understand what it
+          is to be done, only then the functionality can be specified
+          (formulation), and only then automated tests may be created and
+          living documentation achieved (automation). It would be easy to go
+          for automation immediately, yet automating something we are not sure
+          of is a certain way to a disaster. At the same time as the authors
+          put it
+          <i>“Delivery is mandatory. The subsequent practices [formulation,
+            automation] deliver incremental value and facilitate continuous
+            delivery and continuous deployment.”</i>
+        </p>
+        <p>
+          Seb and Gaspar’s book on the deliberate discovery was an easy
+          weekend read. Even before turning the last page it was clear to me
+          this was the way to work in our team. Luckily enough, adopting the
+          approach seemed easier, as we had just transitioned our organisation
+          towards a cross-functional setup with full-stack highly independent
+          verticals.
+        </p>
+        <p>
+          Within our team (a squad) we made a decision to put the ideas from
+          the deliberate-discovery book into action. This meant we met as a
+          team to discuss one of the upcoming functionalities. At that moment
+          all roles (a product owner, a business analyst, a developer, a
+          tester, a designer) found themselves in a room and with the
+          facilitation of our scrum master we spoke about one of the next
+          things to deliver.
+        </p>
+        <p>
+          People started coming up with ideas, questions, we pointed out weak
+          points of the requirement. Even at the very first attempt to do
+          deliberate discovery it was obvious that engagement and the
+          different-role-perspective benefit was something we had ignored a
+          way to much. Yet, we struggled with the example mapping and
+          excessive freedom – it seemed like we could discuss the
+          functionality for hours and days, easily missing an expected
+          delivery date. This struggling seemed to be a great preparation for
+          a workshop I had anyway intended to organize – so we asked Seb and
+          Gáspár to come and share their knowledge and years of experience
+          with us directly.
+        </p>
+        The two give their <i>BDD Fundamentals</i> workshop in two days and
+        cover all three parts. Yet, I deliberately asked whether it would be
+        possible to make two customizations:
+        <ul class="dotted-list">
+          <li>
+            Have a single-day workshop focused on understanding the value of
+            deliberate discovery (the mandatory part of BDD) as a team, dig a
+            bit into the formulation, yet leave the more technical part
+            (automation) possibly for another time.
           </li>
-          <li class="main-nav-btn">
-            <a href="../index.html#experience">Experience</a>
+          <li>
+            Teach us the deliberate discovery using an upcoming functionality
+            from our project rather than using a general example such as an
+            address change for a pizza delivery business.
           </li>
-          <li class="main-nav-btn">
-            <a href="../index.html#portfolio">Portfolio</a>
-          </li>
-          <li class="main-nav-btn">
-            <a href="../index.html#contact">Contact</a>
-          </li>
-          <li class="main-nav-btn"><a href="../blog.html">Blog</a></li>
         </ul>
-      </div>
-    </nav>
-    <!--Post page body-->
-    <section id="blog-post-page" class="section section-odd section-padding">
-      <div class="container">
-        <!--Post itself-->
-        <div class="blog-post-title">
-          <h2 class="blog-post-heading">
-            BDD Fundamentals with Gáspár Nagy and Seb Rose: Working Together is
-            Success
-          </h2>
-        </div>
-        <div class="blog-post-meta-info">
-          <div class="post-meta-info-details">Article published in 2018</div>
-        </div>
-        <article class="blog-post-body">
-          <p>
-            Henry Ford has coined hundreds of brilliant ideas, yet, there is one
-            which is very much true even in the today’s world of software
-            delivery:
-            <i
-              >“Coming together is a beginning. Keeping together is progress.
-              Working together is success.”</i
-            >
-          </p>
-          <p>
-            In the spring 2017, when I first heard about Behaviour-Driven
-            Development (BDD) and read the book BDD In Action, I understood BDD
-            as a way to better specify requirements at our software-delivery
-            project. After all, back then this was a goal of a business analyst
-            – to write better specification and throw it over the fence to a
-            developer and tester so that they would know what to do. BDD in the
-            way I got it seemed to be a sound remedy to the issues we faced back
-            in the days, mainly improvements coming out of the clash between
-            business expectations vs. our delivery, and lots of bugs stemming
-            from the fact that we neither had a common way to write our
-            specifications, nor did we practice an approach that would allow us
-            to understand requirements at the team level. You can read more
-            about those times in the introduction to another post of mine:
-            <a href="/blogposts/2018-spec-by-example.html"
-              >Specification by Example with Gojko Adzic</a
-            >.
-          </p>
-          <p>
-            The participation at the workshop given by Gojko in early 2018
-            opened my eyes a bit more and I started to see the real idea behind
-            BDD. To be fair towards the BDD in Action, re-reading the book
-            allowed me to see what I originally did not get. BDD is not about
-            writing better specification, even though it eventually helps to do
-            that. BDD is rather about delivering maintainable software of a
-            great value through better cooperation and communication within a
-            team.
-          </p>
-          <p>
-            As Johan Wolfgang von Goethe once put it:
-            <i>“Everyone hears only what he understands.” </i> This was true for
-            my original understanding of BDD and this has turned out to be true
-            also for our software-delivery project. Individual people at various
-            roles at our project quite often understood expectations,
-            requirements and specifications in their own ways – and they were
-            not even aware of the different understanding until it came to light
-            at a very late stage, usually after the development had finished.
-          </p>
-          <p>
-            When I met Gáspár Nagy and Seb Rose at the
-            <a href="/blogposts/2018-craft-budapest.html"
-              >Craft Conerence in May 2018</a
-            >
-            they outlined to me how to make everyone
-            <b>u-n-d-e-r-s-t-a-n-d</b> in the same way. They called this
-            approach a deliberate discovery, i.e. a discovery of the
-            requirements intentionally before lots of effort get invested,
-            rather than accidentally in a form of unpleasant surprises during
-            the development or even at the deployment stage.
-          </p>
-          <p>
-            Reading their
-            <a href="http://bddbooks.com/" target="_blank"
-              >concise book on the topic</a
-            >
-            showed me that the deliberate discovery was just the first step
-            towards applying BDD at a project, yet a quintessential one for
-            being able to put into practice the following two steps: Formulation
-            and Automation. First the team needs to agree and understand what it
-            is to be done, only then the functionality can be specified
-            (formulation), and only then automated tests may be created and
-            living documentation achieved (automation). It would be easy to go
-            for automation immediately, yet automating something we are not sure
-            of is a certain way to a disaster. At the same time as the authors
-            put it
-            <i
-              >“Delivery is mandatory. The subsequent practices [formulation,
-              automation] deliver incremental value and facilitate continuous
-              delivery and continuous deployment.”</i
-            >
-          </p>
-          <p>
-            Seb and Gaspar’s book on the deliberate discovery was an easy
-            weekend read. Even before turning the last page it was clear to me
-            this was the way to work in our team. Luckily enough, adopting the
-            approach seemed easier, as we had just transitioned our organisation
-            towards a cross-functional setup with full-stack highly independent
-            verticals.
-          </p>
-          <p>
-            Within our team (a squad) we made a decision to put the ideas from
-            the deliberate-discovery book into action. This meant we met as a
-            team to discuss one of the upcoming functionalities. At that moment
-            all roles (a product owner, a business analyst, a developer, a
-            tester, a designer) found themselves in a room and with the
-            facilitation of our scrum master we spoke about one of the next
-            things to deliver.
-          </p>
-          <p>
-            People started coming up with ideas, questions, we pointed out weak
-            points of the requirement. Even at the very first attempt to do
-            deliberate discovery it was obvious that engagement and the
-            different-role-perspective benefit was something we had ignored a
-            way to much. Yet, we struggled with the example mapping and
-            excessive freedom – it seemed like we could discuss the
-            functionality for hours and days, easily missing an expected
-            delivery date. This struggling seemed to be a great preparation for
-            a workshop I had anyway intended to organize – so we asked Seb and
-            Gáspár to come and share their knowledge and years of experience
-            with us directly.
-          </p>
-          The two give their <i>BDD Fundamentals</i> workshop in two days and
-          cover all three parts. Yet, I deliberately asked whether it would be
-          possible to make two customizations:
-          <ul class="dotted-list">
-            <li>
-              Have a single-day workshop focused on understanding the value of
-              deliberate discovery (the mandatory part of BDD) as a team, dig a
-              bit into the formulation, yet leave the more technical part
-              (automation) possibly for another time.
-            </li>
-            <li>
-              Teach us the deliberate discovery using an upcoming functionality
-              from our project rather than using a general example such as an
-              address change for a pizza delivery business.
-            </li>
-          </ul>
-          <p>
-            When the day of the workshop came on the 31st of July 2018, the
-            fifteen of us and the trainers met to spend a day together. Most of
-            our team members managed to take part and the remaining spaces were
-            offered to scrum masters and product owners of other teams, so that
-            they would be able to evaluate a possible benefit of such a workshop
-            to their work.
-          </p>
-          <p>
-            The trainers started with a set of true/false statements which were
-            meant to see what our understanding of BDD was before the workshop,
-            so that we would be able to compare it to the understanding at the
-            end of the day. After that, Seb and Gáspár let us brainstorm about
-            the meaning of terms such as deliberate discovery,
-            rules-examples-tests, and living documentation. Once done, we
-            together went through the terms in the context of the Behaviour
-            Driven Development, where the trainers used their 50 years of shared
-            experience with software delivery to demonstrate why projects fail
-            and how the chances for sucess can be tremendously increased by
-            applying the BDD principles. This served as a great support for the
-            BDD evangelization I had done internally because the two BDD
-            practicioners could answer all questions and back up the answers by
-            experience from numerous projects.
-          </p>
+        <p>
+          When the day of the workshop came on the 31st of July 2018, the
+          fifteen of us and the trainers met to spend a day together. Most of
+          our team members managed to take part and the remaining spaces were
+          offered to scrum masters and product owners of other teams, so that
+          they would be able to evaluate a possible benefit of such a workshop
+          to their work.
+        </p>
+        <p>
+          The trainers started with a set of true/false statements which were
+          meant to see what our understanding of BDD was before the workshop,
+          so that we would be able to compare it to the understanding at the
+          end of the day. After that, Seb and Gáspár let us brainstorm about
+          the meaning of terms such as deliberate discovery,
+          rules-examples-tests, and living documentation. Once done, we
+          together went through the terms in the context of the Behaviour
+          Driven Development, where the trainers used their 50 years of shared
+          experience with software delivery to demonstrate why projects fail
+          and how the chances for sucess can be tremendously increased by
+          applying the BDD principles. This served as a great support for the
+          BDD evangelization I had done internally because the two BDD
+          practicioners could answer all questions and back up the answers by
+          experience from numerous projects.
+        </p>
 
-          <h4>
-            What we learnt about a deliberate discovery session based on the
-            example mapping:
-          </h4>
-          <p>
-            <b><u>Preparation</u></b>
-          </p>
-          <ul class="dotted-list">
-            <li>
-              needs to be practised ideally on a daily basis (must be scheduled
-              for the same time slot); possible cancellation causes a boost of
-              endorphins within the team
-            </li>
-            <li>should last max 25 minutes</li>
-            <li>
-              is done by the BA (business analyst) and the PO (product owner)
-              who prepare a story, rules and an initial introduction
-            </li>
-            <li>
-              participant needs to get informed about the topic to be discussed
-              a day in advance
-            </li>
-          </ul>
-          <p>
-            <b><u>Running</u></b>
-          </p>
-          <ul class="dotted-list">
-            <li>
-              at least the so called 3-amigos setup (to have various roles
-              present)
-            </li>
-            <li>max 6 participants (to keep a single discussion going)</li>
-            <li>
-              the BA and PO provide a story (a yellow card) + rules (blue cards)
-              and an initial introduction
-            </li>
-            <li>
-              the developer and tester (+everyone else) come up with examples to
-              challenge the functionality rules
-            </li>
-            <li>
-              examples gets discussed together and their originators write them
-              on individual green cards
-            </li>
-            <li>
-              questions that cannot be answered get parked on red cards to be
-              answered after the session
-            </li>
-          </ul>
-          <p>
-            <b><u>Output</u></b>
-          </p>
-          <ul class="dotted-list">
-            <li>a yellow card with the name of the discussed story</li>
-            <li>
-              a set of blue cards with rules related to the discussed
-              functionality
-            </li>
-            <li>
-              a set of green cards with various example demonstrating the rules
-              (at least 2 examples for each rule)
-            </li>
-            <li>
-              a set of red cards with questions that need to get answered and
-              further discussed
-            </li>
-            <li>NOT a set of Given-When-Then scenarios</li>
-          </ul>
-          <p>
-            As a team we managed to see how the example-mapping based deliberate
-            discovery session should be done while applying it on a a real
-            functionality from our project which we are about to deliver in the
-            upcoming months. Even though deliberate discovery sessions may be
-            seen as a huge time investment, they have proven to bring worthy
-            benefits. They increase team engagement, support knowledge sharing,
-            and bring better understanding of functionalities to be build.
-            Having the same understanding across the organization before the
-            development starts eventually reduces the number of must-have
-            improvements and bugs. This is a valuable return on investment which
-            speeds up the delivery, boosts the quality, builds trust, and
-            increases the satisfaction of the team: the team can focus most of
-            their energy on a meaningful evolution of the product rather than on
-            never-ending firefighting of what has (again) gone wrong.
-          </p>
-          <p>
-            The example mapping as a discovery technique invented by Matt Wynne
-            and used within BDD is fully documented online in
-            <a
-              href="https://cucumber.io/blog/bdd/example-mapping-introduction/"
-              target="_blank"
-              >a Cucumber blogpost written by Matt himself</a
-            >.
-          </p>
-          <p>
-            Only once a deliberate discovery of a specific story is finished,
-            the shared understanding can get transferred from the color-based
-            cards (a story, rules, examples) into the Given-When-Then scenarios
-            using the Gherkin syntax. These scenarios can subsequently be used
-            on top of the implementation and automated tests to create a living
-            documentation. Such a documentation provides at any time an
-            up-to-date overview of the desired behaviour with the actual state
-            (pass/fail/to-do) for each of the scenarios – and most importantly
-            this documentation can be read and understood by all stakeholders
-            regardles the level of their technical background.
-          </p>
+        <h4>
+          What we learnt about a deliberate discovery session based on the
+          example mapping:
+        </h4>
+        <p>
+          <b><u>Preparation</u></b>
+        </p>
+        <ul class="dotted-list">
+          <li>
+            needs to be practised ideally on a daily basis (must be scheduled
+            for the same time slot); possible cancellation causes a boost of
+            endorphins within the team
+          </li>
+          <li>should last max 25 minutes</li>
+          <li>
+            is done by the BA (business analyst) and the PO (product owner)
+            who prepare a story, rules and an initial introduction
+          </li>
+          <li>
+            participant needs to get informed about the topic to be discussed
+            a day in advance
+          </li>
+        </ul>
+        <p>
+          <b><u>Running</u></b>
+        </p>
+        <ul class="dotted-list">
+          <li>
+            at least the so called 3-amigos setup (to have various roles
+            present)
+          </li>
+          <li>max 6 participants (to keep a single discussion going)</li>
+          <li>
+            the BA and PO provide a story (a yellow card) + rules (blue cards)
+            and an initial introduction
+          </li>
+          <li>
+            the developer and tester (+everyone else) come up with examples to
+            challenge the functionality rules
+          </li>
+          <li>
+            examples gets discussed together and their originators write them
+            on individual green cards
+          </li>
+          <li>
+            questions that cannot be answered get parked on red cards to be
+            answered after the session
+          </li>
+        </ul>
+        <p>
+          <b><u>Output</u></b>
+        </p>
+        <ul class="dotted-list">
+          <li>a yellow card with the name of the discussed story</li>
+          <li>
+            a set of blue cards with rules related to the discussed
+            functionality
+          </li>
+          <li>
+            a set of green cards with various example demonstrating the rules
+            (at least 2 examples for each rule)
+          </li>
+          <li>
+            a set of red cards with questions that need to get answered and
+            further discussed
+          </li>
+          <li>NOT a set of Given-When-Then scenarios</li>
+        </ul>
+        <p>
+          As a team we managed to see how the example-mapping based deliberate
+          discovery session should be done while applying it on a a real
+          functionality from our project which we are about to deliver in the
+          upcoming months. Even though deliberate discovery sessions may be
+          seen as a huge time investment, they have proven to bring worthy
+          benefits. They increase team engagement, support knowledge sharing,
+          and bring better understanding of functionalities to be build.
+          Having the same understanding across the organization before the
+          development starts eventually reduces the number of must-have
+          improvements and bugs. This is a valuable return on investment which
+          speeds up the delivery, boosts the quality, builds trust, and
+          increases the satisfaction of the team: the team can focus most of
+          their energy on a meaningful evolution of the product rather than on
+          never-ending firefighting of what has (again) gone wrong.
+        </p>
+        <p>
+          The example mapping as a discovery technique invented by Matt Wynne
+          and used within BDD is fully documented online in
+          <a href="https://cucumber.io/blog/bdd/example-mapping-introduction/" target="_blank">a Cucumber blogpost
+            written by Matt himself</a>.
+        </p>
+        <p>
+          Only once a deliberate discovery of a specific story is finished,
+          the shared understanding can get transferred from the color-based
+          cards (a story, rules, examples) into the Given-When-Then scenarios
+          using the Gherkin syntax. These scenarios can subsequently be used
+          on top of the implementation and automated tests to create a living
+          documentation. Such a documentation provides at any time an
+          up-to-date overview of the desired behaviour with the actual state
+          (pass/fail/to-do) for each of the scenarios – and most importantly
+          this documentation can be read and understood by all stakeholders
+          regardles the level of their technical background.
+        </p>
 
-          <h4>This is how BDD looks from 5,000 feet:</h4>
-          <ol>
-            <li>Decide the next user story to work on</li>
-            <li>
-              Use concrete examples to explore and discover the acceptance
-              criteria for the user story
-            </li>
-            <li>Formulate a concrete example as a scenario</li>
-            <li>Automate a scenario and see it fail</li>
-            <li>Write a programmer test and see it fail</li>
-            <li>Write enough code to make the programmer test pass</li>
-            <li>Refactor to clean up the code</li>
-            <li>Manual exploratory testing</li>
-            <li>Release to production</li>
-          </ol>
-          <br />
-          <p>
-            <b
-              ><u
-                >The BDD Fundamentals Workshop by Gáspár Nagy and Seb Rose was
-                extremely well executed and the participants appreciated
-                especially:</u
-              ></b
-            >
-          </p>
-          <ul class="dotted-list">
-            <li>the chance to meet experts from the agile universe</li>
-            <li>
-              getting better understanding of BDD and the benefits it brings
-            </li>
-            <li>
-              getting experience with the deliberate discovery using the example
-              mapping technique
-            </li>
-            <li>
-              attending as a squad brought an unexpected team-building benefit
-            </li>
-          </ul>
-          <br />
-          <p>
-            At the same time the participants would like to have spent more time
-            with the trainers to get additional experience with the example
-            mapping technique. Developers and testers also wish to have had the
-            automation as a part of the workshop to learn the technicalities
-            behind BDD. Yet the automation part was deliberately left out in
-            order to reduce the scope and complexity of the workshop, and can
-            get organized as a standalone session later on.
-          </p>
-          <p>
-            The BDD Fundaments workshop has clarified to our team how to do the
-            deliberate discovery and example mapping properly and more
-            efficiently. It has also inspired us to go deeper into the
-            automation and living documentation direction. We have already
-            turned this inspiration into a working proof of concept where we
-            integrated the cypress.io all-in-one testing framework, which is
-            used at our project, with a cucumber plugin and reached
-            gherkin-based living documentation for a part of our functionality
-            where we have had a great cross-team understanding. I do recommend
-            the BDD workshop with Gáspar and Seb to any team that wants to learn
-            doing the discovery part of Behaviour Driven Development and to any
-            team which wants to collaborate in a better way – because as Henry
-            Ford put it, working together is success.
-          </p>
-        </article>
-        <div class="blog-post-further-info">
-          <a href="http://bddbooks.com/" target="_blank"
-            ><i class="fas fa-book fa-1x"></i>Get books</a
-          >
-        </div>
+        <h4>This is how BDD looks from 5,000 feet:</h4>
+        <ol>
+          <li>Decide the next user story to work on</li>
+          <li>
+            Use concrete examples to explore and discover the acceptance
+            criteria for the user story
+          </li>
+          <li>Formulate a concrete example as a scenario</li>
+          <li>Automate a scenario and see it fail</li>
+          <li>Write a programmer test and see it fail</li>
+          <li>Write enough code to make the programmer test pass</li>
+          <li>Refactor to clean up the code</li>
+          <li>Manual exploratory testing</li>
+          <li>Release to production</li>
+        </ol>
+        <br />
+        <p>
+          <b><u>The BDD Fundamentals Workshop by Gáspár Nagy and Seb Rose was
+              extremely well executed and the participants appreciated
+              especially:</u></b>
+        </p>
+        <ul class="dotted-list">
+          <li>the chance to meet experts from the agile universe</li>
+          <li>
+            getting better understanding of BDD and the benefits it brings
+          </li>
+          <li>
+            getting experience with the deliberate discovery using the example
+            mapping technique
+          </li>
+          <li>
+            attending as a squad brought an unexpected team-building benefit
+          </li>
+        </ul>
+        <br />
+        <p>
+          At the same time the participants would like to have spent more time
+          with the trainers to get additional experience with the example
+          mapping technique. Developers and testers also wish to have had the
+          automation as a part of the workshop to learn the technicalities
+          behind BDD. Yet the automation part was deliberately left out in
+          order to reduce the scope and complexity of the workshop, and can
+          get organized as a standalone session later on.
+        </p>
+        <p>
+          The BDD Fundaments workshop has clarified to our team how to do the
+          deliberate discovery and example mapping properly and more
+          efficiently. It has also inspired us to go deeper into the
+          automation and living documentation direction. We have already
+          turned this inspiration into a working proof of concept where we
+          integrated the cypress.io all-in-one testing framework, which is
+          used at our project, with a cucumber plugin and reached
+          gherkin-based living documentation for a part of our functionality
+          where we have had a great cross-team understanding. I do recommend
+          the BDD workshop with Gáspar and Seb to any team that wants to learn
+          doing the discovery part of Behaviour Driven Development and to any
+          team which wants to collaborate in a better way – because as Henry
+          Ford put it, working together is success.
+        </p>
+      </article>
+      <div class="blog-post-further-info">
+        <a href="http://bddbooks.com/" target="_blank"><i class="fas fa-book fa-1x"></i>Get books</a>
       </div>
-    </section>
-    <!--Footer-->
-    <footer id="main-footer">
-      <div class="container">
-        <p>Copyright &copy; 2020, Ivan Burda, All Rights Reserved</p>
-      </div>
-    </footer>
-  </body>
-  <script src="/js/script.js"></script>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer id="main-footer">
+    <div class="container">
+      <p>
+        Copyright &copy; <span id="footer-year"></span>, Ivan Burda, All
+        Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <script src="../js/app.js"></script>
+</body>
+
 </html>
