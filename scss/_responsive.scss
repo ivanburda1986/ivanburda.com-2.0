@@ -3,13 +3,24 @@
   .container {
     width: 50%;
   }
+
+  .project-overlay {
+    height: 50vh;
+    max-width: 40vw;
+  }
 }
 
 //MIN-WIDTH: 1921px
 @media only screen and (min-width: 1921px) {
   .container {
-    width: 55%;
+    width: 55vw;
   }
+
+  .project-overlay {
+    height: 60vh;
+    max-width: 50vw;
+  }
+
 }
 
 //MIN-WIDTH: 1100px
@@ -34,6 +45,13 @@
     height: 4.375rem;
   }
 
+}
+
+//MAX-WIDTH: 1280px
+@media only screen and (max-width: 1280px) {
+  .project-overlay {
+    width: 80vw;
+  }
 }
 
 //MAX-WIDTH: 900px
@@ -96,7 +114,6 @@
     height: 4.375rem;
   }
 
-  /*Portfolio*/
   #projects {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
@@ -124,6 +141,26 @@
 
 @media only screen and (max-width: 775px) {
 
+  /*Portfolio*/
+
+  .project-overlay-header-title {
+    font-size: 1.75rem;
+
+    p {
+      display: block;
+      color: white;
+      padding: 0.5rem 0.5rem;
+    }
+  }
+
+  .project-overlay-header-hide-btn-container {
+    width: 10%;
+
+    button {
+      font-size: 2rem;
+    }
+  }
+
   /*Navigation*/
   #logo-text {
     width: 20%;
@@ -148,6 +185,16 @@
 
 //MAX-HEIGHT: 720px
 @media only screen and (max-height: 700px) {
+
+  /*Portfolio*/
+  .project-overlay {
+    height: 80vh;
+  }
+
+  .project-overlay-footer button {
+    font-size: 1.2rem;
+  }
+
 
   /*Landscape*/
   .section-padding {
@@ -233,6 +280,23 @@
   }
 
   /*Portfolio*/
+  .project-overlay-main {
+    flex-direction: column;
+  }
+
+  .project-overlay-photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-overlay-description {
+
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+
+
   #portfolio {
     .container {
       width: 85%;
@@ -267,6 +331,12 @@
 
 //MAX-WIDTH: 340px
 @media only screen and (max-width: 340px) {
+
+  #mobile-nav {
+    #logo-text {
+      margin-left: 50px;
+    }
+  }
 
   /*Frontpage*/
   .post-preview {

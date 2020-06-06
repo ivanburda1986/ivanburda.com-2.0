@@ -80,6 +80,9 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.14rem;
   color: $dominant-color;
+
+
+
 }
 
 #main-nav {
@@ -91,7 +94,7 @@ ul {
   align-items: center;
   overflow: none;
   border-bottom: 0.2px solid $page-background-light;
-  z-index: 1;
+  z-index: 2;
   background: white;
   animation-name: stage-onset;
   animation-timing-function: ease-out;

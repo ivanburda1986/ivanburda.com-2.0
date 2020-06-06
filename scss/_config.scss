@@ -102,3 +102,9 @@ $text-dark: #333333;
 
 /*Border radius*/
 $border-radius: 0px 0px 8px 8px;
+
+
+//Transitions and animations
+@mixin transition-littleTime {
+  transition: all 0.5s ease-in-out;
+}

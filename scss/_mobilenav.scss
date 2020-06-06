@@ -5,7 +5,7 @@
   left: 0;
   z-index: 1;
   display: none;
-
+  height: 60px;
 }
 
 //MOBILE NAV ITSELF
@@ -13,11 +13,10 @@
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 60px;
   height: 60px;
-  width: calc(100vw - 60px);
+  width: 100vw;
   background: white;
-  border-bottom: 0.5px solid $page-background-dark;
+  border-bottom: 0.5px solid $page-background-neutral;
 
   #logo-text {
     display: flex;
@@ -28,8 +27,135 @@
     height: 100%;
     width: 100%;
 
+
     a {
       font-size: 1.9rem;
     }
+  }
+}
+
+#main-nav-mobile-burger-menu {
+  height: 60px;
+  width: 40px;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+#burger-container {
+  top: 30px;
+  position: absolute;
+
+  #burger-toggler {
+    width: 50px;
+    height: 45px;
+    top: -20px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+#burger {
+  position: absolute;
+  border: none;
+  width: 40px;
+  height: 4px;
+  z-index: 2;
+  background: $dominant-color;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 4px;
+    background: $dominant-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 4px;
+    background: $dominant-color;
+  }
+}
+
+
+#main-nav-mobile-menu-options {
+  width: 100vw;
+
+  ul {
+    padding-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: rgba(29, 63, 98, 0.95);
+    border-bottom: 1px solid $dominant-color;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+    li {
+      font-size: 1.2rem;
+
+      padding: 1rem 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    a {
+      padding: 10px 20px;
+      color: white;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+}
+
+
+//Mobile navigation slide-in;
+.anim-slideToScreen-startState {
+  @include transition-littleTime;
+  transform: translateY(-100vh);
+}
+
+.anim-slideToScreen-endState {
+  transform: translateY(0vh);
+}
+
+//Burger menu on-toggler
+.burger-animate-startState {
+  @include transition-littleTime();
+  //background-color: orange;
+
+  &::before {
+    @include transition-littleTime();
+    //background-color: orange;
+  }
+
+  &::after {
+    @include transition-littleTime();
+    //background-color: orange;
+  }
+}
+
+.burger-animate-endState {
+  &::before {
+    background: $dominant-color;
+    transform: translateX(10px) !important;
+  }
+
+  &::after {
+    background: $dominant-color;
+    transform: translateX(10px) !important;
   }
 }

@@ -39,14 +39,14 @@
   grid-template-columns: auto;
   grid-template-rows: 1fr 0.25fr 7.75fr 1fr;
   height: 60vh;
-  width: 60%;
+  width: 60vw;
   position: fixed;
   margin: 0;
   top: 10vh;
-  left: 20%;
-  z-index: 3;
+
   background: $page-background-neutral;
   border-radius: 5px;
+
 }
 
 .project-overlay-header {
@@ -83,6 +83,7 @@
     background: none;
     color: $text-light;
     cursor: pointer;
+    margin-right: 0.55rem;
 
     &:hover {
       color: $page-background-neutral;
@@ -92,12 +93,16 @@
 }
 
 
-.project-overlay .tech-tag {
-  height: 1rem;
+.project-overlay {
+  .tech-tag {
+    height: 1rem;
+  }
 }
 
 .project-overlay-tech-tags {
   grid-area: techtags;
+  min-height: auto;
+  max-height: auto;
 }
 
 .project-overlay-main {
@@ -107,12 +112,15 @@
 }
 
 .project-overlay-photo {
-  width: 40%;
+  width: 50%;
+  height: auto;
 }
 
 .project-overlay-description {
+
   padding: 1rem;
-  width: 60%;
+  width: 50%;
+  height: auto;
 }
 
 .project-overlay-footer {
@@ -150,6 +158,7 @@
   outline: none;
   text-align: center;
   font-size: 1.5rem;
+  padding: 0.5rem;
   cursor: pointer;
 
   &:hover {

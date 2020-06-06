@@ -182,17 +182,17 @@
   top: 0;
   left: 0;
   z-index: 1;
-  display: none; }
+  display: none;
+  height: 60px; }
 
 #mobile-nav {
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 60px;
   height: 60px;
-  width: calc(100vw - 60px);
+  width: 100vw;
   background: white;
-  border-bottom: 0.5px solid #AFC4CC; }
+  border-bottom: 0.5px solid #C6D6E6; }
   #mobile-nav #logo-text {
     display: flex;
     align-items: center;
@@ -203,6 +203,93 @@
     width: 100%; }
     #mobile-nav #logo-text a {
       font-size: 1.9rem; }
+
+#main-nav-mobile-burger-menu {
+  height: 60px;
+  width: 40px;
+  margin-left: 2rem;
+  cursor: pointer; }
+
+#burger-container {
+  top: 30px;
+  position: absolute; }
+  #burger-container #burger-toggler {
+    width: 50px;
+    height: 45px;
+    top: -20px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer; }
+
+#burger {
+  position: absolute;
+  border: none;
+  width: 40px;
+  height: 4px;
+  z-index: 2;
+  background: #1D3F62; }
+  #burger::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 4px;
+    background: #1D3F62; }
+  #burger::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 4px;
+    background: #1D3F62; }
+
+#main-nav-mobile-menu-options {
+  width: 100vw; }
+  #main-nav-mobile-menu-options ul {
+    padding-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: rgba(29, 63, 98, 0.95);
+    border-bottom: 1px solid #1D3F62;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    justify-content: center; }
+    #main-nav-mobile-menu-options ul li {
+      font-size: 1.2rem;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      color: white; }
+    #main-nav-mobile-menu-options ul a {
+      padding: 10px 20px;
+      color: white; }
+      #main-nav-mobile-menu-options ul a:hover {
+        color: white; }
+
+.anim-slideToScreen-startState {
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-100vh); }
+
+.anim-slideToScreen-endState {
+  transform: translateY(0vh); }
+
+.burger-animate-startState {
+  transition: all 0.5s ease-in-out; }
+  .burger-animate-startState::before {
+    transition: all 0.5s ease-in-out; }
+  .burger-animate-startState::after {
+    transition: all 0.5s ease-in-out; }
+
+.burger-animate-endState::before {
+  background: #1D3F62;
+  transform: translateX(10px) !important; }
+
+.burger-animate-endState::after {
+  background: #1D3F62;
+  transform: translateX(10px) !important; }
 
 /*PROJECT OVERLAYS*/
 .project-overlay-container {
@@ -230,12 +317,10 @@
   grid-template-columns: auto;
   grid-template-rows: 1fr 0.25fr 7.75fr 1fr;
   height: 60vh;
-  width: 60%;
+  width: 60vw;
   position: fixed;
   margin: 0;
   top: 10vh;
-  left: 20%;
-  z-index: 3;
   background: #C6D6E6;
   border-radius: 5px; }
 
@@ -265,7 +350,8 @@
     outline: none;
     background: none;
     color: #ffffff;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-right: 0.55rem; }
     .project-overlay-header-hide-btn-container button:hover {
       color: #C6D6E6; }
 
@@ -273,7 +359,9 @@
   height: 1rem; }
 
 .project-overlay-tech-tags {
-  grid-area: techtags; }
+  grid-area: techtags;
+  min-height: auto;
+  max-height: auto; }
 
 .project-overlay-main {
   grid-area: main;
@@ -281,11 +369,13 @@
   flex-direction: row; }
 
 .project-overlay-photo {
-  width: 40%; }
+  width: 50%;
+  height: auto; }
 
 .project-overlay-description {
   padding: 1rem;
-  width: 60%; }
+  width: 50%;
+  height: auto; }
 
 .project-overlay-footer {
   display: flex;
@@ -315,6 +405,7 @@
   outline: none;
   text-align: center;
   font-size: 1.5rem;
+  padding: 0.5rem;
   cursor: pointer; }
   .project-overlay-footer button:hover {
     color: #C6D6E6; }
@@ -516,7 +607,7 @@ ul {
   align-items: center;
   overflow: none;
   border-bottom: 0.2px solid #DCE7FF;
-  z-index: 1;
+  z-index: 2;
   background: white;
   animation-name: stage-onset;
   animation-timing-function: ease-out;
@@ -760,11 +851,17 @@ ul {
 
 @media only screen and (min-width: 2560px) {
   .container {
-    width: 50%; } }
+    width: 50%; }
+  .project-overlay {
+    height: 50vh;
+    max-width: 40vw; } }
 
 @media only screen and (min-width: 1921px) {
   .container {
-    width: 55%; } }
+    width: 55vw; }
+  .project-overlay {
+    height: 60vh;
+    max-width: 50vw; } }
 
 @media only screen and (min-width: 1100px) {
   .container {
@@ -777,6 +874,10 @@ ul {
     grid-template-areas: "title title" "photo description"; }
   .testimonial-photo img {
     height: 4.375rem; } }
+
+@media only screen and (max-width: 1280px) {
+  .project-overlay {
+    width: 80vw; } }
 
 @media only screen and (max-width: 900px) {
   .container {
@@ -816,7 +917,6 @@ ul {
     grid-template-areas: "title title" "photo description"; }
   .testimonial-photo img {
     height: 4.375rem; }
-  /*Portfolio*/
   #projects {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem; }
@@ -833,6 +933,17 @@ ul {
     justify-content: space-evenly; } }
 
 @media only screen and (max-width: 775px) {
+  /*Portfolio*/
+  .project-overlay-header-title {
+    font-size: 1.75rem; }
+    .project-overlay-header-title p {
+      display: block;
+      color: white;
+      padding: 0.5rem 0.5rem; }
+  .project-overlay-header-hide-btn-container {
+    width: 10%; }
+    .project-overlay-header-hide-btn-container button {
+      font-size: 2rem; }
   /*Navigation*/
   #logo-text {
     width: 20%;
@@ -847,6 +958,11 @@ ul {
     padding: 0.5rem 0.5rem; } }
 
 @media only screen and (max-height: 700px) {
+  /*Portfolio*/
+  .project-overlay {
+    height: 80vh; }
+  .project-overlay-footer button {
+    font-size: 1.2rem; }
   /*Landscape*/
   .section-padding {
     padding-top: 5rem;
@@ -893,6 +1009,15 @@ ul {
   .post-preview-title {
     padding-left: 1rem; }
   /*Portfolio*/
+  .project-overlay-main {
+    flex-direction: column; }
+  .project-overlay-photo {
+    width: 100%;
+    height: 100%; }
+  .project-overlay-description {
+    padding: 1rem;
+    width: 100%;
+    height: 100%; }
   #portfolio .container {
     width: 85%; }
   #projects {
@@ -912,6 +1037,8 @@ ul {
     color: #1D3F62; } }
 
 @media only screen and (max-width: 340px) {
+  #mobile-nav #logo-text {
+    margin-left: 50px; }
   /*Frontpage*/
   .post-preview {
     grid-template-areas: "title" "description" "image"; }
