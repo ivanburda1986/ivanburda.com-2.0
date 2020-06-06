@@ -1,9 +1,104 @@
 /*Container width */
+$page-width: 95vw;
 
-/*Fonts*/
+/*Colors*/
+$dominant-color: #1D3F62;
 
-/*Text colors*/
+$accent-color-shade-dark: #156099;
+$accent-color-shade-light: #0986E5;
+$contrast-color: #995C00;
 
-/*UI Colors*/
+$page-background-dark: #AFC4CC;
+$page-background-light: #DCE7FF;
+$page-background-neutral: #C6D6E6;
 
-/*Images*/
+$text-light: #ffffff;
+$text-dark: #333333;
+
+
+//Fontawesome
+.fa-1x {
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.fa-2x {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/*Labels*/
+.post-category {
+  display: inline-block;
+  width: auto;
+  min-width: 6rem;
+  max-height: 1.6rem;
+  padding: 0rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  color: #fff;
+  background: dimgray;
+}
+
+.post-category-analysis {
+  background: $accent-color-shade-light;
+}
+
+.post-category-development {
+  background: orangered;
+}
+
+.post-category-teamwork {
+  background: seagreen;
+}
+
+.post-category-technology {
+  background: dimgray;
+}
+
+.post-category-coming-soon {
+  background: white;
+  color: black;
+}
+
+/*Tech tags*/
+.tech-tags {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 4%;
+  max-height: 4%;
+}
+
+.tech-tag {
+  width: 100%;
+  padding: 3px;
+  font-size: 0.6rem;
+  line-height: 1;
+  text-align: center;
+  font-weight: 900;
+  color: white;
+}
+
+.tag-html {
+  position: relative;
+  background: #e34c26;
+}
+
+.tag-css {
+  background: #563d7c;
+}
+
+.tag-js {
+  background: #f1e05a;
+  color: $text-dark;
+}
+
+.tag-sass {
+  background: #B34936;
+}
+
+/*Border radius*/
+$border-radius: 0px 0px 8px 8px;

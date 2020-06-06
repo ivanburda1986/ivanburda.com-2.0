@@ -1,4 +1,132 @@
-//Layout
-.container {}
+//Container
+.container {
+  width: $page-width;
+  margin: auto;
+  padding: 0 1.25rem;
+  overflow: auto;
+}
+
+//Sections
+.section {
+  min-height: 100vh;
+}
+
+.section-odd {
+  background: $page-background-light;
+}
+
+.section-even {
+  background: $page-background-dark;
+}
+
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-bottom: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $dominant-color;
+  font-weight: 900;
+
+  &:before {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    content: "";
+    width: 1.875rem;
+    height: 0.5rem;
+    background-color: $dominant-color;
+  }
+}
+
+.side-heading-text {
+  padding-bottom: 1.2rem;
+  line-height: 3rem;
+  color: $accent-color-shade-dark;
+}
+
+.section-left {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-right: 1.875rem;
+}
+
+.section-left-photo img {
+  width: 100%;
+  border-radius: $border-radius;
+}
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  width: 65%;
+}
+
+//Information boxes
+.infobox {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: $border-radius;
+  background: $page-background-neutral;
+
+  .underlined-list li {
+    border-bottom: $accent-color-shade-dark 1px dotted;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+    &:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+.infobox-title {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid $page-background-light;
+  background: $accent-color-shade-dark;
+  color: $text-light;
+
+  i {
+    color: $text-light;
+  }
+}
+
+.infobox-description {
+  padding: 1rem 1rem;
+
+  .dotted-list li {
+    position: relative;
+    display: block;
+    margin-left: 1.875rem;
+    margin-top: 0.25rem;
+
+    &::before {
+      position: absolute;
+      top: 0.625rem;
+      left: -1.25rem;
+      content: "";
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: $accent-color-shade-dark;
+    }
+  }
+}
+
 
 //Buttons
