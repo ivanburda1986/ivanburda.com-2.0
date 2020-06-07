@@ -1,3 +1,5 @@
+//https://github.com/willmcpo/body-scroll-lock/tree/master/lib
+
 const targetElement1 = document.querySelector('#project-overlay-description1');
 const targetElement2 = document.querySelector('#project-overlay-description2');
 const targetElement3 = document.querySelector('#project-overlay-description3');
