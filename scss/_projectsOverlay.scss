@@ -104,14 +104,14 @@
 
 .project-overlay-photo {
   width: 40%;
-  height: auto;
+  min-height: 100%;
 }
 
 .project-overlay-description {
   padding: 1rem;
   width: 60%;
-  height: auto;
-  overflow: scroll;
+  min-height: 100%;
+  overflow-y: scroll;
 
   p {
     margin-bottom: 0.5rem;

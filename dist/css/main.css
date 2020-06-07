@@ -369,13 +369,13 @@
 
 .project-overlay-photo {
   width: 40%;
-  height: auto; }
+  min-height: 100%; }
 
 .project-overlay-description {
   padding: 1rem;
   width: 60%;
-  height: auto;
-  overflow: scroll; }
+  min-height: 100%;
+  overflow-y: scroll; }
   .project-overlay-description p {
     margin-bottom: 0.5rem; }
   .project-overlay-description .dotted-list {
@@ -1049,13 +1049,11 @@ ul {
     flex-direction: column; }
   .project-overlay-photo {
     width: 100%;
-    height: 35%;
     min-height: 35%; }
   .project-overlay-description {
     padding: 1rem;
     width: 100%;
-    height: 65%;
-    max-height: 65%; }
+    min-height: 65%; }
     .project-overlay-description p {
       font-size: 0.8rem; }
     .project-overlay-description .dotted-list li {
