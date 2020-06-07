@@ -304,8 +304,7 @@
   left: 0;
   z-index: 3; }
   .project-overlay-container.show {
-    visibility: visible;
-    position: relative; }
+    visibility: visible; }
   .project-overlay-container.hide {
     visibility: hidden; }
 

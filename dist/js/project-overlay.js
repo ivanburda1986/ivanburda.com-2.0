@@ -7,15 +7,15 @@ class ProjectDetailsUI {
   }
 
   showProjectOverlay(number) {
-    setScrolling('hidden');
     this[`project${number}Overlay`].classList.add('show');
     this[`project${number}Overlay`].classList.remove('hide');
+    setScrolling('hidden');
   }
 
   hideProjectOverlay(number) {
-    setScrolling('visible');
     this[`project${number}Overlay`].classList.remove('show');
     this[`project${number}Overlay`].classList.add('hide');
+    setScrolling('visible');
   }
 }
 
@@ -34,7 +34,7 @@ const project3hideBtn = document.getElementById('project3-hidebtn');
 const project4showBtn = document.getElementById('project4-showBtn');
 const project4hideBtn = document.getElementById('project4-hidebtn');
 
-project1showBtn.addEventListener('click', (e) => {
+project1showBtn.addEventListener('click', () => {
   projectDetails.showProjectOverlay(1);
 });
 
