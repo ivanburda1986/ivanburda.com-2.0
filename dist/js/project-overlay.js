@@ -34,7 +34,7 @@ const project3hideBtn = document.getElementById('project3-hidebtn');
 const project4showBtn = document.getElementById('project4-showBtn');
 const project4hideBtn = document.getElementById('project4-hidebtn');
 
-project1showBtn.addEventListener('click', () => {
+project1showBtn.addEventListener('click', (e) => {
   projectDetails.showProjectOverlay(1);
 });
 
