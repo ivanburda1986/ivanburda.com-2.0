@@ -11,8 +11,8 @@
   top: 0;
   left: 0;
   z-index: 3;
-  visibility: hidden;
-  overflow-y: hidden;
+  //visibility: hidden;
+  //overflow-y: hidden;
 
   &.show {
     visibility: visible;
@@ -99,7 +99,7 @@
   grid-area: main;
   display: flex;
   flex-direction: row;
-  ///overflow: hidden;
+  overflow: hidden;
 }
 
 .project-overlay-photo {
