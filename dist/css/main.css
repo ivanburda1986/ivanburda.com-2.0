@@ -378,6 +378,7 @@
   width: 60%;
   height: 100%;
   min-height: 100%;
+  overflow: scroll !important;
   overflow-y: scroll !important; }
   .project-overlay-description p {
     margin-bottom: 0.5rem; }
