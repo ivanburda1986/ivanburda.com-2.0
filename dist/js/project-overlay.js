@@ -1,67 +1,79 @@
+const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+const targetElement = document.querySelector('.project-overlay-description');
+
 class ProjectDetailsUI {
   constructor() {
-    this.project1Overlay = document.getElementById('project1-overlay-container');
-    this.project2Overlay = document.getElementById('project2-overlay-container');
-    this.project3Overlay = document.getElementById('project3-overlay-container');
-    this.project4Overlay = document.getElementById('project4-overlay-container');
+    this.project1Overlay = document.getElementById(
+      "project1-overlay-container"
+    );
+    this.project2Overlay = document.getElementById(
+      "project2-overlay-container"
+    );
+    this.project3Overlay = document.getElementById(
+      "project3-overlay-container"
+    );
+    this.project4Overlay = document.getElementById(
+      "project4-overlay-container"
+    );
   }
 
   showProjectOverlay(number) {
-    this[`project${number}Overlay`].classList.add('show');
-    this[`project${number}Overlay`].classList.remove('hide');
-    setScrolling('hidden');
+    this[`project${number}Overlay`].classList.add("show");
+    this[`project${number}Overlay`].classList.remove("hide");
+    setScrolling("hidden");
+    disableBodyScroll(targetElement);
   }
 
   hideProjectOverlay(number) {
-    this[`project${number}Overlay`].classList.remove('show');
-    this[`project${number}Overlay`].classList.add('hide');
-    setScrolling('visible');
+    this[`project${number}Overlay`].classList.remove("show");
+    this[`project${number}Overlay`].classList.add("hide");
+    setScrolling("visible");
+    enableBodyScroll(targetElement);
   }
 }
-
-
 
 // INIT
 const projectDetails = new ProjectDetailsUI();
 
 // PORTFOLIO OVERLAYS
-const project1showBtn = document.getElementById('project1-showBtn');
-const project1hideBtn = document.getElementById('project1-hidebtn');
-const project2showBtn = document.getElementById('project2-showBtn');
-const project2hideBtn = document.getElementById('project2-hidebtn');
-const project3showBtn = document.getElementById('project3-showBtn');
-const project3hideBtn = document.getElementById('project3-hidebtn');
-const project4showBtn = document.getElementById('project4-showBtn');
-const project4hideBtn = document.getElementById('project4-hidebtn');
+const project1showBtn = document.getElementById("project1-showBtn");
+const project1hideBtn = document.getElementById("project1-hidebtn");
+const project2showBtn = document.getElementById("project2-showBtn");
+const project2hideBtn = document.getElementById("project2-hidebtn");
+const project3showBtn = document.getElementById("project3-showBtn");
+const project3hideBtn = document.getElementById("project3-hidebtn");
+const project4showBtn = document.getElementById("project4-showBtn");
+const project4hideBtn = document.getElementById("project4-hidebtn");
 
-project1showBtn.addEventListener('click', () => {
+project1showBtn.addEventListener("click", () => {
   projectDetails.showProjectOverlay(1);
 });
 
-project1hideBtn.addEventListener('click', () => {
+project1hideBtn.addEventListener("click", () => {
   projectDetails.hideProjectOverlay(1);
 });
 
-project2showBtn.addEventListener('click', () => {
+project2showBtn.addEventListener("click", () => {
   projectDetails.showProjectOverlay(2);
 });
 
-project2hideBtn.addEventListener('click', () => {
+project2hideBtn.addEventListener("click", () => {
   projectDetails.hideProjectOverlay(2);
 });
 
-project3showBtn.addEventListener('click', () => {
+project3showBtn.addEventListener("click", () => {
   projectDetails.showProjectOverlay(3);
 });
 
-project3hideBtn.addEventListener('click', () => {
+project3hideBtn.addEventListener("click", () => {
   projectDetails.hideProjectOverlay(3);
 });
 
-project4showBtn.addEventListener('click', () => {
+project4showBtn.addEventListener("click", () => {
   projectDetails.showProjectOverlay(4);
 });
 
-project4hideBtn.addEventListener('click', () => {
+project4hideBtn.addEventListener("click", () => {
   projectDetails.hideProjectOverlay(4);
 });
