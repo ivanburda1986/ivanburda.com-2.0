@@ -1,6 +1,6 @@
-const targetElement2 = document.querySelector('#project-overlay-description2');
+//const targetElement2 = document.querySelector('#project-overlay-description2');
 // const targetElement1 = document.querySelector('#project-overlay-description1');
-// const targetElement3 = document.querySelector('#project-overlay-description3');
+const targetElement3 = document.querySelector('#project-overlay-description3');
 // const targetElement4 = document.querySelector('#project-overlay-description4');
 
 class ProjectDetailsUI {
@@ -23,7 +23,7 @@ class ProjectDetailsUI {
     this[`project${number}Overlay`].classList.add("show");
     this[`project${number}Overlay`].classList.remove("hide");
     //setScrolling("hidden");
-    bodyScrollLock.disableBodyScroll(targetElement2);
+    bodyScrollLock.disableBodyScroll(targetElement3);
     //console.log(`targetElement${number}`);
   }
 
@@ -31,7 +31,7 @@ class ProjectDetailsUI {
     this[`project${number}Overlay`].classList.remove("show");
     this[`project${number}Overlay`].classList.add("hide");
     //setScrolling("visible");
-    bodyScrollLock.enableBodyScroll(targetElement2);
+    bodyScrollLock.enableBodyScroll(targetElement3);
     //console.log(`targetElement${number}`);
   }
 }
