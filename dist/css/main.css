@@ -375,7 +375,7 @@
   padding: 1rem;
   width: 60%;
   height: auto;
-  overflow: auto; }
+  overflow: scroll; }
   .project-overlay-description p {
     margin-bottom: 0.5rem; }
   .project-overlay-description .dotted-list {
