@@ -973,7 +973,8 @@ ul {
 @media only screen and (max-height: 700px) {
   /*Portfolio*/
   .project-overlay {
-    height: 80vh; }
+    height: 80vh;
+    top: 5vh; }
   .project-overlay-footer button {
     font-size: 1.2rem; }
   /*Landscape*/

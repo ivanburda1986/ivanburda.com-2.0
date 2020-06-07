@@ -151,11 +151,9 @@
     }
 
   }
-
-
-
 }
 
+//MAX-WIDTH: 775px
 @media only screen and (max-width: 775px) {
 
   /*Portfolio*/
@@ -206,6 +204,7 @@
   /*Portfolio*/
   .project-overlay {
     height: 80vh;
+    top: 5vh;
   }
 
   .project-overlay-footer button {

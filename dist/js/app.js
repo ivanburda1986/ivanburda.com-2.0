@@ -33,6 +33,9 @@ burgerToggler.addEventListener("click", (e) => {
 function closeMobileNavigation() {
   document.getElementById("main-nav-mobile-menu-options").classList.remove("anim-slideToScreen-endState");
   document.getElementById("burger-toggler").checked = false;
+  burgerLine1.classList.remove("line1-move", "line1-animate-endState");
+  burgerLine2.classList.remove("line2-animate-endState");
+  burgerLine3.classList.remove("line3-move", "line3-animate-endState");
   setScrolling('visible');
 }
 
