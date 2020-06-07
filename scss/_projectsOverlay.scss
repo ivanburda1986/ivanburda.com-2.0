@@ -112,7 +112,8 @@
   padding: 1rem;
   width: 60%;
   min-height: 100%;
-  overflow: scroll;
+  overflow: scroll !important;
+  overflow-y: scroll !important;
 
   p {
     margin-bottom: 0.5rem;
