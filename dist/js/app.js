@@ -19,14 +19,14 @@ burgerToggler.addEventListener("click", (e) => {
     burgerLine1.classList.add("line1-move", "line1-animate-endState");
     burgerLine2.classList.add("line2-animate-endState");
     burgerLine3.classList.add("line3-move", "line3-animate-endState");
-    setScrolling('hidden');
+    //setScrolling('hidden');
 
   } else {
     mobileNavigation.classList.remove("anim-slideToScreen-endState");
     burgerLine1.classList.remove("line1-move", "line1-animate-endState");
     burgerLine2.classList.remove("line2-animate-endState");
     burgerLine3.classList.remove("line3-move", "line3-animate-endState");
-    setScrolling('visible');
+    //setScrolling('visible');
   }
 })
 
@@ -36,7 +36,7 @@ function closeMobileNavigation() {
   burgerLine1.classList.remove("line1-move", "line1-animate-endState");
   burgerLine2.classList.remove("line2-animate-endState");
   burgerLine3.classList.remove("line3-move", "line3-animate-endState");
-  setScrolling('visible');
+  //setScrolling('visible');
 }
 
 document.getElementById("nav-mobile-profile").addEventListener("click", (e) => {

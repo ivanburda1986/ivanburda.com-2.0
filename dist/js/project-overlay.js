@@ -9,13 +9,13 @@ class ProjectDetailsUI {
   showProjectOverlay(number) {
     this[`project${number}Overlay`].classList.add('show');
     this[`project${number}Overlay`].classList.remove('hide');
-    setScrolling('hidden');
+    //setScrolling('hidden');
   }
 
   hideProjectOverlay(number) {
     this[`project${number}Overlay`].classList.remove('show');
     this[`project${number}Overlay`].classList.add('hide');
-    setScrolling('visible');
+    //setScrolling('visible');
   }
 }
 
