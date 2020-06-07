@@ -1,4 +1,4 @@
-const targetElement = document.querySelector('.project-overlay-description');
+const targetElement = document.querySelector('#project-overlay-description2');
 
 class ProjectDetailsUI {
   constructor() {
