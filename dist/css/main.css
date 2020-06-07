@@ -1100,8 +1100,10 @@ ul {
   /*Portfolio*/
   #portfolio .container {
     width: 100%; }
-  .project-overlay-description p {
-    line-height: 1rem; }
+  .project-overlay-description {
+    overflow: scroll; }
+    .project-overlay-description p {
+      line-height: 1rem; }
   /*Contact*/
   #contact .content {
     display: flex;
