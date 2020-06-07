@@ -1,5 +1,3 @@
-const disableBodyScroll = bodyScrollLock.disableBodyScroll;
-const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 const targetElement = document.querySelector('.project-overlay-description');
 
 class ProjectDetailsUI {
@@ -21,15 +19,15 @@ class ProjectDetailsUI {
   showProjectOverlay(number) {
     this[`project${number}Overlay`].classList.add("show");
     this[`project${number}Overlay`].classList.remove("hide");
-    setScrolling("hidden");
-    disableBodyScroll(targetElement);
+    //setScrolling("hidden");
+    bodyScrollLock.disableBodyScroll(targetElement);
   }
 
   hideProjectOverlay(number) {
     this[`project${number}Overlay`].classList.remove("show");
     this[`project${number}Overlay`].classList.add("hide");
-    setScrolling("visible");
-    enableBodyScroll(targetElement);
+    //setScrolling("visible");
+    bodyScrollLock.enableBodyScroll(targetElement);
   }
 }
 

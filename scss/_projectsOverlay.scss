@@ -25,7 +25,8 @@
 
 .project-overlay {
   display: grid;
-  grid-template-areas: "header"
+  grid-template-areas:
+    "header"
     "techtags"
     "main"
     "footer";
@@ -60,7 +61,6 @@
     color: white;
     padding: 1rem 1rem;
   }
-
 }
 
 .project-overlay-header-hide-btn-container {
@@ -79,7 +79,6 @@
     &:hover {
       color: $page-background-neutral;
     }
-
   }
 }
 
@@ -116,11 +115,11 @@
   min-height: 100%;
   overflow: scroll !important;
   overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch;
 
   p {
     margin-bottom: 0.5rem;
   }
-
 
   .dotted-list {
     margin-top: 0.3rem;
@@ -164,8 +163,6 @@
   }
 }
 
-
-
 .project-overlay-demo-btn-container {
   width: 50%;
 }
@@ -189,28 +186,28 @@
 
 #project1-overlay {
   .project-overlay-photo {
-    background: url('../img/portfolio/taxidermy.png') center;
+    background: url("../img/portfolio/taxidermy.png") center;
     background-size: cover;
   }
 }
 
 #project2-overlay {
   .project-overlay-photo {
-    background: url('../img/portfolio/ivanburda.png') center;
+    background: url("../img/portfolio/ivanburda.png") center;
     background-size: cover;
   }
 }
 
 #project3-overlay {
   .project-overlay-photo {
-    background: url('../img/portfolio/currency-convertor.png') center;
+    background: url("../img/portfolio/currency-convertor.png") center;
     background-size: cover;
   }
 }
 
 #project4-overlay {
   .project-overlay-photo {
-    background: url('../img/portfolio/christinadengg.png') center;
+    background: url("../img/portfolio/christinadengg.png") center;
     background-size: cover;
   }
 }

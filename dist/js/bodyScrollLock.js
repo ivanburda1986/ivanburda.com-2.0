@@ -157,6 +157,7 @@
   };
 
   var disableBodyScroll = exports.disableBodyScroll = function disableBodyScroll(targetElement, options) {
+    console.log("disabled BSL");
     if (isIosDevice) {
       // targetElement must be provided, and disableBodyScroll must not have been
       // called on this targetElement before.
@@ -167,8 +168,8 @@
       }
 
       if (targetElement && !locks.some(function (lock) {
-        return lock.targetElement === targetElement;
-      })) {
+          return lock.targetElement === targetElement;
+        })) {
         var lock = {
           targetElement: targetElement,
           options: options || {}
@@ -190,7 +191,9 @@
         };
 
         if (!documentListenerAdded) {
-          document.addEventListener('touchmove', preventDefault, hasPassiveEvents ? { passive: false } : undefined);
+          document.addEventListener('touchmove', preventDefault, hasPassiveEvents ? {
+            passive: false
+          } : undefined);
           documentListenerAdded = true;
         }
       }
@@ -214,7 +217,9 @@
       });
 
       if (documentListenerAdded) {
-        document.removeEventListener('touchmove', preventDefault, hasPassiveEvents ? { passive: false } : undefined);
+        document.removeEventListener('touchmove', preventDefault, hasPassiveEvents ? {
+          passive: false
+        } : undefined);
         documentListenerAdded = false;
       }
 
@@ -229,6 +234,7 @@
   };
 
   var enableBodyScroll = exports.enableBodyScroll = function enableBodyScroll(targetElement) {
+    console.log("enabled BSL");
     if (isIosDevice) {
       if (!targetElement) {
         // eslint-disable-next-line no-console
@@ -244,7 +250,9 @@
       });
 
       if (documentListenerAdded && locks.length === 0) {
-        document.removeEventListener('touchmove', preventDefault, hasPassiveEvents ? { passive: false } : undefined);
+        document.removeEventListener('touchmove', preventDefault, hasPassiveEvents ? {
+          passive: false
+        } : undefined);
 
         documentListenerAdded = false;
       }
@@ -258,4 +266,3 @@
     }
   };
 });
-
