@@ -112,6 +112,28 @@
   padding: 1rem;
   width: 60%;
   height: auto;
+
+
+  .dotted-list {
+    margin-top: 0.3rem;
+
+    li {
+      position: relative;
+      display: block;
+      margin-left: 1.875rem;
+      margin-top: 0rem;
+
+      &::before {
+        position: absolute;
+        top: 0.625rem;
+        left: -1.25rem;
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: $accent-color-shade-dark;
+      }
+    }
+  }
 }
 
 .project-overlay-footer {

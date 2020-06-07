@@ -61,16 +61,19 @@ ul {
 /* Scrollbar Track */
 ::-webkit-scrollbar-track {
   background: $page-background-neutral;
+
 }
 
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
   background: $dominant-color;
+
 }
 
 /* Scrollbar Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $accent-color-shade-dark;
+
 }
 
 //NAVIGATION
