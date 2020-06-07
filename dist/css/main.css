@@ -365,8 +365,7 @@
 .project-overlay-main {
   grid-area: main;
   display: flex;
-  flex-direction: row;
-  overflow: auto; }
+  flex-direction: row; }
 
 .project-overlay-photo {
   width: 40%;
