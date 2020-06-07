@@ -9,6 +9,7 @@ const burgerLine3 = document.getElementById("burger-line3");
 function setScrolling(desiredState) {
   const body = document.getElementsByTagName("body");
   body[0].style = `overflow: ${desiredState}`;
+  body[0].style = "position: fixed";
 }
 
 
