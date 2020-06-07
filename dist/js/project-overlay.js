@@ -23,11 +23,17 @@ class ProjectDetailsUI {
     this[`project${number}Overlay`].classList.add("show");
     this[`project${number}Overlay`].classList.remove("hide");
     //setScrolling("hidden");
+    if (number === 1) {
+      bodyScrollLock.disableBodyScroll(targetElement1);
+    };
     if (number === 2) {
       bodyScrollLock.disableBodyScroll(targetElement2);
     };
     if (number === 3) {
       bodyScrollLock.disableBodyScroll(targetElement3);
+    };
+    if (number === 4) {
+      bodyScrollLock.disableBodyScroll(targetElement4);
     };
     console.log(number);
   }
@@ -36,11 +42,17 @@ class ProjectDetailsUI {
     this[`project${number}Overlay`].classList.remove("show");
     this[`project${number}Overlay`].classList.add("hide");
     //setScrolling("visible");
+    if (number === 1) {
+      bodyScrollLock.enableBodyScroll(targetElement1);
+    };
     if (number === 2) {
       bodyScrollLock.enableBodyScroll(targetElement2);
     };
     if (number === 3) {
       bodyScrollLock.enableBodyScroll(targetElement3);
+    };
+    if (number === 4) {
+      bodyScrollLock.enableBodyScroll(targetElement4);
     };
 
     console.log(number);
