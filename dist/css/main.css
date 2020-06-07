@@ -375,6 +375,8 @@
   padding: 1rem;
   width: 60%;
   height: auto; }
+  .project-overlay-description p {
+    margin-bottom: 0.5rem; }
   .project-overlay-description .dotted-list {
     margin-top: 0.3rem; }
     .project-overlay-description .dotted-list li {
@@ -555,6 +557,9 @@ ul {
 /* Scrollbar Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #156099; }
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0); }
 
 #logo-text {
   width: 27.5%;
@@ -1043,17 +1048,24 @@ ul {
     flex-direction: column; }
   .project-overlay-photo {
     width: 100%;
-    height: 35%; }
+    height: 35%;
+    min-height: 35%; }
   .project-overlay-description {
     padding: 1rem;
     width: 100%;
     height: 65%;
-    overflow-y: scroll; }
-  p {
-    font-size: 0.8rem; }
-  .dotted-list li {
-    margin-top: 0rem;
-    font-size: 0.8rem; }
+    max-height: 65%;
+    overflow: scroll; }
+    .project-overlay-description p {
+      font-size: 0.8rem; }
+    .project-overlay-description .dotted-list li {
+      margin-top: 0rem;
+      font-size: 0.8rem;
+      line-height: 1.2rem; }
+      .project-overlay-description .dotted-list li::before {
+        position: absolute;
+        top: 0.25rem;
+        left: -1.25rem; }
   #portfolio .container {
     width: 85%; }
   #projects {

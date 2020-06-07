@@ -73,7 +73,11 @@ ul {
 /* Scrollbar Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $accent-color-shade-dark;
+}
 
+//This hides the little white corner present when general overflow: scroll is alowed.
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
 }
 
 //NAVIGATION

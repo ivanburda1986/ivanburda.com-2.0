@@ -304,27 +304,34 @@
   .project-overlay-photo {
     width: 100%;
     height: 35%;
+    min-height: 35%;
   }
 
   .project-overlay-description {
     padding: 1rem;
     width: 100%;
     height: 65%;
-    overflow-y: scroll; //Using overflow-y removes the little white corner present when general overflow: scroll is alowed. Also this would help@ ::-webkit-scrollbar-corner {background: rgba(0,0,0,0);
-  }
+    max-height: 65%;
+    overflow: scroll;
 
-  p {
-    font-size: 0.8rem;
-  }
-
-  .dotted-list {
-    li {
-      margin-top: 0rem;
+    p {
       font-size: 0.8rem;
     }
+
+    .dotted-list {
+      li {
+        margin-top: 0rem;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+
+        &::before {
+          position: absolute;
+          top: 0.25rem;
+          left: -1.25rem;
+        }
+      }
+    }
   }
-
-
 
   #portfolio {
     .container {
@@ -399,7 +406,11 @@
     }
   }
 
+
+
   .project-overlay-description {
+    //overflow: scroll;
+
     p {
       line-height: 1rem;
     }

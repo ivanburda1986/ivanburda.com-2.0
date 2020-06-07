@@ -108,10 +108,13 @@
 }
 
 .project-overlay-description {
-
   padding: 1rem;
   width: 60%;
   height: auto;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
 
 
   .dotted-list {
