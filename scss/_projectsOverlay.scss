@@ -16,6 +16,7 @@
 
   &.show {
     visibility: visible;
+    position: relative;
   }
 
   &.hide {
@@ -110,6 +111,7 @@
 }
 
 .project-overlay-description {
+  position: relative !important;
   padding: 1rem;
   width: 60%;
   height: 100%;
