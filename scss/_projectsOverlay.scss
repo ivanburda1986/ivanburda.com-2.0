@@ -31,7 +31,7 @@
     "footer";
   grid-template-columns: auto;
   grid-template-rows: 1fr 0.25fr 7.75fr 1fr;
-  height: 60vh;
+  max-height: 60vh;
   width: 60vw;
   position: fixed;
   margin: 0;
@@ -86,7 +86,7 @@
 
 .project-overlay {
   .tech-tag {
-    height: 1rem;
+    height: 16px;
   }
 }
 
@@ -103,14 +103,14 @@
 }
 
 .project-overlay-photo {
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
 .project-overlay-description {
 
   padding: 1rem;
-  width: 50%;
+  width: 60%;
   height: auto;
 }
 
