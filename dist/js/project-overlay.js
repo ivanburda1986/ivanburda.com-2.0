@@ -1,7 +1,7 @@
-//const targetElement1 = document.querySelector('#project-overlay-description1');
+const targetElement1 = document.querySelector('#project-overlay-description1');
 const targetElement2 = document.querySelector('#project-overlay-description2');
 const targetElement3 = document.querySelector('#project-overlay-description3');
-// const targetElement4 = document.querySelector('#project-overlay-description4');
+const targetElement4 = document.querySelector('#project-overlay-description4');
 
 class ProjectDetailsUI {
   constructor() {
