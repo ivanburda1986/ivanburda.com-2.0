@@ -1,4 +1,4 @@
-const targetElement = document.querySelector('#project-overlay-description2');
+//const targetElement = document.querySelector('#project-overlay-description2');
 
 class ProjectDetailsUI {
   constructor() {
@@ -27,7 +27,7 @@ class ProjectDetailsUI {
     this[`project${number}Overlay`].classList.remove("show");
     this[`project${number}Overlay`].classList.add("hide");
     //setScrolling("visible");
-    bodyScrollLock.enableBodyScroll(targetElement);
+    bodyScrollLock.enableBodyScroll(`document.querySelector('#project-overlay-description${number}')`);
   }
 }
 
