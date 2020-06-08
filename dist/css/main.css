@@ -243,7 +243,7 @@
 #main-nav-mobile-menu-options {
   width: 100vw; }
   #main-nav-mobile-menu-options ul {
-    padding-bottom: 15%;
+    padding-bottom: 25%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -1050,6 +1050,11 @@ ul {
   .post-preview-title {
     padding-left: 1rem; }
   /*Portfolio*/
+  .project-overlay {
+    width: 90vw;
+    height: 90vh;
+    max-height: 90vh;
+    top: 2.5vh; }
   .project-overlay-main {
     flex-direction: column; }
   .project-overlay-photo {
@@ -1092,6 +1097,13 @@ ul {
   .post-preview-content {
     padding-left: 1rem;
     padding-bottom: 0rem; }
+  .project-overlay-photo {
+    width: 100%;
+    min-height: 0%; }
+  .project-overlay-description {
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%; }
   /*Experience*/
   .testimonial {
     grid-template-areas: "title" "description" "photo"; }
