@@ -1,941 +1,798 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--Font Awesome Kit-->
-    <script
-      src="https://kit.fontawesome.com/4b83083c38.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
-      rel="stylesheet"
-    />
-    <!--Styles-->
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Ivan Burda</title>
-    <!--Favicon-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <!--Mobile navigation-->
-    <div class="menu-wrap">
-      <div id="main-nav-mobile-burger-menu">
-        <div id="burger-container">
-          <input type="checkbox" id="burger-toggler" />
-          <div id="burger">
-            <div
-              id="burger-line1"
-              class="burger-line line1-animate-startState"
-            ></div>
-            <div
-              id="burger-line2"
-              class="burger-line line2-animate-startState"
-            ></div>
-            <div
-              id="burger-line3"
-              class="burger-line line3-animate-startState"
-            ></div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--Font Awesome Kit-->
+  <script src="https://kit.fontawesome.com/4b83083c38.js" crossorigin="anonymous"></script>
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" />
+  <!--Styles-->
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Ivan Burda</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!--Mobile navigation-->
+  <div class="menu-wrap">
+    <div id="main-nav-mobile-burger-menu">
+      <div id="burger-container">
+        <input type="checkbox" id="burger-toggler" />
+        <div id="burger">
+          <div id="burger-line1" class="burger-line line1-animate-startState"></div>
+          <div id="burger-line2" class="burger-line line2-animate-startState"></div>
+          <div id="burger-line3" class="burger-line line3-animate-startState"></div>
         </div>
-      </div>
-      <div id="mobile-nav">
-        <h1 id="logo-text"><a href="#frontpage">IVAN BURDA</a></h1>
-      </div>
-      <div
-        id="main-nav-mobile-menu-options"
-        class="anim-slideToScreen-startState"
-      >
-        <ul>
-          <li>
-            <a id="nav-mobile-profile" href="#profile" class="main-nav-btn-link"
-              >Profile</a
-            >
-          </li>
-          <li>
-            <a
-              id="nav-mobile-experience"
-              href="#experience"
-              class="main-nav-btn-link"
-              >Experience</a
-            >
-          </li>
-          <li>
-            <a
-              id="nav-mobile-portfolio"
-              href="#portfolio"
-              class="main-nav-btn-link"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a id="nav-mobile-contact" href="#contact" class="main-nav-btn-link"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a
-              id="nav-mobile-contact"
-              href="blog.html#blog-frontpage"
-              class="main-nav-btn-link"
-              >Blog</a
-            >
-          </li>
-        </ul>
       </div>
     </div>
-    <!--Navigation-->
-    <nav id="main-nav">
-      <div class="container">
-        <h1 id="logo-text"><a href="#frontpage">IVAN BURDA</a></h1>
-        <ul class="list">
-          <li class="main-nav-btn"><a href="#profile">Profile</a></li>
-          <li class="main-nav-btn"><a href="#experience">Experience</a></li>
-          <li class="main-nav-btn"><a href="#portfolio">Portfolio</a></li>
-          <li class="main-nav-btn"><a href="#contact">Contact</a></li>
-          <li class="main-nav-btn">
-            <a href="blog.html#blog-frontpage">Blog</a>
-          </li>
-        </ul>
+    <div id="mobile-nav">
+      <h1 id="logo-text"><a href="#frontpage">IVAN BURDA</a></h1>
+    </div>
+    <div id="main-nav-mobile-menu-options" class="anim-slideToScreen-startState">
+      <ul>
+        <li>
+          <a id="nav-mobile-profile" href="#profile" class="main-nav-btn-link">Profile</a>
+        </li>
+        <li>
+          <a id="nav-mobile-experience" href="#experience" class="main-nav-btn-link">Experience</a>
+        </li>
+        <li>
+          <a id="nav-mobile-portfolio" href="#portfolio" class="main-nav-btn-link">Portfolio</a>
+        </li>
+        <li>
+          <a id="nav-mobile-contact" href="#contact" class="main-nav-btn-link">Contact</a>
+        </li>
+        <li>
+          <a id="nav-mobile-contact" href="blog.html#blog-frontpage" class="main-nav-btn-link">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Navigation-->
+  <nav id="main-nav">
+    <div class="container">
+      <h1 id="logo-text"><a href="#frontpage">IVAN BURDA</a></h1>
+      <ul class="list">
+        <li class="main-nav-btn"><a href="#profile">Profile</a></li>
+        <li class="main-nav-btn"><a href="#experience">Experience</a></li>
+        <li class="main-nav-btn"><a href="#portfolio">Portfolio</a></li>
+        <li class="main-nav-btn"><a href="#contact">Contact</a></li>
+        <li class="main-nav-btn">
+          <a href="blog.html#blog-frontpage">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Frontpage-->
+  <section id="frontpage" class="section section-odd section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Welcome</h2>
       </div>
-    </nav>
-    <!--Frontpage-->
-    <section id="frontpage" class="section section-odd section-padding">
-      <div class="container">
-        <div class="section-title">
-          <h2>Welcome</h2>
+      <div class="content">
+        <!--Ivan Burda - frontpage information-->
+        <div class="section-left">
+          <div class="section-left-heading-and-photo">
+            <div class="section-left-photo">
+              <img src="img/ivan-business.jpg" alt="Ivan Burda - business photo" />
+            </div>
+          </div>
+          <div class="section-left-text">
+            <p id="intro-line">
+              I help businesses understand their needs and translate those
+              into valuable solutions.
+            </p>
+            <div id="signature">
+              <img src="img/signature.png" alt="Ivan Burda - hand signature" />
+            </div>
+          </div>
         </div>
-        <div class="content">
-          <!--Ivan Burda - frontpage information-->
-          <div class="section-left">
-            <div class="section-left-heading-and-photo">
-              <div class="section-left-photo">
-                <img
-                  src="img/ivan-business.jpg"
-                  alt="Ivan Burda - business photo"
-                />
-              </div>
+        <!--An overview of the latest blogposts-->
+        <div class="section-right">
+          <div id="latest-blogposts-title">
+            <h3>Latest blog posts</h3>
+          </div>
+          <article class="post-preview">
+            <div class="post-preview-image">
+              <img src="img/blog/understanding-digital-world.jpg"
+                alt="Cover of the book Understanding the Digital World" />
             </div>
-            <div class="section-left-text">
-              <p id="intro-line">
-                I help businesses understand their needs and translate those
-                into valuable solutions.
+            <div class="post-preview-title">
+              <h4>
+                <a href="blogposts/2020-01-understaning-the-digital-world.html">Understanding the Digital World</a>
+              </h4>
+            </div>
+            <div class="post-preview-content">
+              <p>
+                Brian Kernighan, a Princeton University professor and an
+                experienced computer scientist has written the
+                <i>Understanding the Digital World</i>
+                with the aim to help an ordinary man or woman learn how
+                computers work, how they communicate among themselves, and how
+                they influence our lives, should we like it or not. Long gone
+                are the days when computers were sitting in dark,
+                air-conditioned, ...
               </p>
-              <div id="signature">
-                <img
-                  src="img/signature.png"
-                  alt="Ivan Burda - hand signature"
-                />
+              <a href="blogposts/2020-01-understaning-the-digital-world.html">read more</a>
+            </div>
+          </article>
+          <article class="post-preview">
+            <div class="post-preview-image">
+              <img src="img/blog/you-dont-know-js-up-going.jpg" alt="Cover of the book You dont know JS Up and Going" />
+            </div>
+            <div class="post-preview-title">
+              <h4>
+                <a href="blogposts/2020-03-you-dont-know-js-get-up-going.html">You Don't Know JS: Up & Going</a>
+              </h4>
+              <div class="post-category post-category-development">
+                Development
               </div>
             </div>
-          </div>
-          <!--An overview of the latest blogposts-->
-          <div class="section-right">
-            <div id="latest-blogposts-title">
-              <h3>Latest blog posts</h3>
+            <div class="post-preview-content">
+              <p>
+                The <i>Up&Going</i> is the first book in the series of six
+                written by Kyle Simpson, an open-web evangelist, teacher and a
+                javascript enthusiast. The series is called
+                <i>You Don’t Know JS</i> and the main reason why Simpson has
+                put his efforts into writing it is to help developers getting
+                a complete apprehension of the most popular language of the
+                web.
+              </p>
+              <a href="blogposts/2020-03-you-dont-know-js-get-up-going.html">read more</a>
             </div>
-            <article class="post-preview">
-              <div class="post-preview-image">
-                <img
-                  src="img/blog/understanding-digital-world.jpg"
-                  alt="Cover of the book Understanding the Digital World"
-                />
+          </article>
+          <article class="post-preview">
+            <div class="post-preview-image">
+              <img src="img/blog/api-design.jpg" alt="Cover of the book API Design" />
+            </div>
+            <div class="post-preview-title">
+              <h4>
+                <a href="blogposts/2018-api-architecture.html">API Design</a>
+              </h4>
+              <div class="post-category post-category-technology">
+                Technology
               </div>
-              <div class="post-preview-title">
-                <h4>
-                  <a
-                    href="blogposts/2020-01-understaning-the-digital-world.html"
-                    >Understanding the Digital World</a
-                  >
-                </h4>
-              </div>
-              <div class="post-preview-content">
-                <p>
-                  Brian Kernighan, a Princeton University professor and an
-                  experienced computer scientist has written the
-                  <i>Understanding the Digital World</i>
-                  with the aim to help an ordinary man or woman learn how
-                  computers work, how they communicate among themselves, and how
-                  they influence our lives, should we like it or not. Long gone
-                  are the days when computers were sitting in dark,
-                  air-conditioned, ...
-                </p>
-                <a href="blogposts/2020-01-understaning-the-digital-world.html"
-                  >read more</a
-                >
-              </div>
-            </article>
-            <article class="post-preview">
-              <div class="post-preview-image">
-                <img
-                  src="img/blog/you-dont-know-js-up-going.jpg"
-                  alt="Cover of the book You dont know JS Up and Going"
-                />
-              </div>
-              <div class="post-preview-title">
-                <h4>
-                  <a href="blogposts/2020-03-you-dont-know-js-get-up-going.html"
-                    >You Don't Know JS: Up & Going</a
-                  >
-                </h4>
-                <div class="post-category post-category-development">
-                  Development
-                </div>
-              </div>
-              <div class="post-preview-content">
-                <p>
-                  The <i>Up&Going</i> is the first book in the series of six
-                  written by Kyle Simpson, an open-web evangelist, teacher and a
-                  javascript enthusiast. The series is called
-                  <i>You Don’t Know JS</i> and the main reason why Simpson has
-                  put his efforts into writing it is to help developers getting
-                  a complete apprehension of the most popular language of the
-                  web.
-                </p>
-                <a href="blogposts/2020-03-you-dont-know-js-get-up-going.html"
-                  >read more</a
-                >
-              </div>
-            </article>
-            <article class="post-preview">
-              <div class="post-preview-image">
-                <img
-                  src="img/blog/api-design.jpg"
-                  alt="Cover of the book API Design"
-                />
-              </div>
-              <div class="post-preview-title">
-                <h4>
-                  <a href="blogposts/2018-api-architecture.html">API Design</a>
-                </h4>
-                <div class="post-category post-category-technology">
-                  Technology
-                </div>
-              </div>
-              <div class="post-preview-content">
-                <p>
-                  It is surprising how the author at not even three hunder pages
-                  managed to cover also API description languages, design
-                  decisions, architectural patterns and much more. Still, the
-                  highest value for the readers who finds themselves at a
-                  project with JSON-based REST API lies in the fact that
-                  Matthias Biehl provides a step-by-by step guidance to
-                  designing such a RESTful JSON-based API by covering vast area
-                  of the topic.
-                </p>
-                <a href="blogposts/2018-api-architecture.html">read more</a>
-              </div>
-            </article>
-          </div>
+            </div>
+            <div class="post-preview-content">
+              <p>
+                It is surprising how the author at not even three hunder pages
+                managed to cover also API description languages, design
+                decisions, architectural patterns and much more. Still, the
+                highest value for the readers who finds themselves at a
+                project with JSON-based REST API lies in the fact that
+                Matthias Biehl provides a step-by-by step guidance to
+                designing such a RESTful JSON-based API by covering vast area
+                of the topic.
+              </p>
+              <a href="blogposts/2018-api-architecture.html">read more</a>
+            </div>
+          </article>
         </div>
       </div>
-    </section>
-    <!--Profile-->
-    <section id="profile" class="section section-even section-padding">
-      <div class="container">
-        <div class="section-title">
-          <h2>Profile</h2>
-        </div>
-        <div class="content">
-          <div class="section-left">
-            <div class="section-left-heading-and-photo">
-              <div class="side-heading-text">
-                <h3>Bridging the gap</h3>
-              </div>
-              <div class="section-left-photo">
-                <img
-                  src="img/ivan-outdoor.jpg"
-                  alt="Ivan Burda - an outdoor photo"
-                />
-              </div>
-            </div>
-            <!--Profile: A short text about me-->
-            <div class="section-left-text">
-              <p>
-                As an analyst, I measure my success by helping business clients
-                to understand their needs and turn those into valuable
-                solutions.
-              </p>
-              <p>
-                I achieve this by bridging the communication gap between
-                business representatives and solution delivery teams.
-              </p>
-              <p>
-                Through collaborative team-work I encourage all team members to
-                share role-specific expertise and contribute thus to a better
-                solution. I work in delivery teams at all stages from analysis
-                to deployment and consequent support. I believe in overlapping
-                roles.
-              </p>
-              <p>
-                I constantly develop my soft- and analytical skills as well as
-                technical capabilities.
-              </p>
-            </div>
-          </div>
-          <!--Profile: A structured summary of my skills and expertise-->
-          <div class="section-right">
+    </div>
+  </section>
+  <!--Profile-->
+  <section id="profile" class="section section-even section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Profile</h2>
+      </div>
+      <div class="content">
+        <div class="section-left">
+          <div class="section-left-heading-and-photo">
             <div class="side-heading-text">
-              <h3>Skills and Expertise</h3>
+              <h3>Bridging the gap</h3>
             </div>
-            <div class="infobox">
-              <div class="infobox-title">
-                <i class="far fa-lightbulb fa-1x"></i>
-                <h4>Analytical</h4>
-              </div>
-              <div class="infobox-description">
-                <ul class="underlined-list">
-                  <li>
-                    Analytical expertise in the context of IT and financial
-                    organisations
-                  </li>
-                  <li>
-                    Helping clients to discover and fulfil their real needs
-                  </li>
-                  <li>Knowledge of banking products, fintech</li>
-                  <li>
-                    Analysis, specification and documentation of requirements
-                    for Desktop and Mobile
-                  </li>
-                </ul>
-              </div>
+            <div class="section-left-photo">
+              <img src="img/ivan-outdoor.jpg" alt="Ivan Burda - an outdoor photo" />
             </div>
-            <div class="infobox">
-              <div class="infobox-title">
-                <i class="fas fa-cogs fa-1x"></i>
-                <h4>Technical</h4>
-              </div>
-              <div class="infobox-description">
-                <ul class="underlined-list">
-                  <li>
-                    A solid knowledge and design experience with APIs, HTTP,
-                    JSON
-                  </li>
-                  <li>
-                    IT-systems architecture insight, card processing,
-                    tokenisation
-                  </li>
-                  <li>
-                    Chrome DevTools, Postman, Fiddler, Cypress.io, VSC, Git,
-                    Github
-                  </li>
-                  <li>HTML5, CSS3, Saas, Javascript</li>
-                </ul>
-              </div>
+          </div>
+          <!--Profile: A short text about me-->
+          <div class="section-left-text">
+            <p>
+              As an analyst, I measure my success by helping business clients
+              to understand their needs and turn those into valuable
+              solutions.
+            </p>
+            <p>
+              I achieve this by bridging the communication gap between
+              business representatives and solution delivery teams.
+            </p>
+            <p>
+              Through collaborative team-work I encourage all team members to
+              share role-specific expertise and contribute thus to a better
+              solution. I work in delivery teams at all stages from analysis
+              to deployment and consequent support. I believe in overlapping
+              roles.
+            </p>
+            <p>
+              I constantly develop my soft- and analytical skills as well as
+              technical capabilities.
+            </p>
+          </div>
+        </div>
+        <!--Profile: A structured summary of my skills and expertise-->
+        <div class="section-right">
+          <div class="side-heading-text">
+            <h3>Skills and Expertise</h3>
+          </div>
+          <div class="infobox">
+            <div class="infobox-title">
+              <i class="far fa-lightbulb fa-1x"></i>
+              <h4>Analytical</h4>
             </div>
-            <div class="infobox">
-              <div class="infobox-title">
-                <i class="fas fa-users fa-1x"></i>
-                <h4>Collaborative</h4>
-              </div>
-              <div class="infobox-description">
-                <ul class="underlined-list">
-                  <li>
-                    Cooperation with stakeholders from different cultural and
-                    national backgrounds
-                  </li>
-                  <li>
-                    Promoting collaboration and engagement within self-contained
-                    squads
-                  </li>
-                  <li>Agile, Scrum, Kanban, Behaviour-Driven Development</li>
-                  <li>English (C1), German (B2), Czech (C2)</li>
-                </ul>
-              </div>
+            <div class="infobox-description">
+              <ul class="underlined-list">
+                <li>
+                  Analytical expertise in the context of IT and financial
+                  organisations
+                </li>
+                <li>
+                  Helping clients to discover and fulfil their real needs
+                </li>
+                <li>Knowledge of banking products, fintech</li>
+                <li>
+                  Analysis, specification and documentation of requirements
+                  for Desktop and Mobile
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="infobox">
+            <div class="infobox-title">
+              <i class="fas fa-cogs fa-1x"></i>
+              <h4>Technical</h4>
+            </div>
+            <div class="infobox-description">
+              <ul class="underlined-list">
+                <li>
+                  A solid knowledge and design experience with APIs, HTTP,
+                  JSON
+                </li>
+                <li>
+                  IT-systems architecture insight, card processing,
+                  tokenisation
+                </li>
+                <li>
+                  Chrome DevTools, Postman, Fiddler, Cypress.io, VSC, Git,
+                  Github
+                </li>
+                <li>HTML5, CSS3, Saas, Javascript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="infobox">
+            <div class="infobox-title">
+              <i class="fas fa-users fa-1x"></i>
+              <h4>Collaborative</h4>
+            </div>
+            <div class="infobox-description">
+              <ul class="underlined-list">
+                <li>
+                  Cooperation with stakeholders from different cultural and
+                  national backgrounds
+                </li>
+                <li>
+                  Promoting collaboration and engagement within self-contained
+                  squads
+                </li>
+                <li>Agile, Scrum, Kanban, Behaviour-Driven Development</li>
+                <li>English (C1), German (B2), Czech (C2)</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--Experience-->
-    <section id="experience" class="section section-odd section-padding">
-      <div class="container">
-        <div class="section-title">
-          <h2>Experience</h2>
-        </div>
-        <div class="content">
-          <!--Experience: Testimonials-->
-          <div class="section-left">
-            <div class="section-left-heading-and-photo">
-              <div class="side-heading-text">
-                <h3>Testimonials</h3>
-              </div>
-              <div class="section-left-photo">
-                <img
-                  src="img/ivan-smartcasual.jpg"
-                  alt="Ivan Burda - a smart casual photo"
-                />
-              </div>
-            </div>
-            <div class="section-left-text">
-              <div class="testimonial">
-                <div class="testimonial-title">
-                  <a
-                    href="https://www.linkedin.com/in/mathiasfrey/"
-                    target="_blank"
-                  >
-                    <h5>Mathias Frey (team lead at EGIT)</h5>
-                  </a>
-                </div>
-                <div class="testimonial-text">
-                  <p>
-                    It's no exaggeration to say that I've never met someone else
-                    who featured such a high level of critical introspection.
-                    Ivan therefore is a fast learner, a listener to feedback, an
-                    implementer of strategy like no one else.
-                  </p>
-                </div>
-                <div class="testimonial-photo">
-                  <img
-                    src="img/mathias-linkedin.jpeg"
-                    alt="Mathias Frey - linkedin photo"
-                  />
-                </div>
-              </div>
-              <div class="testimonial">
-                <div class="testimonial-title">
-                  <a href="https://www.linkedin.com/in/niksumeiko/">
-                    <h5>Nik Sumeiko (developer at EGIT)</h5>
-                  </a>
-                </div>
-                <div class="testimonial-text">
-                  <p>
-                    Ivan is a game changer for software development teams. He
-                    has outstanding analytical skills. He is able to tackle any
-                    business requirement and turn it into extremely well
-                    described tasks.
-                  </p>
-                </div>
-                <div class="testimonial-photo">
-                  <img
-                    src="img/nik-linkedin.jpeg"
-                    alt="Nik Sumeiko - linkedin photo"
-                  />
-                </div>
-              </div>
-              <div class="testimonial">
-                <div class="testimonial-title">
-                  <a href="https://www.linkedin.com/in/peterkaras/">
-                    <h5>Peter Karas (analyst lead at EGIT)</h5>
-                  </a>
-                </div>
-                <div class="testimonial-text">
-                  <p>
-                    Ivan is one of the best business analysts I've ever had the
-                    honor to work with. He's very enthusiastic and always
-                    willing to learn and move forward. He's the guy who will "go
-                    the extra mile" to ensure that the solution to be done is
-                    the right one.
-                  </p>
-                </div>
-                <div class="testimonial-photo">
-                  <img
-                    src="img/peter-linkedin.jpeg"
-                    alt="Peter Karas - linkedin photo"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Experience: An overview of employment history-->
-          <div class="section-right">
+    </div>
+  </section>
+  <!--Experience-->
+  <section id="experience" class="section section-odd section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Experience</h2>
+      </div>
+      <div class="content">
+        <!--Experience: Testimonials-->
+        <div class="section-left">
+          <div class="section-left-heading-and-photo">
             <div class="side-heading-text">
-              <h3>Employments</h3>
+              <h3>Testimonials</h3>
             </div>
-            <div class="infobox">
-              <div class="infobox-title">
-                <i class="fas fa-user-tie fa-1x"></i>
-                <h4>Business Analyst, Erste Group IT, Austria, 2018 - now</h4>
+            <div class="section-left-photo">
+              <img src="img/ivan-smartcasual.jpg" alt="Ivan Burda - a smart casual photo" />
+            </div>
+          </div>
+          <div class="section-left-text">
+            <div class="testimonial">
+              <div class="testimonial-title">
+                <a href="https://www.linkedin.com/in/mathiasfrey/" target="_blank">
+                  <h5>Mathias Frey (team lead at EGIT)</h5>
+                </a>
               </div>
-              <div class="infobox-description">
+              <div class="testimonial-text">
                 <p>
-                  I worked for the Erste Group IT between 2016 and 2018 as an
-                  external analyst, consequently to which I joined internally. I
-                  am a member of the team delivering the George Online Banking
-                  to all countries within the Erste Group. George has 5+
-                  millions monthly active users both on web and mobile, and
-                  still growing.
+                  It's no exaggeration to say that I've never met someone else
+                  who featured such a high level of critical introspection.
+                  Ivan therefore is a fast learner, a listener to feedback, an
+                  implementer of strategy like no one else.
                 </p>
-                <p>
-                  I believe in overlapping roles, so I as an analyst I have
-                  acquired lots of knowledge and experience also in the area of
-                  testing, development, project management, system design, etc.
-                  At the same time I also try to share my own experience and
-                  bring in new ideas to support the philosophy of our
-                  self-learning organisation.
-                </p>
-                <ul class="dotted-list">
-                  <li>
-                    Helping business in 6 countries to analyse their needs and
-                    transform them into valuable solutions
-                  </li>
-                  <li>
-                    Specification of requirements and documentation of the
-                    delivered solution
-                  </li>
-                  <li>
-                    Development of automated tests using the Cypress.io and BDD
-                  </li>
-                  <li>Group API alignment and specification (REST&JSON)</li>
-                  <li>Integration of third-party features</li>
-                  <li>Card digitization and NFC payments for mobile devices</li>
-                  <li>Detailed knowledge of retail banking products</li>
-                  <li>
-                    Knowledge handover and skill transfer to other team members
-                  </li>
-                  <li>
-                    Developing the team by interviewing new candidates,
-                    onboarding new colleagues, sharing experience sharing,
-                    consulting, helping others to grow (organizing workshops).
-                  </li>
-                  <li>
-                    Designing the onboarding process and criteria for new
-                    members of the business analysis team
-                  </li>
-                </ul>
+              </div>
+              <div class="testimonial-photo">
+                <img src="img/mathias-linkedin.jpeg" alt="Mathias Frey - linkedin photo" />
               </div>
             </div>
-            <div class="infobox">
-              <div class="infobox-title">
-                <i class="fas fa-user-tie fa-1x"></i>
-                <h4>
-                  Business Analyst, Greyson, the Czech Republic, 2014-2018
-                </h4>
+            <div class="testimonial">
+              <div class="testimonial-title">
+                <a href="https://www.linkedin.com/in/niksumeiko/">
+                  <h5>Nik Sumeiko (developer at EGIT)</h5>
+                </a>
               </div>
-              <div class="infobox-description">
+              <div class="testimonial-text">
                 <p>
-                  I started working for Greyson, a consulting company operating
-                  in the Czech Republic and Slovakia, in 2014. I have
-                  participated at management consulting projects,
-                  multichannel-banking projects and an assignment focused on
-                  setting up a target operating model for an international
-                  project.
+                  Ivan is a game changer for software development teams. He
+                  has outstanding analytical skills. He is able to tackle any
+                  business requirement and turn it into extremely well
+                  described tasks.
                 </p>
-                <ul class="dotted-list">
-                  <li>
-                    Česká spořitelna - management consulting focused on analysis
-                    of the bank's user-contact channels and leveraging potential
-                    of these touchpoints.
-                  </li>
-                  <li>
-                    Raiffeisen Bank - an integration of a multi-channel solution
-                  </li>
-                  <li>
-                    Česká spořitelna - supporting a target-operating model
-                    creation
-                  </li>
-                  <li>
-                    Erste Group IT - an analytical role in the team delivering
-                    the George online banking
-                  </li>
-                </ul>
               </div>
+              <div class="testimonial-photo">
+                <img src="img/nik-linkedin.jpeg" alt="Nik Sumeiko - linkedin photo" />
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-title">
+                <a href="https://www.linkedin.com/in/peterkaras/">
+                  <h5>Peter Karas (analyst lead at EGIT)</h5>
+                </a>
+              </div>
+              <div class="testimonial-text">
+                <p>
+                  Ivan is one of the best business analysts I've ever had the
+                  honor to work with. He's very enthusiastic and always
+                  willing to learn and move forward. He's the guy who will "go
+                  the extra mile" to ensure that the solution to be done is
+                  the right one.
+                </p>
+              </div>
+              <div class="testimonial-photo">
+                <img src="img/peter-linkedin.jpeg" alt="Peter Karas - linkedin photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Experience: An overview of employment history-->
+        <div class="section-right">
+          <div class="side-heading-text">
+            <h3>Employments</h3>
+          </div>
+          <div class="infobox">
+            <div class="infobox-title">
+              <i class="fas fa-user-tie fa-1x"></i>
+              <h4>Business Analyst, Erste Group IT, Austria, 2018 - now</h4>
+            </div>
+            <div class="infobox-description">
+              <p>
+                I worked for the Erste Group IT between 2016 and 2018 as an
+                external analyst, consequently to which I joined internally. I
+                am a member of the team delivering the George Online Banking
+                to all countries within the Erste Group. George has 5+
+                millions monthly active users both on web and mobile, and
+                still growing.
+              </p>
+              <p>
+                I believe in overlapping roles, so I as an analyst I have
+                acquired lots of knowledge and experience also in the area of
+                testing, development, project management, system design, etc.
+                At the same time I also try to share my own experience and
+                bring in new ideas to support the philosophy of our
+                self-learning organisation.
+              </p>
+              <ul class="dotted-list">
+                <li>
+                  Helping business in 6 countries to analyse their needs and
+                  transform them into valuable solutions
+                </li>
+                <li>
+                  Specification of requirements and documentation of the
+                  delivered solution
+                </li>
+                <li>
+                  Development of automated tests using the Cypress.io and BDD
+                </li>
+                <li>Group API alignment and specification (REST&JSON)</li>
+                <li>Integration of third-party features</li>
+                <li>Card digitization and NFC payments for mobile devices</li>
+                <li>Detailed knowledge of retail banking products</li>
+                <li>
+                  Knowledge handover and skill transfer to other team members
+                </li>
+                <li>
+                  Developing the team by interviewing new candidates,
+                  onboarding new colleagues, sharing experience sharing,
+                  consulting, helping others to grow (organizing workshops).
+                </li>
+                <li>
+                  Designing the onboarding process and criteria for new
+                  members of the business analysis team
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="infobox">
+            <div class="infobox-title">
+              <i class="fas fa-user-tie fa-1x"></i>
+              <h4>
+                Business Analyst, Greyson, the Czech Republic, 2014-2018
+              </h4>
+            </div>
+            <div class="infobox-description">
+              <p>
+                I started working for Greyson, a consulting company operating
+                in the Czech Republic and Slovakia, in 2014. I have
+                participated at management consulting projects,
+                multichannel-banking projects and an assignment focused on
+                setting up a target operating model for an international
+                project.
+              </p>
+              <ul class="dotted-list">
+                <li>
+                  Česká spořitelna - management consulting focused on analysis
+                  of the bank's user-contact channels and leveraging potential
+                  of these touchpoints.
+                </li>
+                <li>
+                  Raiffeisen Bank - an integration of a multi-channel solution
+                </li>
+                <li>
+                  Česká spořitelna - supporting a target-operating model
+                  creation
+                </li>
+                <li>
+                  Erste Group IT - an analytical role in the team delivering
+                  the George online banking
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--Portfolio-->
-    <section id="portfolio" class="section section-even section-padding">
-      <!--Overlay-->
-      <div id="project-overlays-container">
-        <!--Overlay-project1-->
-        <div
-          id="project1-overlay-container"
-          class="project-overlay-container hide"
-        >
-          <div class="project-overlay" id="project1-overlay">
-            <div class="project-overlay-header">
-              <div class="project-overlay-header-title">
-                <p>A Small Business Website</p>
-              </div>
-              <div
-                id="project1-hidebtn"
-                class="project-overlay-header-hide-btn-container"
-              >
-                <button>×</button>
-              </div>
+    </div>
+  </section>
+  <!--Portfolio-->
+  <section id="portfolio" class="section section-even section-padding">
+    <!--Overlay-->
+    <div id="project-overlays-container">
+      <!--Overlay-project1-->
+      <div id="project1-overlay-container" class="project-overlay-container hide">
+        <div class="project-overlay" id="project1-overlay">
+          <div class="project-overlay-header">
+            <div class="project-overlay-header-title">
+              <p>A Small Business Website</p>
             </div>
-            <div class="project-overlay-tech-tags tech-tags">
-              <div class="tech-tag tag-html">HTML</div>
-              <div class="tech-tag tag-css">CSS</div>
-              <div class="tech-tag tag-js">JS</div>
+            <div id="project1-hidebtn" class="project-overlay-header-hide-btn-container">
+              <button>×</button>
             </div>
-            <div class="project-overlay-main">
-              <div class="project-overlay-photo"></div>
-              <div
-                id="project-overlay-description1"
-                class="project-overlay-description"
-              >
-                <p>
-                  I managed to get a first client in summer 2019, shortly after
-                  I started learning web development. The client specializes in
-                  taxidermy skull cleaning. He needs to be present online so
-                  that potential clients can learn about him and his services.
-                </p>
-                <p>
-                  By building this website I put into practice my initial
-                  knowledge of HTML and CSS. Later on I added also a JS overlay
-                  gallery so that the images do not have to open in a new
-                  window.
-                </p>
-                <ul class="dotted-list">
-                  <li>Deployed with Netlify</li>
-                  <li>Responsive to all screen sizes</li>
-                </ul>
-              </div>
+          </div>
+          <div class="project-overlay-tech-tags tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overlay-main">
+            <div class="project-overlay-photo"></div>
+            <div id="project-overlay-description1" class="project-overlay-description">
+              <p>
+                I managed to get a first client in summer 2019, shortly after
+                I started learning web development. The client specializes in
+                taxidermy skull cleaning. He needs to be present online so
+                that potential clients can learn about him and his services.
+              </p>
+              <p>
+                By building this website I put into practice my initial
+                knowledge of HTML and CSS. Later on I added also a JS overlay
+                gallery so that the images do not have to open in a new
+                window.
+              </p>
+              <ul class="dotted-list">
+                <li>Deployed with Netlify</li>
+                <li>Responsive to all screen sizes</li>
+              </ul>
             </div>
-            <div class="project-overlay-footer">
-              <div class="project-overlay-sourcode-btn-container">
-                <a
-                  href="https://github.com/ivanburda1986/jordanpetr.cz"
-                  target="_blank"
-                  ><button>Github</button></a
-                >
-              </div>
-              <div class="project-overlay-demo-btn-container">
-                <a href="https://www.jordanpetr.cz" target="_blank"
-                  ><button>Visit site</button></a
-                >
-              </div>
+          </div>
+          <div class="project-overlay-footer">
+            <div class="project-overlay-sourcode-btn-container">
+              <a href="https://github.com/ivanburda1986/jordanpetr.cz" target="_blank"><button>Github</button></a>
+            </div>
+            <div class="project-overlay-demo-btn-container">
+              <a href="https://www.jordanpetr.cz" target="_blank"><button>Visit site</button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <!--Overlay-project2-->
-        <div
-          id="project2-overlay-container"
-          class="project-overlay-container hide"
-        >
-          <div class="project-overlay" id="project2-overlay">
-            <div class="project-overlay-header">
-              <div class="project-overlay-header-title">
-                <p>My Own Website</p>
-              </div>
-              <div
-                id="project2-hidebtn"
-                class="project-overlay-header-hide-btn-container"
-              >
-                <button>×</button>
-              </div>
+    </div>
+    <div class="container">
+      <!--Overlay-project2-->
+      <div id="project2-overlay-container" class="project-overlay-container hide">
+        <div class="project-overlay" id="project2-overlay">
+          <div class="project-overlay-header">
+            <div class="project-overlay-header-title">
+              <p>My Own Website</p>
             </div>
-            <div class="project-overlay-tech-tags tech-tags">
-              <div class="tech-tag tag-html">HTML</div>
-              <div class="tech-tag tag-css">CSS</div>
-              <div class="tech-tag tag-sass">Sass</div>
-              <div class="tech-tag tag-js">JS</div>
+            <div id="project2-hidebtn" class="project-overlay-header-hide-btn-container">
+              <button>×</button>
             </div>
-            <div class="project-overlay-main">
-              <div class="project-overlay-photo"></div>
-              <div
-                id="project-overlay-description2"
-                class="project-overlay-description"
-              >
-                <p>
-                  Obviously, this project in my development portfolio is the
-                  site you are visiting right now. I built this site to replace
-                  my Wordpress blog and originally I built it shortly after I
-                  started learning web development seriously.
-                </p>
-                <p>
-                  This project was first built in HTML and CSS. Later on when I
-                  learnt Saas and Javascript, I completely refactores the site
-                  and added some JS-based features such as overlay windows with
-                  details on individual projects. Also the mobile navigation is
-                  heavily relying on JS.
-                </p>
-                <ul class="dotted-list">
-                  <li>Deployed with Netlify</li>
-                  <li>Responsive to all screen sizes</li>
-                  <li>Built with accessibility on mind</li>
-                </ul>
-              </div>
+          </div>
+          <div class="project-overlay-tech-tags tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-sass">Sass</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overlay-main">
+            <div class="project-overlay-photo"></div>
+            <div id="project-overlay-description2" class="project-overlay-description">
+              <p>
+                Obviously, this project in my development portfolio is the
+                site you are visiting right now. I built this site to replace
+                my Wordpress blog and originally I built it shortly after I
+                started learning web development seriously.
+              </p>
+              <p>
+                This project was first built in HTML and CSS. Later on when I
+                learnt Saas and Javascript, I completely refactored the site
+                and added some JS-based features such as overlay windows with
+                details on individual projects. Also the mobile navigation is
+                heavily relying on JS.
+              </p>
+              <ul class="dotted-list">
+                <li>Deployed with Netlify</li>
+                <li>Responsive to all screen sizes</li>
+                <li>Built with accessibility on mind</li>
+              </ul>
             </div>
-            <div class="project-overlay-footer">
-              <div class="project-overlay-sourcode-btn-container">
-                <a
-                  href="https://github.com/ivanburda1986/ivanburda.com-2.0"
-                  target="_blank"
-                  ><button>Github</button></a
-                >
-              </div>
+          </div>
+          <div class="project-overlay-footer">
+            <div class="project-overlay-sourcode-btn-container">
+              <a href="https://github.com/ivanburda1986/ivanburda.com-2.0" target="_blank"><button>Github</button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <!--Overlay-project3-->
-        <div
-          id="project3-overlay-container"
-          class="project-overlay-container hide"
-        >
-          <div class="project-overlay" id="project3-overlay">
-            <div class="project-overlay-header">
-              <div class="project-overlay-header-title">
-                <p>Currency Convertor</p>
-              </div>
-              <div
-                id="project3-hidebtn"
-                class="project-overlay-header-hide-btn-container"
-              >
-                <button>×</button>
-              </div>
+    </div>
+    <div class="container">
+      <!--Overlay-project3-->
+      <div id="project3-overlay-container" class="project-overlay-container hide">
+        <div class="project-overlay" id="project3-overlay">
+          <div class="project-overlay-header">
+            <div class="project-overlay-header-title">
+              <p>Currency Convertor</p>
             </div>
-            <div class="project-overlay-tech-tags tech-tags">
-              <div class="tech-tag tag-html">HTML</div>
-              <div class="tech-tag tag-css">CSS</div>
-              <div class="tech-tag tag-js">JS</div>
+            <div id="project3-hidebtn" class="project-overlay-header-hide-btn-container">
+              <button>×</button>
             </div>
-            <div class="project-overlay-main">
-              <div class="project-overlay-photo"></div>
-              <div
-                id="project-overlay-description3"
-                class="project-overlay-description"
-              >
-                <p>
-                  As my first API-based Javascript project I decided to build a
-                  currency convertor. To make it more exciting, I enhanced it
-                  with a visual comparison of relative currency powers which is
-                  displayed in addition to the exchange rate.
-                </p>
-                <p>
-                  I used an API from Currencylayer.com, only to find out at the
-                  end the free version would not allow me to call it from an
-                  HTTPS origin when deployed online. I switched therefore
-                  exchangerate-api.com which solved this issue. The nice thing
-                  was my implementation was ready to consume the new API without
-                  code reworking.
-                </p>
-                <p>
-                  The free API does not allow any currency-pair requests such as
-                  CZK-GBP, rather it provides only exchange rates to a default
-                  base currency(EUR, USD). This required that I had to abstract
-                  on the fly a conversion rate for any pair selected by the
-                  user.
-                </p>
-                <p>
-                  In order to save traffic, I implemeted also cache, to request
-                  the new exchange rates from the server, only if the
-                  local-stored ones are older than 24 hours.
-                </p>
-                <ul class="dotted-list">
-                  <li>
-                    Implemented local storage to save the latest selected
-                    currency pair
-                  </li>
-                  <li>Implemented caching to save API requests</li>
-                  <li>Uses console loggin to show what is going on</li>
-                  <li>Fully screen-size responsive</li>
-                </ul>
-              </div>
+          </div>
+          <div class="project-overlay-tech-tags tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overlay-main">
+            <div class="project-overlay-photo"></div>
+            <div id="project-overlay-description3" class="project-overlay-description">
+              <p>
+                As my first API-based Javascript project I decided to build a
+                currency convertor. To make it more exciting, I enhanced it
+                with a visual comparison of relative currency powers which is
+                displayed in addition to the exchange rate.
+              </p>
+              <p>
+                I used an API from Currencylayer.com, only to find out at the
+                end the free version would not allow me to call it from an
+                HTTPS origin when deployed online. I switched therefore
+                exchangerate-api.com which solved this issue. The nice thing
+                was my implementation was ready to consume the new API without
+                code reworking.
+              </p>
+              <p>
+                The free API does not allow any currency-pair requests such as
+                CZK-GBP, rather it provides only exchange rates to a default
+                base currency(EUR, USD). This required that I had to abstract
+                on the fly a conversion rate for any pair selected by the
+                user.
+              </p>
+              <p>
+                In order to save traffic, I implemeted also cache, to request
+                the new exchange rates from the server, only if the
+                local-stored ones are older than 24 hours.
+              </p>
+              <ul class="dotted-list">
+                <li>
+                  Implemented local storage to save the latest selected
+                  currency pair
+                </li>
+                <li>Implemented caching to save API requests</li>
+                <li>Uses console logging to show what is going on</li>
+                <li>Fully screen-size responsive</li>
+              </ul>
             </div>
-            <div class="project-overlay-footer">
-              <div class="project-overlay-sourcode-btn-container">
-                <a
-                  href="https://github.com/ivanburda1986/ExchangeRates"
-                  target="_blank"
-                  ><button>Github</button></a
-                >
-              </div>
-              <div class="project-overlay-demo-btn-container">
-                <a
-                  href="https://infallible-knuth-8c6e3e.netlify.app/"
-                  target="_blank"
-                  ><button>Visit site</button></a
-                >
-              </div>
+          </div>
+          <div class="project-overlay-footer">
+            <div class="project-overlay-sourcode-btn-container">
+              <a href="https://github.com/ivanburda1986/ExchangeRates" target="_blank"><button>Github</button></a>
+            </div>
+            <div class="project-overlay-demo-btn-container">
+              <a href="https://infallible-knuth-8c6e3e.netlify.app/" target="_blank"><button>Visit site</button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <!--Overlay-project4-->
-        <div
-          id="project4-overlay-container"
-          class="project-overlay-container hide"
-        >
-          <div class="project-overlay" id="project4-overlay">
-            <div class="project-overlay-header">
-              <div class="project-overlay-header-title">
-                <p>A Personal Presentation</p>
-              </div>
-              <div
-                id="project4-hidebtn"
-                class="project-overlay-header-hide-btn-container"
-              >
-                <button>×</button>
-              </div>
+    </div>
+    <div class="container">
+      <!--Overlay-project4-->
+      <div id="project4-overlay-container" class="project-overlay-container hide">
+        <div class="project-overlay" id="project4-overlay">
+          <div class="project-overlay-header">
+            <div class="project-overlay-header-title">
+              <p>A Personal Presentation</p>
             </div>
-            <div class="project-overlay-tech-tags tech-tags">
-              <div class="tech-tag tag-html">HTML</div>
-              <div class="tech-tag tag-css">CSS</div>
-              <div class="tech-tag tag-sass">Sass</div>
-              <div class="tech-tag tag-js">JS</div>
+            <div id="project4-hidebtn" class="project-overlay-header-hide-btn-container">
+              <button>×</button>
             </div>
-            <div class="project-overlay-main">
-              <div class="project-overlay-photo"></div>
-              <div
-                id="project-overlay-description4"
-                class="project-overlay-description"
-              >
-                <p>
-                  Taking on this challenge of building a personal presentation
-                  for a pole dance artist and instructor, I knew I would give a
-                  push to my CSS skills. The goal was to build a visually
-                  attractive site, including several animations to convey the
-                  feeling of movement and dynamics.
-                </p>
-                <p>
-                  It turned in addition to CSS I learnt a lot of new Javascript
-                  too. I needed it to trigger animations based on an event such
-                  as the user's scrolling position.
-                </p>
-                <p>
-                  I also implemented my first overlay gallery. Afterwards I
-                  extracted for an easy re-use in my other projects.
-                </p>
-                <ul class="dotted-list"></ul>
-              </div>
+          </div>
+          <div class="project-overlay-tech-tags tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-sass">Sass</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overlay-main">
+            <div class="project-overlay-photo"></div>
+            <div id="project-overlay-description4" class="project-overlay-description">
+              <p>
+                Taking on this challenge of building a personal presentation
+                for a pole dance artist and instructor, I knew I would give a
+                push to my CSS skills. The goal was to build a visually
+                attractive site, including several animations to convey the
+                feeling of movement and dynamics.
+              </p>
+              <p>
+                It turned out in addition to CSS I learnt a lot of new Javascript
+                too. I needed it to trigger animations based on an event such
+                as the user's scrolling position.
+              </p>
+              <p>
+                I also implemented my first overlay gallery. Afterwards I
+                extracted it for an easy re-use in my other projects.
+              </p>
+              <ul class="dotted-list"></ul>
             </div>
-            <div class="project-overlay-footer">
-              <div class="project-overlay-sourcode-btn-container">
-                <a
-                  href="https://github.com/ivanburda1986/christinaDengg"
-                  target="_blank"
-                  ><button>Github</button></a
-                >
-              </div>
-              <div class="project-overlay-demo-btn-container">
-                <a href="https://www.christinadengg.eu/" target="_blank"
-                  ><button>Visit site</button></a
-                >
-              </div>
+          </div>
+          <div class="project-overlay-footer">
+            <div class="project-overlay-sourcode-btn-container">
+              <a href="https://github.com/ivanburda1986/christinaDengg" target="_blank"><button>Github</button></a>
+            </div>
+            <div class="project-overlay-demo-btn-container">
+              <a href="https://www.christinadengg.eu/" target="_blank"><button>Visit site</button></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <!--Projects-->
-        <div class="section-title">
-          <h2>Dev Portfolio</h2>
+    </div>
+    <div class="container">
+      <!--Projects-->
+      <div class="section-title">
+        <h2>Dev Portfolio</h2>
+      </div>
+      <div id="projects">
+        <!--Small business website: Petr Jordan-->
+        <div class="project">
+          <div class="project-title">
+            <h4>A Small Business Website</h4>
+          </div>
+          <div class="tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overview" id="project1"></div>
+          <div id="project1-showBtn" class="project-button">
+            Details
+          </div>
         </div>
-        <div id="projects">
-          <!--Small business website: Petr Jordan-->
-          <div class="project">
-            <div class="project-title">
-              <h4>A Small Business Website</h4>
-            </div>
-            <div class="tech-tags">
-              <div class="tech-tag tag-html">HTML</div>
-              <div class="tech-tag tag-css">CSS</div>
-              <div class="tech-tag tag-js">JS</div>
-            </div>
-            <div class="project-overview" id="project1"></div>
-            <div id="project1-showBtn" class="project-button">
-              Details
-            </div>
+        <!--My own website-->
+        <div class="project">
+          <div class="project-title">
+            <h4>My Own Website</h4>
           </div>
-          <!--My own website-->
-          <div class="project">
-            <div class="project-title">
-              <h4>My Own Website</h4>
-            </div>
-            <div class="tech-tags">
-              <div class="tech-tag tag-html">HTML</div>
-              <div class="tech-tag tag-css">CSS</div>
-              <div class="tech-tag tag-sass">Sass</div>
-              <div class="tech-tag tag-js">JS</div>
-            </div>
-            <div class="project-overview" id="project2"></div>
-            <div id="project2-showBtn" class="project-button">
-              Details
-            </div>
+          <div class="tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-sass">Sass</div>
+            <div class="tech-tag tag-js">JS</div>
           </div>
-          <!--Currency convertor-->
-          <div class="project">
-            <div class="project-title">
-              <h4>Currency Convertor</h4>
-            </div>
-            <div class="tech-tags">
-              <div class="tech-tag tag-html">HTML</div>
-              <div class="tech-tag tag-css">CSS</div>
-              <div class="tech-tag tag-js">JS</div>
-            </div>
-            <div class="project-overview" id="project3"></div>
-            <div id="project3-showBtn" class="project-button">
-              Details
-            </div>
+          <div class="project-overview" id="project2"></div>
+          <div id="project2-showBtn" class="project-button">
+            Details
           </div>
-          <!--Personal presentation: Christina Dengg-->
-          <div class="project">
-            <div class="project-title">
-              <h4>A Personal Presentation</h4>
-            </div>
-            <div class="tech-tags">
-              <div class="tech-tag tag-html">HTML</div>
-              <div class="tech-tag tag-css">CSS</div>
-              <div class="tech-tag tag-sass">Sass</div>
-              <div class="tech-tag tag-js">JS</div>
-            </div>
-            <div class="project-overview" id="project4"></div>
-            <div id="project4-showBtn" class="project-button">
-              Details
-            </div>
+        </div>
+        <!--Currency convertor-->
+        <div class="project">
+          <div class="project-title">
+            <h4>Currency Convertor</h4>
+          </div>
+          <div class="tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overview" id="project3"></div>
+          <div id="project3-showBtn" class="project-button">
+            Details
+          </div>
+        </div>
+        <!--Personal presentation: Christina Dengg-->
+        <div class="project">
+          <div class="project-title">
+            <h4>A Personal Presentation</h4>
+          </div>
+          <div class="tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-sass">Sass</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overview" id="project4"></div>
+          <div id="project4-showBtn" class="project-button">
+            Details
           </div>
         </div>
       </div>
-    </section>
-    <!--Contact-->
-    <section id="contact" class="section section-odd section-padding">
-      <div class="container">
-        <div class="section-title">
-          <h2>Contact</h2>
+    </div>
+  </section>
+  <!--Contact-->
+  <section id="contact" class="section section-odd section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+      <div class="content">
+        <div class="contact-method">
+          <a href="mailto:burda.ivan@gmail.com"><i class="far fa-paper-plane fa-2x"></i>
+            <h5>burda.ivan@gmail.com</h5>
+          </a>
         </div>
-        <div class="content">
-          <div class="contact-method">
-            <a href="mailto:burda.ivan@gmail.com"
-              ><i class="far fa-paper-plane fa-2x"></i>
-              <h5>burda.ivan@gmail.com</h5>
-            </a>
-          </div>
-          <div class="contact-method">
-            <a
-              href="https://www.linkedin.com/in/ivan-burda-08337335"
-              target="_blank"
-              ><i class="fab fa-linkedin-in fa-2x"></i>
-              <h4>LinkedIn</h4>
-            </a>
-          </div>
-          <div class="contact-method">
-            <a href="https://github.com/ivanburda1986" target="_blank"
-              ><i class="fab fa-github fa-2x"></i>
-              <h4>GitHub</h4>
-            </a>
-          </div>
+        <div class="contact-method">
+          <a href="https://www.linkedin.com/in/ivan-burda-08337335" target="_blank"><i
+              class="fab fa-linkedin-in fa-2x"></i>
+            <h4>LinkedIn</h4>
+          </a>
+        </div>
+        <div class="contact-method">
+          <a href="https://github.com/ivanburda1986" target="_blank"><i class="fab fa-github fa-2x"></i>
+            <h4>GitHub</h4>
+          </a>
         </div>
       </div>
-    </section>
-    <!--Footer-->
-    <footer id="main-footer">
-      <div class="container">
-        <p>
-          Copyright &copy; <span id="footer-year"></span>, Ivan Burda, All
-          Rights Reserved
-        </p>
-      </div>
-    </footer>
-    <script src="js/bodyScrollLock.js"></script>
-    <script src="js/project-overlay.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer id="main-footer">
+    <div class="container">
+      <p>
+        Copyright &copy; <span id="footer-year"></span>, Ivan Burda, All
+        Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <script src="js/bodyScrollLock.js"></script>
+  <script src="js/project-overlay.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
