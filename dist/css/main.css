@@ -1052,8 +1052,8 @@ ul {
   /*Portfolio*/
   .project-overlay {
     width: 90vw;
-    height: 90vh;
-    max-height: 90vh;
+    height: 80vh;
+    max-height: 80vh;
     top: 2.5vh; }
   .project-overlay-main {
     flex-direction: column; }
