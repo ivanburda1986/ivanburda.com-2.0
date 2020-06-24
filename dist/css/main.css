@@ -448,6 +448,10 @@
   background: url("../img/portfolio/christinadengg.png") center;
   background-size: cover; }
 
+#project5-overlay .project-overlay-photo {
+  background: url("../img/portfolio/guitarCoach.png") center;
+  background-size: cover; }
+
 /*BLOG SECTION*/
 .year {
   margin-bottom: 3rem; }
@@ -814,6 +818,10 @@ ul {
 
 #project4 {
   background: url("../img/portfolio/christinadengg.png") center;
+  background-size: cover; }
+
+#project5 {
+  background: url("../img/portfolio/guitarCoach.png") center;
   background-size: cover; }
 
 .project-button {
