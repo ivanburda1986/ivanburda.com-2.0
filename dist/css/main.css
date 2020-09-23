@@ -452,6 +452,10 @@
   background: url("../img/portfolio/guitarCoach.png") center;
   background-size: cover; }
 
+#project6-overlay .project-overlay-photo {
+  background: url("../img/portfolio/nextbim.png") center;
+  background-size: cover; }
+
 /*BLOG SECTION*/
 .year {
   margin-bottom: 3rem; }
@@ -520,7 +524,7 @@ html,
 body {
   scroll-behavior: smooth;
   line-height: 1.5rem;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   background: white; }
 
 a {
@@ -822,6 +826,10 @@ ul {
 
 #project5 {
   background: url("../img/portfolio/guitarCoach.png") center;
+  background-size: cover; }
+
+#project6 {
+  background: url("../img/portfolio/nextbim.png") center;
   background-size: cover; }
 
 .project-button {
