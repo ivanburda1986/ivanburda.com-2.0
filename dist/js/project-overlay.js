@@ -6,6 +6,7 @@ const targetElement3 = document.querySelector('#project-overlay-description3');
 const targetElement4 = document.querySelector('#project-overlay-description4');
 const targetElement5 = document.querySelector('#project-overlay-description5');
 const targetElement6 = document.querySelector('#project-overlay-description6');
+const targetElement7 = document.querySelector('#project-overlay-description7');
 
 class ProjectDetailsUI {
   constructor() {
@@ -26,6 +27,9 @@ class ProjectDetailsUI {
     );
     this.project6Overlay = document.getElementById(
       "project6-overlay-container"
+    );
+    this.project7Overlay = document.getElementById(
+      "project7-overlay-container"
     );
   }
 
@@ -50,6 +54,9 @@ class ProjectDetailsUI {
     };
     if (number === 6) {
       bodyScrollLock.disableBodyScroll(targetElement6);
+    };
+    if (number === 7) {
+      bodyScrollLock.disableBodyScroll(targetElement7);
     };
     console.log(number);
   }
@@ -76,6 +83,9 @@ class ProjectDetailsUI {
     if (number === 6) {
       bodyScrollLock.enableBodyScroll(targetElement6);
     };
+    if (number === 7) {
+      bodyScrollLock.enableBodyScroll(targetElement7);
+    };
 
     console.log(number);
   }
@@ -97,6 +107,8 @@ const project5showBtn = document.getElementById("project5-showBtn");
 const project5hideBtn = document.getElementById("project5-hidebtn");
 const project6showBtn = document.getElementById("project6-showBtn");
 const project6hideBtn = document.getElementById("project6-hidebtn");
+const project7showBtn = document.getElementById("project7-showBtn");
+const project7hideBtn = document.getElementById("project7-hidebtn");
 
 project1showBtn.addEventListener("click", () => {
   projectDetails.showProjectOverlay(1);
@@ -144,4 +156,12 @@ project6showBtn.addEventListener("click", () => {
 
 project6hideBtn.addEventListener("click", () => {
   projectDetails.hideProjectOverlay(6);
+});
+
+project7showBtn.addEventListener("click", () => {
+  projectDetails.showProjectOverlay(7);
+});
+
+project7hideBtn.addEventListener("click", () => {
+  projectDetails.hideProjectOverlay(7);
 });

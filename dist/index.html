@@ -763,6 +763,49 @@
       </div>
     </div>
     <div class="container">
+      <!--Overlay-project7-->
+      <div id="project7-overlay-container" class="project-overlay-container hide">
+        <div class="project-overlay" id="project7-overlay">
+          <div class="project-overlay-header">
+            <div class="project-overlay-header-title">
+              <p>Vienna Public Art</p>
+            </div>
+            <div id="project7-hidebtn" class="project-overlay-header-hide-btn-container">
+              <button>×</button>
+            </div>
+          </div>
+          <div class="project-overlay-tech-tags tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overlay-main">
+            <div class="project-overlay-photo"></div>
+            <div id="project-overlay-description7" class="project-overlay-description">
+              <p>
+                The goal of this project was to use: Open Data, Google Maps API, and create something that would be useful. I enjoy walking in the city of Vienna, so I have created a map that enables me to discover art in the public space.
+              </p>
+              <p>
+                Vienna offers data of art objects in public space, including their coordinants. In the first iteration of my project, I worked with a smaller data set containing just ornamental fountains. I mapped the data I needed to an array of new objects and displayed the individual fountains in the map. I also added a window with a description and a link to an external resource to find more information and an image. Afterwards I added a realtime geolocation of the user, so that it is always possible to navigate to the fountains by following the map.
+              </p>
+              <p>As a second iteration of the project, I worked with a larger data set of more that 2000 objects, containing not only ornamental fountains but also other forms of art. Again, I mapped needed data to an array of new objects and displayed this data on the map, building on top of the first iteration.</p>
+              <p>However, displaying 2000+ markers in the map turned out to be difficult (performance, cluttered view), so I decided to display only items within 1km from the user's geolocation. To do this, I had to use the Haversine formula, which I read about on Wikipedia and got the script for at Stack Overflow. Afer all, the user is not expected to go and visit art located more than 1km from their position. The app should rather help the user discover art in the nearest proximity and learn that way more about the city as a side-effect of moving around in everyday life. </p>
+              <p>Once done, I also included clustering of item markers, so that when the user zooms in/out the markers get grouped and the map easier to view.</p>
+              <ul class="dotted-list"></ul>
+            </div>
+          </div>
+          <div class="project-overlay-footer">
+            <div class="project-overlay-sourcode-btn-container">
+              <a href="https://github.com/ivanburda1986/kunstWien" target="_blank"><button>Github</button></a>
+            </div>
+            <div class="project-overlay-demo-btn-container">
+              <a href="https://kunst.ivanburda.com/" target="_blank"><button>Visit site</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
       <!--Projects-->
       <div class="section-title">
         <h2>Dev Portfolio</h2>
@@ -858,6 +901,21 @@
           </div>
           <div class="project-overview" id="project6"></div>
           <div id="project6-showBtn" class="project-button">
+            Details
+          </div>
+        </div>
+        <!--Vienna Public Art-->
+        <div class="project">
+          <div class="project-title">
+            <h4>Vienna Public Art</h4>
+          </div>
+          <div class="tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overview" id="project7"></div>
+          <div id="project7-showBtn" class="project-button">
             Details
           </div>
         </div>
