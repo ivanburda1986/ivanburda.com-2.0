@@ -806,6 +806,55 @@
       </div>
     </div>
     <div class="container">
+      <!--Overlay-project8-->
+      <div id="project8-overlay-container" class="project-overlay-container hide">
+        <div class="project-overlay" id="project8-overlay">
+          <div class="project-overlay-header">
+            <div class="project-overlay-header-title">
+              <p>Life Perspective</p>
+            </div>
+            <div id="project8-hidebtn" class="project-overlay-header-hide-btn-container">
+              <button>×</button>
+            </div>
+          </div>
+          <div class="project-overlay-tech-tags tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overlay-main">
+            <div class="project-overlay-photo"></div>
+            <div id="project-overlay-description8" class="project-overlay-description">
+              <p>
+                The goal of this project was to visualise a person's life. Having the ability to see all days, one becomes more motivated to appreaciate every single of them.
+                At the technical level the goal was to get more experience with creating a user flow, a registration/login form, input validations, working with the local storage, generating content dynamically based on user's input. 
+              </p>
+              <p>
+                A user can create a new profile or login to an existing one. When creating a new profile, the provided answers are used to retrieve a user's life expectancy based on real-world static JSON data. Based on the user's life expectancy, the application visualises all days in a user's life - those that have elapsed and those that still remain. Each day can be clicked to add a note and customize its image. The user's 1st birthday and the last expected day come with a default image/note, yet these can be overwritten.
+              </p>
+              <p>
+                An already created profile can be re-visited. Instead of creating a new profile, the user can login with an existing one. If a creation is attempted for an existing name, a login is offered instead. Of course, all data is stored only locally, in the storage of user's browser.
+              </p>
+              <p>It is also possible to login as an admin (username: admin, pass: winettou) to see a list of all existing profiles and login with any of them without a password.</p>
+              <p>
+                The main challenge of this project was to generate all the years and days properly (different number of days in individual months, leap years, etc.). Also working with the local storage was a really good exercise. I had to handle also cases when a user outlives their expected age - in such a case I had to visualise the extra days and reflect this situation also in the general progress bar.
+              </p>
+              <p>When I learn node.js I plan to implement also the backend and REST API for this project.</p>
+              <ul class="dotted-list"></ul>
+            </div>
+          </div>
+          <div class="project-overlay-footer">
+            <div class="project-overlay-sourcode-btn-container">
+              <a href="https://github.com/ivanburda1986/lifePerspective" target="_blank"><button>Github</button></a>
+            </div>
+            <div class="project-overlay-demo-btn-container">
+              <a href="https://life.ivanburda.com/" target="_blank"><button>Visit site</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
       <!--Projects-->
       <div class="section-title">
         <h2>Dev Portfolio</h2>
@@ -916,6 +965,21 @@
           </div>
           <div class="project-overview" id="project7"></div>
           <div id="project7-showBtn" class="project-button">
+            Details
+          </div>
+        </div>
+        <!--Life Perspective-->
+        <div class="project">
+          <div class="project-title">
+            <h4>Life Perspective</h4>
+          </div>
+          <div class="tech-tags">
+            <div class="tech-tag tag-html">HTML</div>
+            <div class="tech-tag tag-css">CSS</div>
+            <div class="tech-tag tag-js">JS</div>
+          </div>
+          <div class="project-overview" id="project8"></div>
+          <div id="project8-showBtn" class="project-button">
             Details
           </div>
         </div>

@@ -460,6 +460,10 @@
   background: url("../img/portfolio/kunst.png") center;
   background-size: cover; }
 
+#project8-overlay .project-overlay-photo {
+  background: url("../img/portfolio/lifeperspective.jpeg") center;
+  background-size: cover; }
+
 /*BLOG SECTION*/
 .year {
   margin-bottom: 3rem; }
@@ -838,6 +842,10 @@ ul {
 
 #project7 {
   background: url("../img/portfolio/kunst.png") center;
+  background-size: cover; }
+
+#project8 {
+  background: url("../img/portfolio/lifeperspective.jpeg") center;
   background-size: cover; }
 
 .project-button {

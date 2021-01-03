@@ -1,12 +1,13 @@
 //https://github.com/willmcpo/body-scroll-lock/tree/master/lib
 
-const targetElement1 = document.querySelector('#project-overlay-description1');
-const targetElement2 = document.querySelector('#project-overlay-description2');
-const targetElement3 = document.querySelector('#project-overlay-description3');
-const targetElement4 = document.querySelector('#project-overlay-description4');
-const targetElement5 = document.querySelector('#project-overlay-description5');
-const targetElement6 = document.querySelector('#project-overlay-description6');
-const targetElement7 = document.querySelector('#project-overlay-description7');
+const targetElement1 = document.querySelector("#project-overlay-description1");
+const targetElement2 = document.querySelector("#project-overlay-description2");
+const targetElement3 = document.querySelector("#project-overlay-description3");
+const targetElement4 = document.querySelector("#project-overlay-description4");
+const targetElement5 = document.querySelector("#project-overlay-description5");
+const targetElement6 = document.querySelector("#project-overlay-description6");
+const targetElement7 = document.querySelector("#project-overlay-description7");
+const targetElement8 = document.querySelector("#project-overlay-description8");
 
 class ProjectDetailsUI {
   constructor() {
@@ -31,6 +32,9 @@ class ProjectDetailsUI {
     this.project7Overlay = document.getElementById(
       "project7-overlay-container"
     );
+    this.project8Overlay = document.getElementById(
+      "project8-overlay-container"
+    );
   }
 
   showProjectOverlay(number) {
@@ -39,25 +43,28 @@ class ProjectDetailsUI {
     //setScrolling("hidden");
     if (number === 1) {
       bodyScrollLock.disableBodyScroll(targetElement1);
-    };
+    }
     if (number === 2) {
       bodyScrollLock.disableBodyScroll(targetElement2);
-    };
+    }
     if (number === 3) {
       bodyScrollLock.disableBodyScroll(targetElement3);
-    };
+    }
     if (number === 4) {
       bodyScrollLock.disableBodyScroll(targetElement4);
-    };
+    }
     if (number === 5) {
       bodyScrollLock.disableBodyScroll(targetElement5);
-    };
+    }
     if (number === 6) {
       bodyScrollLock.disableBodyScroll(targetElement6);
-    };
+    }
     if (number === 7) {
       bodyScrollLock.disableBodyScroll(targetElement7);
-    };
+    }
+    if (number === 8) {
+      bodyScrollLock.disableBodyScroll(targetElement8);
+    }
     console.log(number);
   }
 
@@ -67,25 +74,28 @@ class ProjectDetailsUI {
     //setScrolling("visible");
     if (number === 1) {
       bodyScrollLock.enableBodyScroll(targetElement1);
-    };
+    }
     if (number === 2) {
       bodyScrollLock.enableBodyScroll(targetElement2);
-    };
+    }
     if (number === 3) {
       bodyScrollLock.enableBodyScroll(targetElement3);
-    };
+    }
     if (number === 4) {
       bodyScrollLock.enableBodyScroll(targetElement4);
-    };
+    }
     if (number === 5) {
       bodyScrollLock.enableBodyScroll(targetElement5);
-    };
+    }
     if (number === 6) {
       bodyScrollLock.enableBodyScroll(targetElement6);
-    };
+    }
     if (number === 7) {
       bodyScrollLock.enableBodyScroll(targetElement7);
-    };
+    }
+    if (number === 8) {
+      bodyScrollLock.enableBodyScroll(targetElement8);
+    }
 
     console.log(number);
   }
@@ -109,6 +119,8 @@ const project6showBtn = document.getElementById("project6-showBtn");
 const project6hideBtn = document.getElementById("project6-hidebtn");
 const project7showBtn = document.getElementById("project7-showBtn");
 const project7hideBtn = document.getElementById("project7-hidebtn");
+const project8showBtn = document.getElementById("project8-showBtn");
+const project8hideBtn = document.getElementById("project8-hidebtn");
 
 project1showBtn.addEventListener("click", () => {
   projectDetails.showProjectOverlay(1);
@@ -164,4 +176,12 @@ project7showBtn.addEventListener("click", () => {
 
 project7hideBtn.addEventListener("click", () => {
   projectDetails.hideProjectOverlay(7);
+});
+
+project8showBtn.addEventListener("click", () => {
+  projectDetails.showProjectOverlay(8);
+});
+
+project8hideBtn.addEventListener("click", () => {
+  projectDetails.hideProjectOverlay(8);
 });
