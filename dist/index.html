@@ -833,13 +833,13 @@
                 A user can create a new profile or login to an existing one. When creating a new profile, the provided answers are used to retrieve a user's life expectancy based on real-world static JSON data. Based on the user's life expectancy, the application visualises all days in a user's life - those that have elapsed and those that still remain. Each day can be clicked to add a note and customize its image. The user's 1st birthday and the last expected day come with a default image/note, yet these can be overwritten.
               </p>
               <p>
-                An already created profile can be re-visited. Instead of creating a new profile, the user can login with an existing one. If a creation is attempted for an existing name, a login is offered instead. Of course, all data is stored only locally, in the storage of user's browser.
+                An already created profile can be re-visited. Instead of creating a new profile, the user can login with an existing one. If a creation is attempted for an existing name, a login is offered instead. Of course, all data is stored only locally, in the storage of user's browser. There is no real authentication in place.
               </p>
               <p>It is also possible to login as an admin (username: admin, pass: winettou) to see a list of all existing profiles and login with any of them without a password.</p>
               <p>
-                The main challenge of this project was to generate all the years and days properly (different number of days in individual months, leap years, etc.). Also working with the local storage was a really good exercise. I had to handle also cases when a user outlives their expected age - in such a case I had to visualise the extra days and reflect this situation also in the general progress bar.
+                The main challenge of this project was to generate all the years and days properly (different number of days in individual months, leap years, etc.). Also working with the local storage was a really good exercise. In addition to that I had to handle cases when a user outlives their expected age - in such a case I had to visualise the extra days and reflect this situation also in the general progress bar.
               </p>
-              <p>When I learn node.js I plan to implement also the backend and REST API for this project.</p>
+              <p>Once I learn node.js I plan to implement also the backend and REST API for this project.</p>
               <ul class="dotted-list"></ul>
             </div>
           </div>
